@@ -1,0 +1,4 @@
+commands.txt
+registry-private.key
+*.private.key
+secrets/
