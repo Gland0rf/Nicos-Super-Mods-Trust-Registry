@@ -1,0 +1,35 @@
+{
+    "schema": 1,
+    "generatedAt": "2026-08-03T00:00:00Z",
+    "projects": [
+        {
+            "name": "Nicos Super Mods",
+            "projectUrl": "https://github.com/Gland0rf/Nicos-Super-Mods",
+            "modIds": [
+                "nsm"
+            ],
+            "releases": [
+                {
+                    "version": "1.0.0",
+                    "fileName": "NicosSuperMods-1.0.0.jar",
+                    "sha512": "f389d012b63f9fb9ef04f27aed13e92c98f34c3b50adf55517a33a16e2205c320dd2920115c7d7fa7cda87ead10d5ece3c6c01d5747cb566878b6ae8e56b13ef"
+                },
+                {
+                    "version": "1.0.1",
+                    "fileName": "NicosSuperMods-1.0.1.jar",
+                    "sha512": "3972034302f69035f6372cd4219aa4b1a2c37b940ec6513f3eddb110054b1602e0570b22b58e0eee5aa4a2766bd25caec7955327298acb48ae98713ac0ec65b6"
+                },
+                {
+                    "version": "1.0.2",
+                    "fileName": "NicosSuperMods-1.0.2.jar",
+                    "sha512": "9e02e8dc494f45a39490710979f46f9a372a77c53ca4051d6c3fcd7681d82568490d33cf60e115f77063f964660b71304a80c2e69b8cd82f511bdc7247d3f95f"
+                },
+                {
+                    "version": "1.0.2",
+                    "fileName": "NicosSuperMods-1.0.2.jar",
+                    "sha512": "af0bdd6cff4110d1299f3d52271f0df34af8a1deb0c5e4beb91f25d9a582752c781c6280edffc60128a28618d50019843455b01f9df30b8741a2c6ff2a1884d7"
+                }
+            ]
+        }
+    ]
+}
