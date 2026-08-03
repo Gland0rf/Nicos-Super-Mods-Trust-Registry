@@ -1,0 +1,30 @@
+name: Verify registry
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  verify:
+    name: Verify registry signature
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Check signature
+        run: |
+          java tools/RegistrySigner.java verify \
+            registry-public.key \
+            registry.json \
+            registry.sig
