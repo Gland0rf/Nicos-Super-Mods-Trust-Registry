@@ -1,6 +1,6 @@
-registry.json text eol=lf
-registry.sig binary
-registry-public.key binary
+/registry.json text eol=lf
+/registry.sig -text
+/registry-public.key -text
 
 *.java text eol=lf
 *.yml text eol=lf
