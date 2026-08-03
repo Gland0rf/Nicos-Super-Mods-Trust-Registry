@@ -1,0 +1,74 @@
+name: Discover trusted releases
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: trust-registry-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    name: Discover new releases
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out registry
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      
+      - name: Update registry
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python tools/update_registry.py
+      
+      - name: Check for registry changes
+        id: changes
+        shell: bash
+        run: |
+          if git diff --quiet -- registry.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create update pull request
+        if: steps.changes.outputs.changed == 'true'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          branch="automation/registry-${GITHUB_RUN_ID}"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git switch -c "$branch"
+          git add registry.json
+          git commit -m "Discover new official mod release"
+          git push --set-upstream origin "$branch"
+
+          gh pr create \
+            --repo "$GITHUB_REPOSITORY" \
+            --base main \
+            --head "$branch" \
+            --title "Update trusted mod releases" \
+            --body "New GitHub release JARs were discovered automatically.
+
+          Review:
+          - repository identity
+          - extracted mod IDs
+          - filenames and versions
+          - registry.json changes
+
+          After review, sign registry.json locally and push registry.sig to this branch."

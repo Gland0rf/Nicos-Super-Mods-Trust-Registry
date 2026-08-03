@@ -1,0 +1,15 @@
+{
+    "schemaVersion": 1,
+    "projects": [
+        {
+            "repository": "Gland0rf/Nicos-Super-Mods",
+            "assetRegex": "^NicosSuperMods-[0-9].*\\.jar$",
+            "includePrereleases": true
+        },
+        {
+            "repository": "hannibal002/SkyHanni",
+            "assetRegex": "^SkyHanni-[0-9]+\\.[0-9]+\\.[0-9]+-mc[0-9]+\\.[0-9]+\\.[0-9]+\\.jar$",
+            "includePrereleases": true
+        }
+    ]
+}
