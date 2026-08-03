@@ -1,0 +1,7 @@
+registry.json text eol=lf
+registry.sig binary
+registry-public.key binary
+
+*.java text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
