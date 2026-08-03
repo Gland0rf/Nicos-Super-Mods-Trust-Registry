@@ -1,35 +1,1544 @@
 {
-    "schemaVersion": 1,
-    "generatedAt": "2026-08-03T00:00:00Z",
-    "projects": [
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-03T01:36:20Z",
+  "projects": [
+    {
+      "name": "Nicos Super Mods",
+      "projectUrl": "https://github.com/Gland0rf/Nicos-Super-Mods",
+      "modIds": [
+        "nsm"
+      ],
+      "releases": [
         {
-            "name": "Nicos Super Mods",
-            "projectUrl": "https://github.com/Gland0rf/Nicos-Super-Mods",
-            "modIds": [
-                "nsm"
-            ],
-            "releases": [
-                {
-                    "version": "1.0.0",
-                    "fileName": "NicosSuperMods-1.0.0.jar",
-                    "sha512": "f389d012b63f9fb9ef04f27aed13e92c98f34c3b50adf55517a33a16e2205c320dd2920115c7d7fa7cda87ead10d5ece3c6c01d5747cb566878b6ae8e56b13ef"
-                },
-                {
-                    "version": "1.0.1",
-                    "fileName": "NicosSuperMods-1.0.1.jar",
-                    "sha512": "3972034302f69035f6372cd4219aa4b1a2c37b940ec6513f3eddb110054b1602e0570b22b58e0eee5aa4a2766bd25caec7955327298acb48ae98713ac0ec65b6"
-                },
-                {
-                    "version": "1.0.2",
-                    "fileName": "NicosSuperMods-1.0.2.jar",
-                    "sha512": "9e02e8dc494f45a39490710979f46f9a372a77c53ca4051d6c3fcd7681d82568490d33cf60e115f77063f964660b71304a80c2e69b8cd82f511bdc7247d3f95f"
-                },
-                {
-                    "version": "1.0.3",
-                    "fileName": "NicosSuperMods-1.0.3.jar",
-                    "sha512": "4e23cf0dac242c5aba7c246a83459ffe023855077a808f973f321189a9ef2ffc941d05f0fbed45e267066ecd2d07ba5d855e031ff76a4851b5669b2e4faa1d63"
-                }
-            ]
+          "version": "1.0.0",
+          "fileName": "NicosSuperMods-1.0.0.jar",
+          "sha512": "f389d012b63f9fb9ef04f27aed13e92c98f34c3b50adf55517a33a16e2205c320dd2920115c7d7fa7cda87ead10d5ece3c6c01d5747cb566878b6ae8e56b13ef"
+        },
+        {
+          "version": "1.0.1",
+          "fileName": "NicosSuperMods-1.0.1.jar",
+          "sha512": "3972034302f69035f6372cd4219aa4b1a2c37b940ec6513f3eddb110054b1602e0570b22b58e0eee5aa4a2766bd25caec7955327298acb48ae98713ac0ec65b6"
+        },
+        {
+          "version": "1.0.2",
+          "fileName": "NicosSuperMods-1.0.2.jar",
+          "sha512": "9e02e8dc494f45a39490710979f46f9a372a77c53ca4051d6c3fcd7681d82568490d33cf60e115f77063f964660b71304a80c2e69b8cd82f511bdc7247d3f95f"
+        },
+        {
+          "version": "1.0.3",
+          "fileName": "NicosSuperMods-1.0.3.jar",
+          "sha512": "4e23cf0dac242c5aba7c246a83459ffe023855077a808f973f321189a9ef2ffc941d05f0fbed45e267066ecd2d07ba5d855e031ff76a4851b5669b2e4faa1d63"
         }
-    ]
+      ]
+    },
+    {
+      "name": "SkyHanni",
+      "projectUrl": "https://github.com/hannibal002/SkyHanni",
+      "modIds": [
+        "skyhanni"
+      ],
+      "releases": [
+        {
+          "version": "1.0.0",
+          "fileName": "SkyHanni-1.0.0-mc1.8.9.jar",
+          "sha512": "08d43511d5cc2433e989bb00a7ee74f21fe13db1c873820550c12fbd93756423171558b7a4d5188dc07c55e460392d9ee41f541cf02bd30f84f637891726bc0d"
+        },
+        {
+          "version": "1.1.0",
+          "fileName": "SkyHanni-1.1.0-mc1.8.9.jar",
+          "sha512": "8b2468f1ad2378bd554118cbb777e4baf5556932cc50a5161cb6aa82cfe68d60dc41854fa197e3f95dc69b9eca6c3a6ce1b803404672061025bf2b80239ee723"
+        },
+        {
+          "version": "1.10.0",
+          "fileName": "SkyHanni-1.10.0-mc1.8.9.jar",
+          "sha512": "58cb4f2a1621042147f97dfc86d9253d0841d0d4cb2e00c87de19d10eabe430e29c083e15583125b6ef2a187c03c92d7626f458fc4fecf906fc33a2e3b81fbee"
+        },
+        {
+          "version": "1.11.0",
+          "fileName": "SkyHanni-1.11.0-mc1.8.9.jar",
+          "sha512": "d957e4dd73e921c831508035d1f0c0383bb878ae66469aef8767fdb4947d4b1f3e553759dd42557d5e5b3236432b6a286e7b6ab14b4be0ddf73a02c163558a8a"
+        },
+        {
+          "version": "1.12.0",
+          "fileName": "SkyHanni-1.12.0-mc1.8.9.jar",
+          "sha512": "c7b9a5f7b49b8c36ab11e864502783db979a1d39007c2e18749dc40eaa3c0b91ce20e2cb08df16f934b9eafe140c5809c2c4e50c227b1d0a6483d603e124967c"
+        },
+        {
+          "version": "1.13.0",
+          "fileName": "SkyHanni-1.13.0-mc1.8.9.jar",
+          "sha512": "ab1bd92f215d3da2d43ccbb9168478de84a1e0d3ed90dee8caefb139b823f3385a4a7a2544a55230e21c497886a91beeef167278269cfef353b2f886584f13f9"
+        },
+        {
+          "version": "1.14.0",
+          "fileName": "SkyHanni-1.14.0-mc1.8.9.jar",
+          "sha512": "4cf27358b591f7b2680e395d8bb9e98224ea727eb3db44839c4d2082020d764bbef058e71b71f0514ad6ebf04b446cf2462f07e4400cd521089506c4fedde3a5"
+        },
+        {
+          "version": "1.15.0",
+          "fileName": "SkyHanni-1.15.0-mc1.8.9.jar",
+          "sha512": "80d22da1f1a43150d54fced9f879bb04fc28cf22a923f8766b55a3c7235fe4decf05087a45c7de6f5d702e4eba9f34770711b9f619a6dff04beefb0ed9dfc572"
+        },
+        {
+          "version": "1.16.0",
+          "fileName": "SkyHanni-1.16.0-mc1.8.9.jar",
+          "sha512": "88a01cd8d6d9fe3a59d68dbb631e0eac047913d07c062736686f540f5efa4963939c649ab2198356280b3ce9d7a440ffa57db33bac73b766867c80e31a53a3d3"
+        },
+        {
+          "version": "1.17.0",
+          "fileName": "SkyHanni-1.17.0-mc1.8.9.jar",
+          "sha512": "e59f18cda2413a053bbc9f0afb84a3fbbdfad092a15845cd45fbbd694be1da79fab2ec3338764fb8bbda25dd807128eb147ff24e561ab728feb3d5111b30e858"
+        },
+        {
+          "version": "1.18.0",
+          "fileName": "SkyHanni-1.18.0-mc1.8.9.jar",
+          "sha512": "1a8fb1902acbd9bbfc5ce01eb4aa3bafdc4ae5d0bc87c7f868d530d66d95863ff23bcccb4e3ce019ddab41a20be26098a59185b8eb5a7b7ab769c2fc7ff1c2fa"
+        },
+        {
+          "version": "1.19.0",
+          "fileName": "SkyHanni-1.19.0-mc1.8.9.jar",
+          "sha512": "85f279ee49df4be57f16897404c6360c5fcaa7dd5fe1c50ff24feea67ec0e0e251d6359217973038796c319549d76f7cd85e8078f36d88ffcd74362ba697e912"
+        },
+        {
+          "version": "1.2.0",
+          "fileName": "SkyHanni-1.2.0-mc1.8.9.jar",
+          "sha512": "7db041daa9cebda885c13942d3c0b35ad1a91f246f92afebf1f03e7af79b42e8dc3fa6fccb825a9c34e68fe676f2e817e4124fc99cc9b8d161f63556c6b0bf6d"
+        },
+        {
+          "version": "1.3.0",
+          "fileName": "SkyHanni-1.3.0-mc1.8.9.jar",
+          "sha512": "958a0fa8dd0e6a4620575d17de88f7afbe43a0e1af91ff37f5e567c0313cb0a1da156e795dd1a2891c0003a50b1e8a70f5cb11f19f748a125946e7f4361fd549"
+        },
+        {
+          "version": "1.30.0",
+          "fileName": "SkyHanni-1.30.0-mc1.8.9.jar",
+          "sha512": "84ca406dc0e8122934c8834a260ec62a1ccd39b69b73b862e6f36a69ca57fa7096467f0f36c3328d902413cbb1fd8428c6866c852838e052f1ae165bf05d0e38"
+        },
+        {
+          "version": "1.4.0",
+          "fileName": "SkyHanni-1.4.0-mc1.8.9.jar",
+          "sha512": "f2cec5058c2757a6f4a5fc8e9779f46b497161c404624a5f4bc2d29a21cc107330bd3b3472df8090588e59c675074a93f47d8f8b5fa8adf59dd581be43830f14"
+        },
+        {
+          "version": "1.5.0",
+          "fileName": "SkyHanni-1.5.0-mc1.8.9.jar",
+          "sha512": "e70c39720765d1f23ff939b4619d378cbdbc8c54df812d5d01223a851c83f10676eded267fd3b51d615ecb9b56f758e32b416c066d14f0af17c2badb6112db6d"
+        },
+        {
+          "version": "1.6.0",
+          "fileName": "SkyHanni-1.6.0-mc1.8.9.jar",
+          "sha512": "1683de6c5c5b3bb45b91aefccf418600d245ceaf09e316744975706a110a742499f77556fc3f8c5125aec30f4ae3e205ab4dcde59f48720bc7c4789a1e610ff9"
+        },
+        {
+          "version": "1.7.0",
+          "fileName": "SkyHanni-1.7.0-mc1.8.9.jar",
+          "sha512": "b0bc46806e46a13031ca16fd7400142db168b925b9743e50a5a3185be95e8642e5248ebceec7811a4049ed0cbcc995141d5fc94b4e63548b94763653d534c0e1"
+        },
+        {
+          "version": "1.8.0",
+          "fileName": "SkyHanni-1.8.0-mc1.8.9.jar",
+          "sha512": "c2601ebcc2b527d9f060d5121a084695e4a83b9032091bf2de732f78e401f8ca909cb6680d765484ef27a6cb796a935d59ed2a0d84abad89b35079a08a62d2fe"
+        },
+        {
+          "version": "1.9.0",
+          "fileName": "SkyHanni-1.9.0-mc1.8.9.jar",
+          "sha512": "db78df1f57bdc4d6aaed10847654aa087a9906f91eedbff68e13524999900d3256a9344b58a2cd4f495e3662694f17f89e987bc4d3361ec4aa4eed34eb78a39e"
+        },
+        {
+          "version": "2.0.0",
+          "fileName": "SkyHanni-2.0.0-mc1.8.9.jar",
+          "sha512": "deb58a7e28f4d8d4efb5e544aef59ea89640c28bb3ee209821116211a392ef00b43951f1e33079ea4a750b1955a428f08b71f1e1803516729b18b45cb3386035"
+        },
+        {
+          "version": "2.0.1",
+          "fileName": "SkyHanni-2.0.1-mc1.8.9.jar",
+          "sha512": "192444735e33a10fac52f250ef28cd96885dec1f6455c73d5a8ef2350d3e8aee5c4a564e9eb0daa7cee5f39975a201d9ff698f9cfa5c6e8579d9f02be3090038"
+        },
+        {
+          "version": "2.1.0",
+          "fileName": "SkyHanni-2.1.0-mc1.8.9.jar",
+          "sha512": "e97941c05913ee55f0f244bc3d36ba038e4dbae63941174663ee4737c51361ac84a855b1cc1f8c673a03e35fb59ae8eeed09579115f3a3674c066219f6baa64f"
+        },
+        {
+          "version": "2.10.0",
+          "fileName": "SkyHanni-2.10.0-mc1.8.9.jar",
+          "sha512": "c78cd70c39822fcf365a63614a6fe571fd39b5105b7e5fca5f4f60bf79861655fbe8ed7f700757226a4773148476203c210303d231a2e954ee59f91a648f9360"
+        },
+        {
+          "version": "2.11.0",
+          "fileName": "SkyHanni-2.11.0-mc1.8.9.jar",
+          "sha512": "2d21a6bf55d70fac0ca0966705237b71660ce763ff1ee454643e0d85932fa7033f61a163ab56fdaaa237532104f24476015285d1d6734780ed6ea2265229f2ba"
+        },
+        {
+          "version": "2.12.0",
+          "fileName": "SkyHanni-2.12.0-mc1.8.9.jar",
+          "sha512": "72de2f8431437e1a6452908d7455440770b1b119dc525a69e446a90753144cb2ec9baf60dee6273a1ee00be96bb528689fbb8b1e61ee80b8fbab049a00e209eb"
+        },
+        {
+          "version": "2.13.0",
+          "fileName": "SkyHanni-2.13.0-mc1.8.9.jar",
+          "sha512": "39ccad981951e02ed035e3249d9ba497df09b34dfde7e6da300b8277247881c477759bc5fca6fb26e02f53cbe233c0259bf4730f373b4f84c98c83525a774475"
+        },
+        {
+          "version": "2.14.0",
+          "fileName": "SkyHanni-2.14.0-mc1.8.9.jar",
+          "sha512": "33935ef567ba4e570a3b8e0e6ffc5e58613a67d5a423b8406b9d4f2c2708432ff31015358f2dd5e1fc7874d4aa7bc94ab4240d57ff9256bada065e8c2b583f54"
+        },
+        {
+          "version": "2.15.0",
+          "fileName": "SkyHanni-2.15.0-mc1.8.9.jar",
+          "sha512": "14789a49022e1e2fc2a4b5d345ee3165a8905831f21df00ec50f4515077ff1422f53b169878115ca46562030fdafd1259c503d35e6d2cbce7dbec963236d9a99"
+        },
+        {
+          "version": "2.16.0",
+          "fileName": "SkyHanni-2.16.0-mc1.8.9.jar",
+          "sha512": "a665085a694ed86b19b485e8da39b67bacd9757bd5a81a0da9c64c6a0d6b9be9bf55eabbcd13a7851c01611996365b368703a62629f7b8dd380cd384bf2b0961"
+        },
+        {
+          "version": "2.17.0",
+          "fileName": "SkyHanni-2.17.0-mc1.8.9.jar",
+          "sha512": "db830385ab68df41e2bae4445b741339e2d42298f4bf3d4748555810f9b2e73e09ed929b653b00edaf8e4ac397fff6802ee00459fa14559a31dd4abaf31cc705"
+        },
+        {
+          "version": "2.18.0",
+          "fileName": "SkyHanni-2.18.0-mc1.8.9.jar",
+          "sha512": "570035785bddca9a221e183a742fd0d996abe5d322c53d0459d611cb0d7082715db2d1490af56eeb87288a0fd44ef3b94946cbc5872153352e2f947a205ffb53"
+        },
+        {
+          "version": "2.2.0",
+          "fileName": "SkyHanni-2.2.0-mc1.8.9.jar",
+          "sha512": "f19ac04c88bb392bcaa8c829f14b7ba1ec79dbaa096b6a1e49e38dd7d81c3852d1c8f153e22e0d5ccab40c9154356e04fdb0ea3a27d20b5d02a5a48d94de1c77"
+        },
+        {
+          "version": "2.3.0",
+          "fileName": "SkyHanni-2.3.0-mc1.8.9.jar",
+          "sha512": "0d3ffac5b8ceba84eaec56ce493d2451c82600838148e7ac7d38fff8c8ab5d74f5276ed8ad886a1b90c8f9c666244191d890e72f875f2265975c9470466011a6"
+        },
+        {
+          "version": "2.4.0",
+          "fileName": "SkyHanni-2.4.0-mc1.8.9.jar",
+          "sha512": "24d3c4f5d40f37d5a210730d72c45a642ac285f5893994894505d3f405898d21adad1d0879dfedb36d59925dec0b4ded4b6fd18ef4e35e22f403fdbff96964ff"
+        },
+        {
+          "version": "2.5.0",
+          "fileName": "SkyHanni-2.5.0-mc1.8.9.jar",
+          "sha512": "27340a86ab4712334503bdacdd7c00f066d11eeaaec04079780652bca92da35cc7e642b58bd2a147468d74acaa370b7fd9499567f405164f00b05e30d956c290"
+        },
+        {
+          "version": "2.6.0",
+          "fileName": "SkyHanni-2.6.0-mc1.8.9.jar",
+          "sha512": "bb25114e54514f1be5fd843fa3be190ec64c02d8762cd10f1afd21c643e230de4483489d5b04d18c19186416281ac13bb730028597f578969dcddbafa677b341"
+        },
+        {
+          "version": "2.7.0",
+          "fileName": "SkyHanni-2.7.0-mc1.8.9.jar",
+          "sha512": "00616cde619d5f9bb3f4d7fa5ef6d88ba13f9fa4362abcbe88ca986fc5ec5a84f78e0ad2aea7bef0ca5573c57081e15bfa1a2a55af6c9ee2baadc83b8967eea6"
+        },
+        {
+          "version": "2.8.0",
+          "fileName": "SkyHanni-2.8.0-mc1.8.9.jar",
+          "sha512": "4a88de92b92dade186ceb0bde02e8c32576fb618d2f00a80196c494d14a6ed36ecd6aa3d9a35ea0594c245e1abdbf9bcb5565b58cf5e50fd1967241281e23f14"
+        },
+        {
+          "version": "2.9.0",
+          "fileName": "SkyHanni-2.9.0-mc1.8.9.jar",
+          "sha512": "e01912eacc409a127e5db8e4ff5c52ddf14eafff3b8dd0a5040dfd00ba250d14596c318c83bd6d3cc7518ed2c10393f3981af5e403c17efe7233ce4c408f008a"
+        },
+        {
+          "version": "3.0.0",
+          "fileName": "SkyHanni-3.0.0-mc1.8.9.jar",
+          "sha512": "f3d3bbc59fb92b42b35bbbdc74c868694800332b4cfc221bf4a378b23c72e6776dc64a46f7cec065758dfa74e1c14f508505c4bf634f4fb2958abb1e4f990170"
+        },
+        {
+          "version": "3.1.0",
+          "fileName": "SkyHanni-3.1.0-mc1.8.9.jar",
+          "sha512": "639366c6932973555864f18c7c4328e6812043cecfd6d47ae7aa5abf6d744ad52f628dc94f7e351cece5cdc9c566b008d214ef536bd6f0d5c0033345c7b7e381"
+        },
+        {
+          "version": "3.10.0",
+          "fileName": "SkyHanni-3.10.0-mc1.21.5.jar",
+          "sha512": "a9a0452034fad0d7de89fe2dbaaadf6884b9f1a8b6ceb9b91fd6c3c834ae5537b65e8565a07f046d4e3b73fe5596cbf1bf0fe185d3d2633d543b8ee4bae84471"
+        },
+        {
+          "version": "3.10.0",
+          "fileName": "SkyHanni-3.10.0-mc1.8.9.jar",
+          "sha512": "24802733e52e35549d10cf809986954701cd6db56b32d0f25778e6f7635e63fd5c5a10b71a3951f452d59abb7442201303efffe747a4b935a98433c3289cb413"
+        },
+        {
+          "version": "3.11.0",
+          "fileName": "SkyHanni-3.11.0-mc1.21.5.jar",
+          "sha512": "2f987411878963a8480798d1b2073783f5d56e15073054e8c7a56632493d46cad4241ddca9b88fb0c282774c3400c05c6f8b6f85c2bf9faa3ddf647ed527509a"
+        },
+        {
+          "version": "3.11.0",
+          "fileName": "SkyHanni-3.11.0-mc1.8.9.jar",
+          "sha512": "6a0da482b15684a63da17953d9104b8a50683e3e237ceeb9b1430ae150b9d67982b42147c6b18106f3115b086861747873fba21fbde534707754430762634cb6"
+        },
+        {
+          "version": "3.12.0",
+          "fileName": "SkyHanni-3.12.0-mc1.21.5.jar",
+          "sha512": "18cf62fe4501cf340955b03215015165d53a018716a47a60e1c14cba5a08916657c32cef4e6e02e095e7ba7ba69996aca4f150edd6f82e0bc4bac82205a1b627"
+        },
+        {
+          "version": "3.12.0",
+          "fileName": "SkyHanni-3.12.0-mc1.8.9.jar",
+          "sha512": "e900889e7039574d267735ffb356448289bd9bdc127b4ea48cd74f9f85d5fc71c52086735ac5a76ef72dd3c00c224714c80882974572ebf1d1752d80ddc88288"
+        },
+        {
+          "version": "3.13.0",
+          "fileName": "SkyHanni-3.13.0-mc1.21.5.jar",
+          "sha512": "391c2a52cf9cc9e59e056e39c4041c70066e3165c7ed347eea843d5c50115a81103eb7f43803468a585695a8afafd4a6ca6d91f3143306ea184dc0a0f0aae21e"
+        },
+        {
+          "version": "3.13.0",
+          "fileName": "SkyHanni-3.13.0-mc1.8.9.jar",
+          "sha512": "c6f4d1898b2ad5b12bd5f5f5d94bf48ba768713465d7edc9f9ada432ffc242b1794d1ebbf52626edb06f006abc051973684b0521d0b9b819158d480187f6a34f"
+        },
+        {
+          "version": "3.14.0",
+          "fileName": "SkyHanni-3.14.0-mc1.21.5.jar",
+          "sha512": "2734ee1d3cc80bd6be38aed762e6e41a99cfac0f802468844106380cf2b5e4560721cb45291540cf8d7fc1a182dc251c4e9178985ab73b4b3b472f1756db4437"
+        },
+        {
+          "version": "3.14.0",
+          "fileName": "SkyHanni-3.14.0-mc1.8.9.jar",
+          "sha512": "ad27707ea7fe17248021cbd6da25f2c4d2ff9ec1ca25ee0e92dceed230863d2bf8600478dc19037dba806fc2d139712f85b46632a2c53206fc9292ac535eef90"
+        },
+        {
+          "version": "3.15.0",
+          "fileName": "SkyHanni-3.15.0-mc1.21.5.jar",
+          "sha512": "c47fbfbf08cd8b856b6179d671a6ee2cbda0031b679cfcc16b104f3c5f19b5ab7835b941186bedcab3985ae115a0e1f11d7a252caf20264aaee83df306e360f9"
+        },
+        {
+          "version": "3.15.0",
+          "fileName": "SkyHanni-3.15.0-mc1.8.9.jar",
+          "sha512": "8e7e912097a1a18fa2f5de8efd5e41db88e70a015dcd0cd4c7da42edd2af0f10b5e0690ff4e49faff96824982fd762f77bc13b901933e68bd7e88dd71423e3a8"
+        },
+        {
+          "version": "3.16.0",
+          "fileName": "SkyHanni-3.16.0-mc1.21.5.jar",
+          "sha512": "443f0237254f744d8206e25f69ddd2684754e4def465ba9cf374e3bd6eecb30d21223a1dda43157fd03a802df2cc31bb480e6af93f7aa85c37b6081e8a260e74"
+        },
+        {
+          "version": "3.16.0",
+          "fileName": "SkyHanni-3.16.0-mc1.8.9.jar",
+          "sha512": "b109ab07cd28b5f5b41ee3a2eaa9e7d5fa9dd8b643f7a25367b3359d33a64e399986634a690f0274194dd45ff5280f66fdc829d3340911b332bfc395d56f210b"
+        },
+        {
+          "version": "3.17.0",
+          "fileName": "SkyHanni-3.17.0-mc1.21.5.jar",
+          "sha512": "a6e45b97e658b19fe4c508263a5ef71a4635a6f10d62672c4c255920a62c0d43a12f4431b424d96602fd024368d50cf78d27686294a6ef889ad1cc7a70a55fae"
+        },
+        {
+          "version": "3.17.0",
+          "fileName": "SkyHanni-3.17.0-mc1.8.9.jar",
+          "sha512": "ca81b78586aa082719e893a6a3017023661e629d5a1306d7d7f74a94a50f8ea9d9c935fa1510f24e3b0d7ee361b8619c3858eea7d4c41a13b7e8400538ca78f8"
+        },
+        {
+          "version": "3.18.0",
+          "fileName": "SkyHanni-3.18.0-mc1.21.5.jar",
+          "sha512": "5465c8069849c24a207d2580da3f1840b125db332bb0123b8faa5fbc2f81477220e591b3330ad8d6ab3c9feb585145bd409e652487b3334e5633854593f84e3b"
+        },
+        {
+          "version": "3.18.0",
+          "fileName": "SkyHanni-3.18.0-mc1.8.9.jar",
+          "sha512": "48a2bb16dee59753b0c66acd002b5eb9f7d782f635e280a4ae822b48d1c9b7f1e2aa5383029ba87c247961c33a2196142f2e6071119387cea887d23c84a6b61f"
+        },
+        {
+          "version": "3.2.0",
+          "fileName": "SkyHanni-3.2.0-mc1.8.9.jar",
+          "sha512": "dd24f9c52f64cc2129f6785da2edeeafd72d6a9905133f4906ae6504a77954b7d0bf33056c0cd214561f5dd424d2d1d1f50394eba735157b4031c6ffb515e806"
+        },
+        {
+          "version": "3.3.0",
+          "fileName": "SkyHanni-3.3.0-mc1.8.9.jar",
+          "sha512": "6f212ab912b149130d93b6b7dba9438a99d24fabced252641bc5807209d4681ae2871de9d54bb58abacabc418378c5874d365e2ff554d15108e2a936a283f8ef"
+        },
+        {
+          "version": "3.4.0",
+          "fileName": "SkyHanni-3.4.0-mc1.8.9.jar",
+          "sha512": "4571ac9bc3f85fa3940194b0e4fb7211e39666f2c52420029c73dc8a174dab6f8e63e819d353d1006b828cb46b310c9e544a1cf482b21b2e7a24773feecb23bf"
+        },
+        {
+          "version": "3.5.0",
+          "fileName": "SkyHanni-3.5.0-mc1.8.9.jar",
+          "sha512": "8377437a2e249c2682c2e7a6b3344bcb1cdf94865ed34770fa8e9983bc12b2d4608da4007b8d5236de402cf8b5bd6f0325090416898105017519a1372af10c56"
+        },
+        {
+          "version": "3.6.0",
+          "fileName": "SkyHanni-3.6.0-mc1.8.9.jar",
+          "sha512": "910bdff16ab9806507c3bb1a04fc801e4071511c194405431571a7973d45946e75a37417f66741525664675428b7a8399077df7f60c9e518c80bea9460822089"
+        },
+        {
+          "version": "3.7.0",
+          "fileName": "SkyHanni-3.7.0-mc1.8.9.jar",
+          "sha512": "cedc879fd6805b717e0e63e5da8b4113b7de3f1b92b04ec94b47e24f2e4e075148bd128aca44842fb52b167c90a23512fd89bb9a379c3040da8de0f1b687d242"
+        },
+        {
+          "version": "3.8.0",
+          "fileName": "SkyHanni-3.8.0-mc1.8.9.jar",
+          "sha512": "8ba04c963dab4a1937bbf06780e2fcf463580555cc27ef25d8c07f6ae691ae72216718be0ac6aef804ba0ca98ef92e13dda5f94fc260b0e9b87cc6c25a0a0374"
+        },
+        {
+          "version": "3.9.0",
+          "fileName": "SkyHanni-3.9.0-mc1.8.9.jar",
+          "sha512": "ada09c88797654b850874b043678fe300c33ca054547b7b85d0cb6c9240b190dc3284b1e478386371ab6383f3b79ff2d5e6f48248272908bfbf7ec251ad840ba"
+        },
+        {
+          "version": "4.0.0",
+          "fileName": "SkyHanni-4.0.0-mc1.21.5.jar",
+          "sha512": "d40041ec0466e4177c8923ec07c790d62119ee533cbb0f04905e1b5aeb2709fda33ef5e7f6198d6676ae0a48955979d15f592334686f2f6d36387fcae385a5e7"
+        },
+        {
+          "version": "4.0.0",
+          "fileName": "SkyHanni-4.0.0-mc1.8.9.jar",
+          "sha512": "240e9699bea341c460cdf74069cf2756c62b88cd27571631f2742ca087f9f9b31452a4d133da3dc2fdf829c3c468d78a4757cf1e9e323e6dbb6fd172afd4f0be"
+        },
+        {
+          "version": "4.1.0",
+          "fileName": "SkyHanni-4.1.0-mc1.21.5.jar",
+          "sha512": "c681f077d790e99dc3ceeb455b8b815a9b2c69acbc28525307f3f9703400726d830a8089fc8efdfe8d9483554ff2f31fd39824aa1000ffa678c1fb47096d375c"
+        },
+        {
+          "version": "4.1.0",
+          "fileName": "SkyHanni-4.1.0-mc1.8.9.jar",
+          "sha512": "a4208c6167a7bcc3925f7555890f85ad7ac105a36a9248d5dec9dbedce1e77cb5fe6aaa72702fb9ea2921ca0c091aa74c0bf877495cbcb88479e46b43b71bd36"
+        },
+        {
+          "version": "4.10.0",
+          "fileName": "SkyHanni-4.10.0-mc1.21.5.jar",
+          "sha512": "f8ac1af40b007ba58b320f3dde8fe972db5a21d914baa2ea5ae12db97400db8b5c6c7b533deac7c67ffe80b3dd60958c8e3ca91f60289a4c319e0bfe48cd2edd"
+        },
+        {
+          "version": "4.10.0",
+          "fileName": "SkyHanni-4.10.0-mc1.21.7.jar",
+          "sha512": "a76b0916597db8fee55046c12175483fd769fd9be747f46a6ff212d359cbfc56d77185927708210e4e9cff12a6185b15b0658cab7d24d97b16f7c7213e705a04"
+        },
+        {
+          "version": "4.10.0",
+          "fileName": "SkyHanni-4.10.0-mc1.8.9.jar",
+          "sha512": "d323e8dd7559fcbad2a3d632e36f167b9310c7fa6aaa209fb075dd4c2bb75a89d41c4e832933bf9f05fad773da967b595d0397baf02c94bc1051eda4ed12202b"
+        },
+        {
+          "version": "4.11.0",
+          "fileName": "SkyHanni-4.11.0-mc1.21.5.jar",
+          "sha512": "e6054493da0deb8e79ecb355a36d46fdb78d31f353659a5612d7c15524c093630eac6ed4e9b5726d37b61153ceb4b20cca8112f3c175c15b6e4abb5067a6c751"
+        },
+        {
+          "version": "4.11.0",
+          "fileName": "SkyHanni-4.11.0-mc1.21.7.jar",
+          "sha512": "48696d28e1093123a4faabe2551d47f3d478ba2934cada0a3f3dd6119475506eecc7fabc5934938b340259b14497d74a86387e239b225e8f1bdf4f565ea47078"
+        },
+        {
+          "version": "4.11.0",
+          "fileName": "SkyHanni-4.11.0-mc1.8.9.jar",
+          "sha512": "7c06109fe8413b0e7a72a28f056ee2b07a5445d9cbc89fcd95f83c572320c9f0a9f2eb7d3e2200777b1ee378dbc01e8ab7e08adffa9b9c390fadb6e8a0652c1e"
+        },
+        {
+          "version": "4.12.0",
+          "fileName": "SkyHanni-4.12.0-mc1.21.5.jar",
+          "sha512": "130d00c3649807360d9597baca5d1a4ae9b49e9b5cb4f09ab714c4e9de126415873242829babf83fb3c1191f926244d6b604aa7db3c495f4a03c19592a15dd93"
+        },
+        {
+          "version": "4.12.0",
+          "fileName": "SkyHanni-4.12.0-mc1.21.7.jar",
+          "sha512": "ea4be07221acb7a1762332f40085d4729b24b1eab7dc624e568d44dba89130ad20ba90ab0217bce6c4899411503c6840f35c7d16c4006445da0058fb955650d4"
+        },
+        {
+          "version": "4.12.0",
+          "fileName": "SkyHanni-4.12.0-mc1.8.9.jar",
+          "sha512": "c1d65b6e084bb16915c7810b22fc3de6d770481a30cc1fbafd032a4949ce714d346cb415cdd1993d11830f7d92db2ad40aa23701ae380c11dbb4847c5faff929"
+        },
+        {
+          "version": "4.13.0",
+          "fileName": "SkyHanni-4.13.0-mc1.21.5.jar",
+          "sha512": "3bf03a16b27a2cf9a228e246147adbf442cbc60f87d5fc8dde1eb0e41169a7ef4d321194cc69597b56361c311a5d548e2161601add1c0f0c887563e835f071b2"
+        },
+        {
+          "version": "4.13.0",
+          "fileName": "SkyHanni-4.13.0-mc1.21.7.jar",
+          "sha512": "d74f0e711021bd15bc507385afeb893db2bc1231b03be252bc48b181ee2f011efafdb6427e8718a5b1b95adafdbfdce6a5e0c669071f8955f84bd16e8cdc3762"
+        },
+        {
+          "version": "4.13.0",
+          "fileName": "SkyHanni-4.13.0-mc1.8.9.jar",
+          "sha512": "632a8d3643a5754b2353375ee15290338fb99a5c1233f4ac53931c459d1860899e6441aa736fbbb614b647748523ab2e7dbdad569c6debf113b7076d233c5083"
+        },
+        {
+          "version": "4.14.0",
+          "fileName": "SkyHanni-4.14.0-mc1.21.5.jar",
+          "sha512": "f76c3e8a7748a0afee6bafef3056e220cd54e8e362cba5d982be58129d29ca02038fe18c1caff383300bc366f80da0df59d36af36f7cdb9ed4435357f6deae58"
+        },
+        {
+          "version": "4.14.0",
+          "fileName": "SkyHanni-4.14.0-mc1.21.7.jar",
+          "sha512": "591441342e3ccfcc9a986e7998d9d71bf895e5494d0a9335995378d2a2068cb941370ad5623de446c2a1f5aded86bec7cf49d083bbaae45082c924f167f28ac7"
+        },
+        {
+          "version": "4.14.0",
+          "fileName": "SkyHanni-4.14.0-mc1.8.9.jar",
+          "sha512": "98f065b9f7eb0f7ee1ace5d8583bf2e5355b3cbb4ce5464a9497e7c3e53641488f9ccbec1292e7959a75fbd03ced1e97f5f441ee99d4ccecf6c3db7e6d0eaf88"
+        },
+        {
+          "version": "4.15.0",
+          "fileName": "SkyHanni-4.15.0-mc1.21.5.jar",
+          "sha512": "dd2ed0b4c094cf13672d2dcc66a96436ca3d02923e8a0f5179c3836de6a63e5ebee4252c88e552b58cb4636113e5f2e0b0c0f0d73bcf3dd45f6cf2bcf657db64"
+        },
+        {
+          "version": "4.15.0",
+          "fileName": "SkyHanni-4.15.0-mc1.21.7.jar",
+          "sha512": "41602afe50d889c2023c2b30b088ec8de9417b6a15de0e38f8fb7e451724931ae34fb20b72464f82bde76d77f3256c35f925caaabf56c234b7e16b2345968e5b"
+        },
+        {
+          "version": "4.15.0",
+          "fileName": "SkyHanni-4.15.0-mc1.8.9.jar",
+          "sha512": "dbb69251f77cc95d064fc310744bb2dd8a9aba775f44def7f63e1d3df700b851b56e84f470da35645bdee9904d33f4a78d77eeb9266fe435e5e94f030365b160"
+        },
+        {
+          "version": "4.16.0",
+          "fileName": "SkyHanni-4.16.0-mc1.21.5.jar",
+          "sha512": "008430310904213a9273f76173d6feff62212a60371fd84ecad852c354d66b99baaa5b6ee0c1552637bff5396585639c171ab0d89b789091e0affc139b61fc80"
+        },
+        {
+          "version": "4.16.0",
+          "fileName": "SkyHanni-4.16.0-mc1.21.7.jar",
+          "sha512": "a06888dd1d1e36b3a2526f1aecdabfc17c40d7f10eed488fc00bf515560799cca1a6c41d3f644f2752fc4a654a900d0d7c400a061d32397d42dea9f43d56b58d"
+        },
+        {
+          "version": "4.16.0",
+          "fileName": "SkyHanni-4.16.0-mc1.8.9.jar",
+          "sha512": "44db5a6f2f5ed3dddfa5b6db7a6848502f966a36e44f20d3be4657a5062505314dbf67b11ac64d3450c1a2c22204b0421152a5797225edd0c0a43a2aa389399e"
+        },
+        {
+          "version": "4.17.0",
+          "fileName": "SkyHanni-4.17.0-mc1.21.5.jar",
+          "sha512": "c9c4df0439f6d94238b9d4a494816f7cc4254d6167a01ba69b90032fd2ed745faccb102993e410a025777681408a2c99cb45c90e41ad4182513fe08f87dc8e04"
+        },
+        {
+          "version": "4.17.0",
+          "fileName": "SkyHanni-4.17.0-mc1.21.7.jar",
+          "sha512": "92d4888378db9f4ceb4ee1e5bb1bf68bf952430644d64c0ff7a66b39dbc13bab720bd0b5dfc80312e418a4d79212ea70beb7814ac55f0a41fba8038cbef8cb0c"
+        },
+        {
+          "version": "4.17.0",
+          "fileName": "SkyHanni-4.17.0-mc1.8.9.jar",
+          "sha512": "63209d1e3494523b284f893108a3bd57becca67ec4edae940b99c7c57505cbf6b9b9bd1dd3c546182def1122952036ac97326a3e24744ca2fa45729af63ced24"
+        },
+        {
+          "version": "4.18.0",
+          "fileName": "SkyHanni-4.18.0-mc1.21.5.jar",
+          "sha512": "3fee1207e017ffbdce89dafd2107615f6b7fd150e11d6dd820f0268dc25ce0f82eb313c771214b7d003558e9cff1611dd2bf6e91e8482356ee37158d4d84dd46"
+        },
+        {
+          "version": "4.18.0",
+          "fileName": "SkyHanni-4.18.0-mc1.21.7.jar",
+          "sha512": "3b308d659e2ca6556a6833545401031576672fe0ace5644271fdd901f3f1cf68abba0dbda7cacd4aa98b5bf31a630365e2ad45afc0076ccdf2fcdd5bc70de6d2"
+        },
+        {
+          "version": "4.18.0",
+          "fileName": "SkyHanni-4.18.0-mc1.8.9.jar",
+          "sha512": "f7ef6da28e2251863319a8749035997c3581b5832c6e2027eed7fbddaf8eb5130a2c46fc980b6cc31f90926860fe5e0f14768e929f04252be249e65e36463651"
+        },
+        {
+          "version": "4.19.0",
+          "fileName": "SkyHanni-4.19.0-mc1.21.5.jar",
+          "sha512": "6da1c0f4ebd12152f16cca24c4dd8448418a5dc64c1e91dabebcda46c48b629dc83cb78746c0793ce9afdefb4a119254a24a459aa63b43336e28039cb3a1dda0"
+        },
+        {
+          "version": "4.19.0",
+          "fileName": "SkyHanni-4.19.0-mc1.21.7.jar",
+          "sha512": "51258026dab165c7ecdcaeb810b0a9b61e2f55f593d701af4d98806bfcfba6096fea8253307686dce939b722f08290ecc55132665c089ad8da9745602b2439ce"
+        },
+        {
+          "version": "4.19.0",
+          "fileName": "SkyHanni-4.19.0-mc1.8.9.jar",
+          "sha512": "9167fa1748e200cf7c33e7c2b9742dc4a621030b3cfb4daa5eff33e06604b97f12784074466f876b1cc702c60d90862fb006374fc028cd7e309c33e0ccaf868c"
+        },
+        {
+          "version": "4.2.0",
+          "fileName": "SkyHanni-4.2.0-mc1.21.5.jar",
+          "sha512": "103c457d223837c19e6c01c417b617fbb63bf7616a770fe8ac8dccba0e50dd8b235f0ca1ce26641fccfdab729f71a59cd79e4b6b48edd6a50c15efd4388d0971"
+        },
+        {
+          "version": "4.2.0",
+          "fileName": "SkyHanni-4.2.0-mc1.8.9.jar",
+          "sha512": "59795d7e38e400ed25fab43f9c0a7cf1adf66ea19ebcb5e2d51b7281cbc90a46b2a062320fee5f17c814d6a7f4d895d8f2b9a02f3aac1f52715a56789cddc55f"
+        },
+        {
+          "version": "4.20.0",
+          "fileName": "SkyHanni-4.20.0-mc1.21.5.jar",
+          "sha512": "83365b6359e9d1fa5a612f769f4f1b847773e6f9be262d0585d67ae608579dbaabf0c2e240be214ab546908ac277d7d0e6524b85eafaf34df2570e3af17c9320"
+        },
+        {
+          "version": "4.20.0",
+          "fileName": "SkyHanni-4.20.0-mc1.21.7.jar",
+          "sha512": "507501ee65a73c7c5a6523c38ab61847c325496f3672bed5276a8563b7d9b4a1d32209495439be2edf0011e8a8b4efe18a0ef761aedbb32757287bea46b5fca4"
+        },
+        {
+          "version": "4.20.0",
+          "fileName": "SkyHanni-4.20.0-mc1.8.9.jar",
+          "sha512": "27bda7434ea292ba6b15d495234c905ce150a93d499a7361795e96b30cf2d1aaa46d1324cbd9919172a32302beae81f5e2511f14c2489e424adfeb69f71681a7"
+        },
+        {
+          "version": "4.21.0",
+          "fileName": "SkyHanni-4.21.0-mc1.21.5.jar",
+          "sha512": "fd35bd83d99fa78689949da74ae897cfd8d08b19dd11e29c8fdc4a111697803c1da589f211506887f0364185f4b25c746b26be5fea0d82c5cc5a843563c3b0b6"
+        },
+        {
+          "version": "4.21.0",
+          "fileName": "SkyHanni-4.21.0-mc1.21.7.jar",
+          "sha512": "8eba4cfb728faa648462010dce434cc3c240c6b402bbed12facab2c97748bc27e18c698358a3d77a91bc3eaf8bd8a5c007b1da387283ecf2415016de27640780"
+        },
+        {
+          "version": "4.21.0",
+          "fileName": "SkyHanni-4.21.0-mc1.8.9.jar",
+          "sha512": "02629faa027afe8741e04084332555e22eb8690982c06e5e06375abdf001724e165453ba5153af84b13a26f4000ba92001188ee4831962f02d7041381e02ee2f"
+        },
+        {
+          "version": "4.22.0",
+          "fileName": "SkyHanni-4.22.0-mc1.21.5.jar",
+          "sha512": "159cb906991edded7ce619b40f145f2ab9cd06a5656e7f0be0d2ac2dc50330e049cbf56756cd892ffea6ad1a1eee894a1dd57def8b064796424b7b19b20a7d2b"
+        },
+        {
+          "version": "4.22.0",
+          "fileName": "SkyHanni-4.22.0-mc1.21.7.jar",
+          "sha512": "6f6930ef49a460395b33a3472cd351ff01511c66976d77cae427f76f46977268f33120e7d8ca3ce059d4a0160b9782e99f330905568d60b0b0b98113a9348c1c"
+        },
+        {
+          "version": "4.22.0",
+          "fileName": "SkyHanni-4.22.0-mc1.8.9.jar",
+          "sha512": "d39cbc083c2e4e01a93f68a4ea90403b2b53ea2ca8804b73cd8b6678c942257a6dabb1d7e429ec582f5a06764f3ccbfaf0f4f97d019abf5940450b9f8aa3a07d"
+        },
+        {
+          "version": "4.23.0",
+          "fileName": "SkyHanni-4.23.0-mc1.21.5.jar",
+          "sha512": "6d4d30d5953566d20d3a43b019d26eb1cbd2571dd62f59a352ebd835669cac74bd76a8aec778c0b7cb0a72668a105bd905079aacab8c85f575c70561c4641e5c"
+        },
+        {
+          "version": "4.23.0",
+          "fileName": "SkyHanni-4.23.0-mc1.21.7.jar",
+          "sha512": "914df994da8ee147eb0c814690196c09f39838a6bdbe8a0345069b00d10d299f5698cf7d314e9e47fa59003c6adf2764a62d71ffb4199a74a2743f8e97dbe316"
+        },
+        {
+          "version": "4.23.0",
+          "fileName": "SkyHanni-4.23.0-mc1.8.9.jar",
+          "sha512": "e2478fe02e3e723b12a7e1a975b521723923dcc13caa42c0d8a2d2354533f1c8af8b5782919214aa9b4e4011e14e307b103d6c0b8102492f9310e6f133ee0ecc"
+        },
+        {
+          "version": "4.24.0",
+          "fileName": "SkyHanni-4.24.0-mc1.21.5.jar",
+          "sha512": "907f9a7b671adff7712655181f024eaec3ec2caa3326cb440a4f9bca47ade8eca3f00355a4dd53d0a2c404b1454a8926552833c00ecf8e1bd6745b01c20c1fc0"
+        },
+        {
+          "version": "4.24.0",
+          "fileName": "SkyHanni-4.24.0-mc1.21.7.jar",
+          "sha512": "81f146321a79bde36e3766122c4175818ab95e14f77073d37401790af2cf1263432ab939fcb52c8e3f73cc0d71023a190fb7e28714beed0fb2f238ab3a861a5c"
+        },
+        {
+          "version": "4.24.0",
+          "fileName": "SkyHanni-4.24.0-mc1.8.9.jar",
+          "sha512": "17c08b607889ade8ee6fd79077edbb1fdf9c92276a849217ea2f429a96e0a4acbd62c2ea17c5ae4583bf60367d26fdc0881bdc71759e80f1f1d8a2f85e5ec36f"
+        },
+        {
+          "version": "4.26.0",
+          "fileName": "SkyHanni-4.26.0-mc1.21.10.jar",
+          "sha512": "c6a36cfe7c62d18dc6f0b0473923f941b6418ffd568004550815aeda9ff20550fb977e52e070e85eae95d03e14fe83d62310d3a6377370722928052aff7ebf89"
+        },
+        {
+          "version": "4.26.0",
+          "fileName": "SkyHanni-4.26.0-mc1.21.5.jar",
+          "sha512": "780dbc8193936f6bf09a62e4c4342d06633517de322219804894e015554df535f7f16b7c943ffdec6f5fcfebe94f781dfce3311664edf9b61592632ca6bd37ab"
+        },
+        {
+          "version": "4.26.0",
+          "fileName": "SkyHanni-4.26.0-mc1.21.8.jar",
+          "sha512": "67b6f45e25d6041e7d8cdcaf040691a6df7bd9f4e134a39c9a6b5f38a8066603699bd1f78a86e6ef27c72c9a210c138404872ecfa713f8ac5ac30a3612fe3fe3"
+        },
+        {
+          "version": "4.26.0",
+          "fileName": "SkyHanni-4.26.0-mc1.8.9.jar",
+          "sha512": "a8f18c9036f10f0a0b89ae45483f6a85236bf95b6549266d823b73185103bdbb5d2b607b8cf5f7a3ab635c6a32bffe540ca3ebb6fd7b77c593818543aa829017"
+        },
+        {
+          "version": "4.27.0",
+          "fileName": "SkyHanni-4.27.0-mc1.21.10.jar",
+          "sha512": "311c98cf914923eedf8921225bf51da8e36bfae26b4a09857714c379da20fc9fabdd05e7bec12ee3305a8e3b8e6fb1c585ed0ca9b636771d69c9b37d5d48168d"
+        },
+        {
+          "version": "4.27.0",
+          "fileName": "SkyHanni-4.27.0-mc1.21.5.jar",
+          "sha512": "66a56273ad211aa5813f175fdf8bb9d1d584a5b671df8a0ac02bf3e940ab492ddcfb5bc51ce584527b5046f7c985286c511ffaea5ce87b0a5535fdf53dec7caa"
+        },
+        {
+          "version": "4.27.0",
+          "fileName": "SkyHanni-4.27.0-mc1.21.8.jar",
+          "sha512": "ced759b6c259c5eac623ceec55b70b5fed6f2f63ae9a628f88feb9febf85d92b6a80563362233395c39ebae8c5cb8bea90d057b839ec132687471e9446b395cf"
+        },
+        {
+          "version": "4.27.0",
+          "fileName": "SkyHanni-4.27.0-mc1.8.9.jar",
+          "sha512": "fc2de18cca8192d71b0f2b2aed64c1973b83fabf5962dd07950c2b88dad771b08c515cf674f6fa33108a3cba95fe63fb9955f8e93bd5232898790e88a842a09b"
+        },
+        {
+          "version": "4.3.0",
+          "fileName": "SkyHanni-4.3.0-mc1.21.5.jar",
+          "sha512": "1d63b7c48da3b265f66463715988f4de3481f4daa7c5fb18c723cbab5f1bbfc69a2a3210ca680ecc8b1fa928ecd618ddfba64bba5901edbbb98c9d92d8e60a90"
+        },
+        {
+          "version": "4.3.0",
+          "fileName": "SkyHanni-4.3.0-mc1.21.7.jar",
+          "sha512": "6a70224d954bea95028cd278dff9be1f8c798c22ecc582d89781f760c6b158d6ac5b15c4ce167a685f8bd1b7585c2d2e9a4c96c8dea278e56b22344263d65d2f"
+        },
+        {
+          "version": "4.3.0",
+          "fileName": "SkyHanni-4.3.0-mc1.8.9.jar",
+          "sha512": "0a0b34534d55aeda3a53f03be2e2ad837bca0bfa5ef7240ff590c9c0bd0c927041d47ef912dc1b966311cca2d5741a17d8093dc7c7891198af2d8205a734ccd5"
+        },
+        {
+          "version": "4.4.0",
+          "fileName": "SkyHanni-4.4.0-mc1.21.5.jar",
+          "sha512": "33a6a47edb7b042e1e1cd94b1312bc6d9860d66fc84dc0e84021d589ac7fc863d92dc934d9cb69e90942c9c9ab808bfdacf7b4bf770a76c80a3e15227a5e4954"
+        },
+        {
+          "version": "4.4.0",
+          "fileName": "SkyHanni-4.4.0-mc1.21.7.jar",
+          "sha512": "1af1fc52da8cad29d769693bdb13f7ed87a9014d340c05334def5ce8005ea3284d7f3b1018edf68a5fbeff328e3b32db66232f069415018f9f66267dc33babdf"
+        },
+        {
+          "version": "4.4.0",
+          "fileName": "SkyHanni-4.4.0-mc1.8.9.jar",
+          "sha512": "5116593509827a72403efb7528c8e98734c119cd864e1c1b5d36277cd3f21f606ca0aa2a5dd1777ce40839b75e1d9b0124e3633bd389808a20258cf6eafa11f3"
+        },
+        {
+          "version": "4.5.0",
+          "fileName": "SkyHanni-4.5.0-mc1.21.5.jar",
+          "sha512": "8b16d9f7c9130a75791f3f3b60bb3bba55c0d19e07c22658432e781c8ca8deabcd93a5bed7c404f67fde62980624d80b1fcc4ac6ce5f3e9d731d8e518df2cd1c"
+        },
+        {
+          "version": "4.5.0",
+          "fileName": "SkyHanni-4.5.0-mc1.21.7.jar",
+          "sha512": "f648c2eeef2155bc14e56afb941a03bbae2338b0491b340e6190b1f365ce715ec643d37edfda0776dce08d3c24752f93365da28657a44e2a59ece95457009b3b"
+        },
+        {
+          "version": "4.5.0",
+          "fileName": "SkyHanni-4.5.0-mc1.8.9.jar",
+          "sha512": "e9a58a40b0144348fc88ad6c04c32d5c65979f84bb5713ba906c2b2510e4ebda708fdf94a8f10c97c44853ba7938f6b329ee6f05a6bb0e92e9a1a8bba59794f1"
+        },
+        {
+          "version": "4.6.0",
+          "fileName": "SkyHanni-4.6.0-mc1.21.5.jar",
+          "sha512": "b32b0257ea48619391c9a3bd0b6abe9d5b38b257e040f4f6c77256067f9546d5cd4f5687bd729bcaaa6ff5da9a4dc22fc3e38b587864c4adf3bb79ced40330d9"
+        },
+        {
+          "version": "4.6.0",
+          "fileName": "SkyHanni-4.6.0-mc1.21.7.jar",
+          "sha512": "08e338b53330a4985c143e5c884ab8e8a98b48c20f99c6048eab592946830490a9f57cddaccf35654f522a5744a603b2641148139a5c5cb9a244643c0a0ab3ba"
+        },
+        {
+          "version": "4.6.0",
+          "fileName": "SkyHanni-4.6.0-mc1.8.9.jar",
+          "sha512": "9f3fe5d589f58a521287a2050cf7d66eec1cbefd04f269f619623d384dbeeb5c631070878e65f6de614d0faaaab90b5ab1a8ea11498a6574765f46cb611f7d5d"
+        },
+        {
+          "version": "4.7.0",
+          "fileName": "SkyHanni-4.7.0-mc1.21.5.jar",
+          "sha512": "0cffbd7bbab6626df8284093c106a7c49b3c8c217a4456819658517c25c910df7b17801bf195a78d28834dbcaa3180ef50467033c9c0afc3c9ab6fb60f3794cf"
+        },
+        {
+          "version": "4.7.0",
+          "fileName": "SkyHanni-4.7.0-mc1.21.7.jar",
+          "sha512": "7fb2e61c401e34bfdb96b4db039f26022b38cd1d11aa4b108544d72ec9927f0e9f0bcafeeb751db627dd60a1e3142c86b361de378f9bcce1d552c3c1aca0b8ca"
+        },
+        {
+          "version": "4.7.0",
+          "fileName": "SkyHanni-4.7.0-mc1.8.9.jar",
+          "sha512": "64d9853e173312cc57dddf6436eea854eed48c5ba2571399729ea324d536e05c5382812ab16a9a7ebd4c4f51634599b31212d1c07ab7959d61f94566845ff8bb"
+        },
+        {
+          "version": "4.8.0",
+          "fileName": "SkyHanni-4.8.0-mc1.21.5.jar",
+          "sha512": "43f159eab4d6b546d113653c69fcd70ec04ad7c43fc59c74c9a6e8f706900d71f758e9afa00000d6138cd4261adce7a15b77e31648167c7ed77ea65b17162ac4"
+        },
+        {
+          "version": "4.8.0",
+          "fileName": "SkyHanni-4.8.0-mc1.21.7.jar",
+          "sha512": "5020ec73ddb9790b0205b36d1b67854534ac6a99e01ba7c76e77984833bc5013cf4ec7032ca8627933a61a10dcad7b3051517f1b351d880f1ef4b7b9d67e9086"
+        },
+        {
+          "version": "4.8.0",
+          "fileName": "SkyHanni-4.8.0-mc1.8.9.jar",
+          "sha512": "a28272689ac608247549e43b2464d731b0a9249fb0ca247e82eb89dc25de2b190f3e99db60b78a9d9a24a9ff45b97a6bf28525bcfb7c58f6c9a47a9081b0c5bb"
+        },
+        {
+          "version": "4.9.0",
+          "fileName": "SkyHanni-4.9.0-mc1.21.5.jar",
+          "sha512": "cb7a45fc32b2b1d7d7d62c13d2254dc135d5d967cca0e601c38735759c10b66bd0f2aea49b4f0c0643c96f92e804a62a185e437be9249df63ed6cdf38cebac3e"
+        },
+        {
+          "version": "4.9.0",
+          "fileName": "SkyHanni-4.9.0-mc1.21.7.jar",
+          "sha512": "5432d219a4dd964e9f85020fee6fd46a9a344f1a2f2c06f060a971cefaa4b25e8da8058a1b40fb3add6b19a5979f4962e9bf57f892fa45979880ed8c8bdaf46b"
+        },
+        {
+          "version": "4.9.0",
+          "fileName": "SkyHanni-4.9.0-mc1.8.9.jar",
+          "sha512": "d00324567528b517bc33bd304f3286bc13480748bb18e74b4fd0e40b7cd5d10a26fe7eedb55e052e7a4c530e9ec6dd59dff044d74c65466241587257f87137e3"
+        },
+        {
+          "version": "5.0.0",
+          "fileName": "SkyHanni-5.0.0-mc1.21.10.jar",
+          "sha512": "c997be01634482622d2efe05ba68c8147383a791c4cb72a8ddfc93e5870efd532de3672567f612729724194d2d0fa52147d686eaba8122825126a2fed797bd7d"
+        },
+        {
+          "version": "5.0.0",
+          "fileName": "SkyHanni-5.0.0-mc1.21.5.jar",
+          "sha512": "ed97167e98871563657cb7849e74554f547f9c31fcbbab015fa12eb6749ba00d42c14338f4fe3031594e0bc4fad3f80fde5823fb203fff75fd039a9fbb29677d"
+        },
+        {
+          "version": "5.0.0",
+          "fileName": "SkyHanni-5.0.0-mc1.21.8.jar",
+          "sha512": "4cd4336bddcf7efa9e4474d5f73e5ecf197eeb815d02830c2564ec1a5796f0a2f6505e432a0790494734beb22c02a5b4af20d2bd7e7b8dc58ba25de694c5416d"
+        },
+        {
+          "version": "5.0.0",
+          "fileName": "SkyHanni-5.0.0-mc1.8.9.jar",
+          "sha512": "79b50d753d1bb00140ef0f647a41208696db0f25df0eccb94a28e334bc3d4df7d3062a8f166dd5278f0e598b672b4e9a0b844ab2423e6f699d3e593d7ed176af"
+        },
+        {
+          "version": "5.0.1",
+          "fileName": "SkyHanni-5.0.1-mc1.21.10.jar",
+          "sha512": "170aceb9d1b6ae21ecb52a9bdf43a9e7eb2010fb1907bdcf4db56680af380f514058df2d0eb2072e53d7f941b0704c2b73da9cf95cc171fef4e95b35110191dd"
+        },
+        {
+          "version": "5.0.1",
+          "fileName": "SkyHanni-5.0.1-mc1.21.5.jar",
+          "sha512": "e7d8b167670cde9c1881f75d989b719383473a558d6d1e52e83b2673361d088645a27cfced6d2157225f032f7480777441df95ffddf74d8b3f155c47a3b7cc0e"
+        },
+        {
+          "version": "5.0.1",
+          "fileName": "SkyHanni-5.0.1-mc1.21.8.jar",
+          "sha512": "9fceb832f865b3f657d651666cc4e9d078e048f011f7b456c0f0775cda3452a5ce0dcae689da4b6823ac70f5a01737b9c01cc3e08c06b70fb8a66544f202c3ac"
+        },
+        {
+          "version": "5.0.1",
+          "fileName": "SkyHanni-5.0.1-mc1.8.9.jar",
+          "sha512": "444ad71cfb2904af087ecda02d84bf3a4efbe04a3fece8485f2de24a333c5a54976102e1b6702b5a461b401554eeb96b805aa9f37efee933381fb55ece840ea0"
+        },
+        {
+          "version": "5.0.2",
+          "fileName": "SkyHanni-5.0.2-mc1.21.10.jar",
+          "sha512": "fcc5ec5a27834f944c06d6e419d607a8eec699da2261cb20bc378aa541d08b1e18f50a9aaf7582cf7c38eebb8a7d29c3a416f8e9127c6b25cb61e40b0452d39b"
+        },
+        {
+          "version": "5.0.2",
+          "fileName": "SkyHanni-5.0.2-mc1.21.5.jar",
+          "sha512": "ddef44aa5a1f9392226c73e59831ca33cf2759fb5aa2c82e01f6426859b3109bed544f8d81df2956cc818527fed5e877358e83dbd386e27ceffed3fc3887b70f"
+        },
+        {
+          "version": "5.0.2",
+          "fileName": "SkyHanni-5.0.2-mc1.21.8.jar",
+          "sha512": "84a6336c42160f06138857fe3fae58dba516afe06421f889e9375e8ca6ccdc5d48c359b105c12015bc634098f31720f7b3c1c0339e1fc9bc485f08dc6b201aa9"
+        },
+        {
+          "version": "5.0.2",
+          "fileName": "SkyHanni-5.0.2-mc1.8.9.jar",
+          "sha512": "8c24392c1db2559329cf59fd30f2f3075ff53332b28ffef29c4048c955804f72b1e93a1b5e1f1fabcccddc557ca32302918818acfd7c729e099c417a9ad38954"
+        },
+        {
+          "version": "5.0.3",
+          "fileName": "SkyHanni-5.0.3-mc1.21.10.jar",
+          "sha512": "0dd6f42bd13210ed5e6aa556d52793284bae559557e02a86bca8c216af38e481a304179e9eeae9d95731b025c30a7be593cec26603aa95581e2567faa5328b9e"
+        },
+        {
+          "version": "5.0.3",
+          "fileName": "SkyHanni-5.0.3-mc1.21.5.jar",
+          "sha512": "4cfb35842e634a8ee84cacaabe5349dc2e6cd33dc599bd5996fc133092d71739c05149377b5be09aea8fed25d762ca53a76ef8c35b043d91ab4422a2e2008539"
+        },
+        {
+          "version": "5.0.3",
+          "fileName": "SkyHanni-5.0.3-mc1.21.8.jar",
+          "sha512": "f5e7e46595a1ccf6ff6764db1b8e2897983092a8121314fa52d76eb742e0fb95bc8e1d2e4a0bfd6e7e1d61adb3f6a2dd41e88006424edd85db91ecc8795eb616"
+        },
+        {
+          "version": "5.0.3",
+          "fileName": "SkyHanni-5.0.3-mc1.8.9.jar",
+          "sha512": "20dfbb1aaa6f60871a77336a8ebc23789b810fe962c02b88cb4540cf3a6698ae493cd881d8e26a6c2e7c2bf363f4895bd644cc61edf7f94957c9e68e1d62d9b8"
+        },
+        {
+          "version": "5.1.0",
+          "fileName": "SkyHanni-5.1.0-mc1.21.10.jar",
+          "sha512": "0339c52c2ba0bc70b28546fabd7ee65a13a0b21957cf07d3ba19cc8c9daadde197cbcce5d63ef17df2ebe06241e2fcaa3fea6d95ecb8fdd340975b4e6426143f"
+        },
+        {
+          "version": "5.1.0",
+          "fileName": "SkyHanni-5.1.0-mc1.21.5.jar",
+          "sha512": "d50ae91504864824a657be0e8590063e1be993d17b00a485a53f114b4a215f4a425b1c741f40524af115bdb70a09b72bbee4f4335c892b7d821d87c3264fdf18"
+        },
+        {
+          "version": "5.1.0",
+          "fileName": "SkyHanni-5.1.0-mc1.21.8.jar",
+          "sha512": "8abc327e4b7d8c8adda3e1bf6cd2b522578358ebd5d40d97fe919894c17648b316b86f58d77ffe3311168539bbe86fdebe57d79e987fafb07c96af91863e2727"
+        },
+        {
+          "version": "5.1.0",
+          "fileName": "SkyHanni-5.1.0-mc1.8.9.jar",
+          "sha512": "c70aebe7073d1790ac44b97e6e8694254b88d019e7bf42dd18d5a996364879b36bee46636465c6f0f72b0826dc3fcc64fb3492f61f9275d2996fb6afb4b4ddfa"
+        },
+        {
+          "version": "5.2.0",
+          "fileName": "SkyHanni-5.2.0-mc1.21.10.jar",
+          "sha512": "21bd977e047c33adbceb32dc3f9776f4a7a6b9c5dbc69e24d49694437ba37b868e203f24f0f84b9f82187aed2805423b05dcacc41c31d20e014b93a33b7ff601"
+        },
+        {
+          "version": "5.2.0",
+          "fileName": "SkyHanni-5.2.0-mc1.21.5.jar",
+          "sha512": "be393b40638d58459568f4445f7fc941f5f26363f55f253383cf25ebd423348c01a73f9c7f5dd0f6b63749677ef10082a80d07a138b456d3b162969130d1c804"
+        },
+        {
+          "version": "5.2.0",
+          "fileName": "SkyHanni-5.2.0-mc1.21.8.jar",
+          "sha512": "3fc449a1d7a14c89fde301955423b508ddec05659f003f0ea8028bc8f576dbabf910d2a379bc04a4019151469075a58df5b737106b3f8af4e12967908690af6f"
+        },
+        {
+          "version": "5.2.0",
+          "fileName": "SkyHanni-5.2.0-mc1.8.9.jar",
+          "sha512": "5036d7696bc28cf83e4e5dc87fab7e2553b451407f351a0379d7851438973d65edc5624d13586e20f5f97cb9f179ca6d3bcea105f363d6443f79f6e7210c1987"
+        },
+        {
+          "version": "5.3.0",
+          "fileName": "SkyHanni-5.3.0-mc1.21.10.jar",
+          "sha512": "ddf343f0e549d086cc2586b231c07041d8d82fa80a4dc3810696cc76cb9759a1aa97d3dba75eb094e046ab8effc9e10c56875c24bc38500f30e447616e8b62e7"
+        },
+        {
+          "version": "5.3.0",
+          "fileName": "SkyHanni-5.3.0-mc1.21.5.jar",
+          "sha512": "8fb82af6b152b249b69eb8ccd3fc499bfca586e2a91457e24cba17eaec1071df5a453e909527e73a9d2f82879838238698f5a6ff33257040b2c3a11478379e24"
+        },
+        {
+          "version": "5.3.0",
+          "fileName": "SkyHanni-5.3.0-mc1.21.8.jar",
+          "sha512": "5546fbfb6cf16e5be4525ca43a4d0d4592f44d7efeb5836c8e74989dedb1031e9b00db3c851a1e84ab3dc262bb5272846051d8687cdd8f99c1fbda9c18b5ec49"
+        },
+        {
+          "version": "5.3.0",
+          "fileName": "SkyHanni-5.3.0-mc1.8.9.jar",
+          "sha512": "ef6a94c99541076cb5c036728fd0666f6360f05a5bcab07b9efc37553a9a2d0c613bdc044667f1a4ffb3d2a2dc6230b574c012d98583cf51d9813ca2fdb857de"
+        },
+        {
+          "version": "5.4.0",
+          "fileName": "SkyHanni-5.4.0-mc1.21.10.jar",
+          "sha512": "ddcaad6eb4976e8d223c6c72cf7e3d71b821b73fe9c3133c895bc608ab9828baff7fa0eb89d91eb3b499d3004d2da2094853b24498e91ac1537a26d2bac02100"
+        },
+        {
+          "version": "5.4.0",
+          "fileName": "SkyHanni-5.4.0-mc1.21.5.jar",
+          "sha512": "1b0748b71a9906daf1aae5b94261523afeb1b6747628bd6dcab4181d7c3d66ec97648510ef80f96f9f85a84a7e73742703118b87a409b08d3792ec068679a37e"
+        },
+        {
+          "version": "5.4.0",
+          "fileName": "SkyHanni-5.4.0-mc1.21.8.jar",
+          "sha512": "38988d7f800b9bcfb518743fcdbe0890fb730dcda985542f8e4412f310302d66c5a72e421bacbbd321ec32ac992d0a69b0b132d3d0d599d38ca864288b43af6d"
+        },
+        {
+          "version": "5.4.0",
+          "fileName": "SkyHanni-5.4.0-mc1.8.9.jar",
+          "sha512": "0022f39c709a95abec41330e69969c1e63eb442a51e154e204096f851ba20b6f63f4836cf03259fd9a5e62d62b7a03d1c0b833cea91433d773a8061b2af1f1ea"
+        },
+        {
+          "version": "5.5.0",
+          "fileName": "SkyHanni-5.5.0-mc1.21.10.jar",
+          "sha512": "56a037776c98bab5aab475f0872a8986bb081c3779802a1aa6df67bcccce3c5a98c34821fe4c506b6b985ff3f0496c550ca244c06f8f19c752a1a866e77220d2"
+        },
+        {
+          "version": "5.5.0",
+          "fileName": "SkyHanni-5.5.0-mc1.21.5.jar",
+          "sha512": "200c56abebbb6024940b29bdb1649dcce0cf9591855fd2c85062484bf4d75ca8884154e36080599a3462f5766551885cf023b7bc32c515fb16d22479bd2c0ef1"
+        },
+        {
+          "version": "5.5.0",
+          "fileName": "SkyHanni-5.5.0-mc1.21.8.jar",
+          "sha512": "896e8c4e075655fb824506591a3d5ee7bda1c0399e60a5722ce87247cebb182c61589b52d87fea4feda62980492c5df3c4be40bed90063f32210fdd61e5b2a82"
+        },
+        {
+          "version": "5.5.0",
+          "fileName": "SkyHanni-5.5.0-mc1.8.9.jar",
+          "sha512": "103afba7d79cc19cbbc49f992247dae23411cb930edf01830980a221ece43fe0981e39d1dd747c42bef0f54d63241fda094e177cdea16ca47664c4f79261bfad"
+        },
+        {
+          "version": "5.6.0",
+          "fileName": "SkyHanni-5.6.0-mc1.21.10.jar",
+          "sha512": "ee95a1f79d5a19c34d48517e4cc99529ede0049756063dcf0bfcde6fa52c127f31a0570f518834cc34e3b2fd38ebb1ce813b8078b4d029e8cfd30cb18af223c8"
+        },
+        {
+          "version": "5.6.0",
+          "fileName": "SkyHanni-5.6.0-mc1.21.5.jar",
+          "sha512": "75e876df4efa765302bdd42bad087ad71c8f9531fa737ea44ceb806d5671d75548f973dec46ecfb452524b4933dd017a4df37f6ca989905660167b1cf2aca6b3"
+        },
+        {
+          "version": "5.6.0",
+          "fileName": "SkyHanni-5.6.0-mc1.21.8.jar",
+          "sha512": "ea0af7b6c771175b9c8b33c95d24e740424aa68a1835129f7ed5e4095570fde6ead38b44c207893d0fd9fd49b27a15444e217e2958a86901e4ff35854fc9ee3f"
+        },
+        {
+          "version": "5.6.0",
+          "fileName": "SkyHanni-5.6.0-mc1.8.9.jar",
+          "sha512": "d85d9d5ad8a8220a136c25354d5adb9c16e0dfdd4d6de5ebd3c5feb9475b2b9efff97349f415db595a8b322e7b99738f98530d231ec3069c32bc40bcb81182a7"
+        },
+        {
+          "version": "5.8.0",
+          "fileName": "SkyHanni-5.8.0-mc1.21.10.jar",
+          "sha512": "b05ff1663bc3b4b47dd325d1598d23b93abf27cf5c20a0200e456a372bc11382dfa2b2c300e96049217eeddd230f3f7d5941e1645817af99349ec3ec531892c8"
+        },
+        {
+          "version": "5.8.0",
+          "fileName": "SkyHanni-5.8.0-mc1.21.5.jar",
+          "sha512": "be7842536330250e027c9e470fb3369a015df8974b81e31b7833560f7c652d4e2e885cab307bcdc16878b6e074626920a0d5071fcdc0347321987e094aedffbc"
+        },
+        {
+          "version": "5.8.0",
+          "fileName": "SkyHanni-5.8.0-mc1.21.8.jar",
+          "sha512": "5a82bcbf5af8c91bfd3221dcdcefa93afaf08576883da49043fd9b6d0bf8d1688980e539feada2f65354caedc41bdeaa9e39ac9e6ad77f925bec044663592315"
+        },
+        {
+          "version": "5.8.0",
+          "fileName": "SkyHanni-5.8.0-mc1.8.9.jar",
+          "sha512": "fb2b04d99377178c2208747f4228ceccf89690aebd0e3c0e5a4efaeabc7dc8b5a20adf7baa8d2ecff9d47fc9bdc6d0345a7541791e0cb2c8229dabae7d43ae7f"
+        },
+        {
+          "version": "5.9.0",
+          "fileName": "SkyHanni-5.9.0-mc1.21.10.jar",
+          "sha512": "930059839cfbd9058b959145d079f3a3d19d12d4fe631e363f37c852ff704ad282bb1f98320b0f2d90c40e88b2eeb5c887f338b9ab300f52aa3467613774e4a6"
+        },
+        {
+          "version": "5.9.0",
+          "fileName": "SkyHanni-5.9.0-mc1.21.5.jar",
+          "sha512": "48068c102be04110be8abe3f3d55380755fda8fa71508222c437524ced222bd079a759bfd72c465dccdd133570fd1f9c783d866f97018f43976364b0b581188a"
+        },
+        {
+          "version": "5.9.0",
+          "fileName": "SkyHanni-5.9.0-mc1.21.8.jar",
+          "sha512": "3f86f4a19316b87fb189bb1276cee65edc9af569a8848659292422480ef13b7f79396b511872c4fdbc4a93e26ab203337e615ba8d2d57e156c40cc5b77406795"
+        },
+        {
+          "version": "5.9.0",
+          "fileName": "SkyHanni-5.9.0-mc1.8.9.jar",
+          "sha512": "7f0aa3480743f19f0ab80f27f0cc767fc2f2067c6282d9ad284ef0362c94afcfa8ea23a7a553e3d75560930adf42e9bd7086af66072920b8330fb45710bead64"
+        },
+        {
+          "version": "6.0.0",
+          "fileName": "SkyHanni-6.0.0-mc1.21.10.jar",
+          "sha512": "a28021fa1ceb49cda4bb1f2a46d0ec82a9369a7a96641cb41ed3e1a6f62a388d875d357b19055915984fb191687cfa4d774dfe73dc9471f0d490fe795ea18420"
+        },
+        {
+          "version": "6.0.0",
+          "fileName": "SkyHanni-6.0.0-mc1.21.5.jar",
+          "sha512": "89421d5c7dcc708800fc5ca8c7bfb9fd88596488974f33b9c339a4d59b973b08edb50a9810f15e765fa5900bc98881497d68ce09b1c422fea66e13c5cb66fa90"
+        },
+        {
+          "version": "6.0.0",
+          "fileName": "SkyHanni-6.0.0-mc1.21.8.jar",
+          "sha512": "c625d48fef7a7d312221fc643bb2cb9348c533ab2011cc9bc3de33156fc8cfa5eee0587e0bab92511b97ce6bb17f966606e8e0b981239ca7c29ad28e7e63dbd7"
+        },
+        {
+          "version": "6.0.0",
+          "fileName": "SkyHanni-6.0.0-mc1.8.9.jar",
+          "sha512": "067aa6a5b72a6f9ce9e9c96f3a5302d9ca8efb83164b86412adc397704279f622c8fb3d9481b539e74ce7a8588903c7a70f5ac97c6c3cc3be3c7d38586a5ea7a"
+        },
+        {
+          "version": "6.1.0",
+          "fileName": "SkyHanni-6.1.0-mc1.21.10.jar",
+          "sha512": "2d26f1553ed59987fefa8c1df44e20028f4a60dc59df34624d544a65ddfbb62931548673f042fd6cfb8e7d215769a60b8068117e1be6909d26648df1101835af"
+        },
+        {
+          "version": "6.1.0",
+          "fileName": "SkyHanni-6.1.0-mc1.21.5.jar",
+          "sha512": "a0b5021e5314a3a431ae6b6eb0f16f4214c0a09a54a29f29a4d3cb48683d6026f989c270bac140906ab04e6846c6b5cc21f3f1e8f7bbcf975609fced10125056"
+        },
+        {
+          "version": "6.1.0",
+          "fileName": "SkyHanni-6.1.0-mc1.21.8.jar",
+          "sha512": "21b62e215e5b204cd2034294833fd3f73e392c0e4233a8f6b040d03223ab789932a0c854694e28cc967c2a1cc9d26427bae975cc5838cfda5d3a4b707c440832"
+        },
+        {
+          "version": "6.10.0",
+          "fileName": "SkyHanni-6.10.0-mc1.21.10.jar",
+          "sha512": "071b4f05df550dcaacec0bd36bfe73e2d5d29cc1018789a6c4613b359b51759407cdcefa826b10f96a86a2dac132b87505da2b07f12c5eaea30c2fb219c34991"
+        },
+        {
+          "version": "6.10.0",
+          "fileName": "SkyHanni-6.10.0-mc1.21.5.jar",
+          "sha512": "be811f4c4de5885d5b55a4395ff02628025081af25fb539d490e69240fc645826ef89636a5c062db96d4b373714d29ae4ad49133d112c2f1d91a58ec4b020510"
+        },
+        {
+          "version": "6.10.0",
+          "fileName": "SkyHanni-6.10.0-mc1.21.8.jar",
+          "sha512": "0176b330c922a97b9599429aed09c1fe1bd448b26f45a3308dd48b578dd0d01a8119c2c9560b963cdd0e4c45a4bc8b28573de52564ea2ccbdc5e6c5861d6cfa1"
+        },
+        {
+          "version": "6.11.0",
+          "fileName": "SkyHanni-6.11.0-mc1.21.10.jar",
+          "sha512": "50dce3dd4b91b0154d11e9cc4be1b0dc6354d131aead69461cb702dbb2484a467af980df402ea6ab10788f610ed8f30ab1ec29a7debb0128b4d9d0511aabf300"
+        },
+        {
+          "version": "6.11.0",
+          "fileName": "SkyHanni-6.11.0-mc1.21.5.jar",
+          "sha512": "d33dc914e07849ca5f2bf727169b8ebe7223d884b7645652a22f2964f69223ba62e219bf3dcdb9416bae780477acbc0d6816c5d4a62f82ebec0ba24d647b5eda"
+        },
+        {
+          "version": "6.11.0",
+          "fileName": "SkyHanni-6.11.0-mc1.21.8.jar",
+          "sha512": "01a18ea2bb73873eb4ff034282da8f0b07a99a96d98bc4eab6facb513a8ef836fdc3d1c327815f46260ec978642ab1e3be1460878364e9fba67ca84f0284eec3"
+        },
+        {
+          "version": "6.12.0",
+          "fileName": "SkyHanni-6.12.0-mc1.21.10.jar",
+          "sha512": "085de43bd7a4c1e868aee57c4a864d61036b7664a15c41a688f0ef16393b25a77765a6859992d7029a6e082849c95ec218752b3f26427a0a921dcc286ead0ed5"
+        },
+        {
+          "version": "6.12.0",
+          "fileName": "SkyHanni-6.12.0-mc1.21.5.jar",
+          "sha512": "7a7d19dffab5d7669c64086f4b3c0165310fa4e0b04c3251edf3d3286c0b60eaee96251ef4f6f774ee9a14660da64e85f489b68c3e5d7e5362c56be90b591af4"
+        },
+        {
+          "version": "6.12.0",
+          "fileName": "SkyHanni-6.12.0-mc1.21.8.jar",
+          "sha512": "ec60598c8bd0ed7c979aee5bc3376b96ea5fe16e0366d1747fdc8d40b766df562f6efdafa8f9007f3579c3b1e016e2decf4c7b5c388314d1f3ed83bf016258fa"
+        },
+        {
+          "version": "6.13.0",
+          "fileName": "SkyHanni-6.13.0-mc1.21.10.jar",
+          "sha512": "8385ddbaf8bb162f6d2f7ed080565025dcb79462e2f11808fd61b1738cc64e6135fc15f7fcd372cad851fef71583c9825d6118ea21f8b20e4ab4343bb3c4c7f9"
+        },
+        {
+          "version": "6.13.0",
+          "fileName": "SkyHanni-6.13.0-mc1.21.5.jar",
+          "sha512": "ae2e0a960221c4486f80cce613dd8eea15ed108a5e9194a71427bad944a825c8d6abac4da684347f7b5473c92b682dd01d3f69818c35e9a15a766bc252300b86"
+        },
+        {
+          "version": "6.13.0",
+          "fileName": "SkyHanni-6.13.0-mc1.21.8.jar",
+          "sha512": "e0c185edb63740b2033213e8139a85f25eca6531001d84cce39aa464369883c30cba263d7cac33335998379b16630b79d796c43684206b9c6884a0f8b26552c8"
+        },
+        {
+          "version": "6.14.0",
+          "fileName": "SkyHanni-6.14.0-mc1.21.10.jar",
+          "sha512": "a7d3284db7f8d587b117e896c67737d714140ddaf0bfc245ff877bf8ddd37f582a3ec6ff8fe8a0a10e82ddec90ee2864d0246384a5a0702168563cd5a21fcecd"
+        },
+        {
+          "version": "6.14.0",
+          "fileName": "SkyHanni-6.14.0-mc1.21.5.jar",
+          "sha512": "0f6c7571f68b717460b939c7ce30801a1d5d53743e795f5fd56bca8cde0ff65cef6c459a06630b069db03ac53b8f0098655fb014165faf562d1bc054999a3702"
+        },
+        {
+          "version": "6.14.0",
+          "fileName": "SkyHanni-6.14.0-mc1.21.8.jar",
+          "sha512": "42ebed788ffe959f33648ac661e0c2e9583bb63a0a7fe42de8e0e2cf58f577148b986f2cae6957a7ed277a2fc6e7fcec573a612ce783da1f85af83c6fed1939f"
+        },
+        {
+          "version": "6.15.0",
+          "fileName": "SkyHanni-6.15.0-mc1.21.11.jar",
+          "sha512": "990b53456808617b17359ab50b5fc20dbc5067c6bb3a458c6b67f22beb59deef7b9b113d90c9fa48c111bd16ac2e9e56c0cecf3269bcfdcd9c401edd1f73a53f"
+        },
+        {
+          "version": "6.16.0",
+          "fileName": "SkyHanni-6.16.0-mc1.21.10.jar",
+          "sha512": "164b2278569b615c776b13f900f2ad77819e9cb5a3c2e00eb9aa284d89e8e69cf08382b9573b3653948ff4cc26406e5038f42cd52b2d7c79630fe9e05d714d98"
+        },
+        {
+          "version": "6.16.0",
+          "fileName": "SkyHanni-6.16.0-mc1.21.11.jar",
+          "sha512": "837e2691f61c135a61540eaf96f635e1938b663b1dbb0eaf567c76df6db81282e9d88b5cd6df4ffc566ef683fc974a937a9066ac5d1a5bea5acb5926570a1f56"
+        },
+        {
+          "version": "6.17.0",
+          "fileName": "SkyHanni-6.17.0-mc1.21.10.jar",
+          "sha512": "48ba4235941ecc79669c01d9548a51d9d02bad8871afc23c36778e7452f59c53dc0db9a39788d1d9abfaaf05dcb3060fd97e6326bd52007e379ae9bade2eb03b"
+        },
+        {
+          "version": "6.17.0",
+          "fileName": "SkyHanni-6.17.0-mc1.21.11.jar",
+          "sha512": "47ff525f1ea9d2f080d21352da46bffd45ce5488efaaccf5a70e474b93da308aa00835b62824211d40695f2618ebb81e011ce73c3cf5ced0db354dec9998d417"
+        },
+        {
+          "version": "6.18.0",
+          "fileName": "SkyHanni-6.18.0-mc1.21.10.jar",
+          "sha512": "d474a4b8696943c5302c1b943c2e7ac3370c21c404aaf24c8f2b66f4c1ab5d4374195ed44f80502f1739be8e02081c0b7767d1c0c88201e4f18e5cb138a18820"
+        },
+        {
+          "version": "6.18.0",
+          "fileName": "SkyHanni-6.18.0-mc1.21.11.jar",
+          "sha512": "3481f76d5740cbe97491a7aadefabc9a354f4b4081cb44fc3fcfd94b61a323c639001ee88a72d1603c3450616237733035c5f8d1091465e7cf4b61bfcf12f04b"
+        },
+        {
+          "version": "6.19.0",
+          "fileName": "SkyHanni-6.19.0-mc1.21.10.jar",
+          "sha512": "553649ab12ba6507a992274ef15c06506386532e47d8a7a18208e3f9091233a15295799eb89e74596a887404045dcb562b4ac7e61c9d670a7984656e60982027"
+        },
+        {
+          "version": "6.19.0",
+          "fileName": "SkyHanni-6.19.0-mc1.21.11.jar",
+          "sha512": "11df1583f0edd205d2f3f74c2db7899a043dd002f763a96523becca9defa7ffe869749f0a5e4879943fb39f279d3bb8a3a2a77a8eac3b57d5a1502c080fe0217"
+        },
+        {
+          "version": "6.2.0",
+          "fileName": "SkyHanni-6.2.0-mc1.21.10.jar",
+          "sha512": "b2fae6e78de6f55ae442963f2b260f6c671b3cc74c610256fd497a58c95ff7ef9ff805160180ebfcd8764bb8201e0f799d1071e0c5b8f6efe51dfe6ff8477195"
+        },
+        {
+          "version": "6.2.0",
+          "fileName": "SkyHanni-6.2.0-mc1.21.5.jar",
+          "sha512": "d121ecd5d18c63426c1e949efc05bc4b2beaf0ae05ee010661bfa0a4e2f4128547f399f1d50b2e5f59f4d1b0b88b63bdf195abd7ff3f6473ee8723ff0e2a5827"
+        },
+        {
+          "version": "6.2.0",
+          "fileName": "SkyHanni-6.2.0-mc1.21.8.jar",
+          "sha512": "cb22209dfdb8a1e38725c3a9b9d0b16b5f0a37d05c4e3b376c45236050a0a841a107e35467a8bf1f7fdba123e74b44dbdc193b2ddb933afc9560e12b2620b0ee"
+        },
+        {
+          "version": "6.20.0",
+          "fileName": "SkyHanni-6.20.0-mc1.21.10.jar",
+          "sha512": "06cb28b2876d0dd65ca6dda1045c8031d7e6c52003c3319dc9557ffd8adcd268130e4f279512a922fe9b11fa70df8c4f6e3df6ce8c3a82ad9a116e56dff001c0"
+        },
+        {
+          "version": "6.20.0",
+          "fileName": "SkyHanni-6.20.0-mc1.21.11.jar",
+          "sha512": "8070e4aa1f822b0a67c7a6e28c28501a831f15c92ad8f18f004c4d920794f4779462a6c0bdd50230877f5964163e1c79ce84007037eb68ab5bc411c1d4642c4f"
+        },
+        {
+          "version": "6.3.0",
+          "fileName": "SkyHanni-6.3.0-mc1.21.10.jar",
+          "sha512": "8059ecd59c82df4c0aa7c0c4584272c5c16017703a2920a45f0fa27757bbc434be2fae39a15d90a22a0a812f9bdad2b5df7094bf457f77c0857907f4c63fabe0"
+        },
+        {
+          "version": "6.3.0",
+          "fileName": "SkyHanni-6.3.0-mc1.21.5.jar",
+          "sha512": "89d1ac3a3d35f8730df9bfe45ebed7f3c50408008eb8eea3f932afd4064a27e0fd27f58a5c089af3b74c37aee06a7944495a932e2f4a0ab69bfb1c6c18200df1"
+        },
+        {
+          "version": "6.3.0",
+          "fileName": "SkyHanni-6.3.0-mc1.21.8.jar",
+          "sha512": "89ca141d8519782758da34bff590cf09780f51ba06dd2c428d7af4eeac27d4af24f9260d6ac905ac346be88c7feefce962a9c2e0f732a9e6399a97d49420c69c"
+        },
+        {
+          "version": "6.4.0",
+          "fileName": "SkyHanni-6.4.0-mc1.21.10.jar",
+          "sha512": "72eb8961e68018d3d291a5cec8259d24614bc3290352868022a83b77183ea080bfdd5a55972566a79288a3067a1551103adda25cba195acdeaadc8fc09cc7e0a"
+        },
+        {
+          "version": "6.4.0",
+          "fileName": "SkyHanni-6.4.0-mc1.21.5.jar",
+          "sha512": "80cce76d17994f2c7289eb7f2ea34f08cdd1245845c2d3d82d34b2235a284cfcbbabe0526cb8a09287632c7b0e07ae84aaddb98492ec4b60252cd43147f28dee"
+        },
+        {
+          "version": "6.4.0",
+          "fileName": "SkyHanni-6.4.0-mc1.21.8.jar",
+          "sha512": "f62392923e9694a8a3cf5ca3fad78f861ae5c4e3bda720774e773c207ae53b79c5333efb24bb1e2e1035fddf0ec0230620efd518369c4616946ec301250b7711"
+        },
+        {
+          "version": "6.5.0",
+          "fileName": "SkyHanni-6.5.0-mc1.21.10.jar",
+          "sha512": "822776fc379eb1f777563856930f9345eaee50dd10a8c2dbc2dae55939d308444e0bd969259d3cc76927a6e7e2d229e05d067fcbc16dc3bb1b6018999ee9c27f"
+        },
+        {
+          "version": "6.5.0",
+          "fileName": "SkyHanni-6.5.0-mc1.21.5.jar",
+          "sha512": "ae4f0b8ab0f8de9724fa0b8677819b978ab05c791dc18e5dac37aaff28d172a7ea090d7f70bd2f0b5e43a05304020801a01a578bdb66575063e83c2a02ea72ae"
+        },
+        {
+          "version": "6.5.0",
+          "fileName": "SkyHanni-6.5.0-mc1.21.8.jar",
+          "sha512": "452f84445f412a0a6aa11dac4ece44010addcea7c294e5e9f321fa1055e3e36fe9ba8e25d552f887076f7afcda1c5cce6f9e72fb1350d72464a5f7713d49c335"
+        },
+        {
+          "version": "6.6.0",
+          "fileName": "SkyHanni-6.6.0-mc1.21.10.jar",
+          "sha512": "eb167bc1b18013e7c31afc5410888317bdbe8b6a30df06fc10ab0a5f8efaedd5dbab2f781eaf18d2ffeac53bcf9990378dc2b1b235b001e1a5c251ca25be622c"
+        },
+        {
+          "version": "6.6.0",
+          "fileName": "SkyHanni-6.6.0-mc1.21.5.jar",
+          "sha512": "ad4d3c42c5e6b41329647aa5073428709518f6b387c9022b3320fc73f09a4d61d080936a407d2bfb945f17c9bdfc1c4f88a5cc822d519e63f3995c5cb91cb2b6"
+        },
+        {
+          "version": "6.6.0",
+          "fileName": "SkyHanni-6.6.0-mc1.21.8.jar",
+          "sha512": "5a5e061329fe830c1d65193879821ff52497b518327a358dbbfe5ae9e1f34d6d3ace42528ab55189fe24195fcce393bd42e817398ab1e3dc5664ad1af2aada51"
+        },
+        {
+          "version": "6.8.0",
+          "fileName": "SkyHanni-6.8.0-mc1.21.10.jar",
+          "sha512": "7363452b060ed78b8da8ccd8010e19e4baba1cd84262d3f5ebf189c725f20cf10d0fb11167ccaa115f48b0ff5fd992c8d2e8b362c83ee2b8aa756498fd61d686"
+        },
+        {
+          "version": "6.8.0",
+          "fileName": "SkyHanni-6.8.0-mc1.21.5.jar",
+          "sha512": "47bec1a1078773ddef1dded6b49005862486094c3f458dccd137a80b36672418aaedb8559c8f0af685c919e922533cc29e1b58122dc45ea54930f7e34d138773"
+        },
+        {
+          "version": "6.8.0",
+          "fileName": "SkyHanni-6.8.0-mc1.21.8.jar",
+          "sha512": "34ae1ae2ef081570eaad35922289f67db0b1f293264ad92b643a18a6e6befedd1a5526933ea1f5e6253095c25a03e2ad5fdda75c799782313978c61988a6a81f"
+        },
+        {
+          "version": "6.9.0",
+          "fileName": "SkyHanni-6.9.0-mc1.21.10.jar",
+          "sha512": "9648899ba7d51a176e5b0e990769f76b087ee2bc9da5aeaf5453adca2aec60db78666bdc78d065193980c8f2505d5b833ebe658f3c1bb10b6692c9f8977502df"
+        },
+        {
+          "version": "6.9.0",
+          "fileName": "SkyHanni-6.9.0-mc1.21.5.jar",
+          "sha512": "1727a1d10b85ad6d00505c1fe3a5ae22853c83b49c8af5a1d257426e83cd069cab6480c01996371d1638b6460281879db4ff45e4bc54d6eb27f5757b7ed8f450"
+        },
+        {
+          "version": "6.9.0",
+          "fileName": "SkyHanni-6.9.0-mc1.21.8.jar",
+          "sha512": "801eb11a73b9ac4d9217d7daad4cbcbe856a3d1f0e15b0eee16ff826f0a0049b5df16492d6cd14d1b259b18066ea323487a8cc205cdcab85a21cbb4de10b6b31"
+        },
+        {
+          "version": "7.10.0",
+          "fileName": "SkyHanni-7.10.0-mc1.21.10.jar",
+          "sha512": "f9fb13ef249e4299e86f53159465ce09b76e752c910f53f7169dd8bcc6bd00e58970bd907f075fe9a20dd0e22b2acceba5c70de5b9172f5e11254735d36af9c3"
+        },
+        {
+          "version": "7.10.0",
+          "fileName": "SkyHanni-7.10.0-mc1.21.11.jar",
+          "sha512": "bdc73b36dae6378f74b4f10db1607e4cd11a6785480662f5bfce103acdcabea4ac7f4ae20ed0d45cf48b0daaf852710b33cef198aefe98c225607c1ada9a403a"
+        },
+        {
+          "version": "7.11.0",
+          "fileName": "SkyHanni-7.11.0-mc1.21.10.jar",
+          "sha512": "53928c89600c91cfddb002af3340f3fbffae91a250c5a97690e011289baaf1c2004093610f9e3b02bb1581ffa9c5fa2577d91c04a9b685d2a27a4f39ce9762d6"
+        },
+        {
+          "version": "7.11.0",
+          "fileName": "SkyHanni-7.11.0-mc1.21.11.jar",
+          "sha512": "e08f68209186b90d072399e4c5cb8c0cfddb5607f377704b343aef8cbdf5ace5eac34ce5b616d448750563217f3cafcc57b4895a94b279db2edc8cb52f4cb9ae"
+        },
+        {
+          "version": "7.12.0",
+          "fileName": "SkyHanni-7.12.0-mc1.21.11.jar",
+          "sha512": "3ba95fab2136ba72299bf8a92eb8c918cebfc7ea2bf7277d11e5b9315c1d7b1c1486933e1b50b42a60e511c39ad86086470a6e3c08ff6494c0455b38f596c30d"
+        },
+        {
+          "version": "7.13.0",
+          "fileName": "SkyHanni-7.13.0-mc1.21.11.jar",
+          "sha512": "23233eef4559bdba4dbc0b06e3330913bce9f84ef37595d7094dd4302a024170a3f326b3841b4e3d2170ca5c4049b1f97c92da7d7053d524a1e0513a719367ae"
+        },
+        {
+          "version": "7.14.0",
+          "fileName": "SkyHanni-7.14.0-mc1.21.11.jar",
+          "sha512": "b74f28d19bd162e1c08024b40e3ba31b16da5b39db45925969728508ecd9df8bb32bf0e3cc3930ed1df9aa415a31103f8b94b5f31dcb0b640d0ec24f7e54c4d8"
+        },
+        {
+          "version": "7.15.0",
+          "fileName": "SkyHanni-7.15.0-mc1.21.11.jar",
+          "sha512": "725d7f267df317dca3526d3f6a8b7ace40b013a84a8789ce4ee2dc11c6e94f7f1a7a5aa7a763e01a40e94722b23b3eef9e857dbc48b5c2bff8885b0ded0b38f6"
+        },
+        {
+          "version": "7.17.0",
+          "fileName": "SkyHanni-7.17.0-mc1.21.11.jar",
+          "sha512": "072ad47ebd4098eff4755ceef1d91f5d3b0c6b04dedb5c251d0f8a74190850d1a208ba93b03dc4cfd658970ddf9437a2dbb5245833b14907b7e1c11d7bfc4866"
+        },
+        {
+          "version": "7.18.0",
+          "fileName": "SkyHanni-7.18.0-mc1.21.11.jar",
+          "sha512": "8418676bf17e6f2ffa9c7a700bec1254ca0fbc0d0291974ced12e73b990259ed0f16b1188be3cae7f03857deaf8999e39a7b4deeeb5699464f8ff0f28ed11319"
+        },
+        {
+          "version": "7.19.0",
+          "fileName": "SkyHanni-7.19.0-mc1.21.11.jar",
+          "sha512": "50e5ac9f628a4746e48246b798621b8283bd261ed5ab0ca3153a198a1396fa7358b81107f47eefe45c14f970b2657f30a1ea3939b2a3dd86101db33237a4dad1"
+        },
+        {
+          "version": "7.2.0",
+          "fileName": "SkyHanni-7.2.0-mc1.21.10.jar",
+          "sha512": "3ba5ebcbd7943ccdc06c49443fed5e1e98ab658c77c74c04469d27330fb44deab6b1f900f7cdfc0d0ea878ae65cb5b300b31d2915c3fd7c5b514d8c3f3973e9e"
+        },
+        {
+          "version": "7.2.0",
+          "fileName": "SkyHanni-7.2.0-mc1.21.11.jar",
+          "sha512": "609005a4056fe752a6de9d9a1ab182d3fa57f4ca3863024e7b28920357426a445717991646d73eaed8b3750ac1e056ac355bb68bdf108e1956e6761b5a4afe99"
+        },
+        {
+          "version": "7.20.0",
+          "fileName": "SkyHanni-7.20.0-mc1.21.11.jar",
+          "sha512": "1fc6f7d253560d5549f1c8464243c96138ba0d0b452cf730104ac9c75d366033f72967c0381fb4eeba2d67090d0f950322d0ef7653720a3049245b27d7277bf2"
+        },
+        {
+          "version": "7.21.0",
+          "fileName": "SkyHanni-7.21.0-mc1.21.11.jar",
+          "sha512": "ba32a80a6b3c691c1d17cd00da4463eacd2972b879d7066c2295ad8d9ed407abf2353b836eed6fc97307416d9c86302780effa2677e4f14e7f8b603c7c93d774"
+        },
+        {
+          "version": "7.22.0",
+          "fileName": "SkyHanni-7.22.0-mc1.21.11.jar",
+          "sha512": "eb9dee31abfdba481b430a9e5debf97881d4fd8ccdc5b66923cf942d28d11ee1643fbe45a2b18c6269eb4d2d93710b83cddcc620703d1297ae59e565edd7c95b"
+        },
+        {
+          "version": "7.23.0",
+          "fileName": "SkyHanni-7.23.0-mc1.21.11.jar",
+          "sha512": "4fc448087ae348d596071883762e3238d0af1d5d85908bb80309db0a3f7767e88f1fc6af4388f891a5a0d4014b665ef61f67354f6b424c690da1f4fc85cb8f74"
+        },
+        {
+          "version": "7.24.0",
+          "fileName": "SkyHanni-7.24.0-mc1.21.11.jar",
+          "sha512": "e91fa7eb4815e6df9af9c7e93cf793bf8b739000935e8fbac31e62fb4e3cb4054c5c65f0b7172c7cad5e58b2624a3f61a98d5842ae1ff151524f4a35b60debde"
+        },
+        {
+          "version": "7.25.0",
+          "fileName": "SkyHanni-7.25.0-mc1.21.11.jar",
+          "sha512": "defc3fb07b2d0e1b03b8522242fc5b747e689336a52987c47556d5136b97dac4a709a540386fb8a938abc0c78178197ef7fa719623f59d553f3b9e6ea004e212"
+        },
+        {
+          "version": "7.26.0",
+          "fileName": "SkyHanni-7.26.0-mc1.21.11.jar",
+          "sha512": "c81269db399912514f5f8d3d94f36469c2eb742afd9afc9e8e94eb076eaa6add0abbcc6ff56eccf749fddf6b0361a0f4934c4fb675e0f6dc348069211a45d8bb"
+        },
+        {
+          "version": "7.27.0",
+          "fileName": "SkyHanni-7.27.0-mc1.21.11.jar",
+          "sha512": "06ca5a8d6696978f56faeeb19b2f12c97746fddac39ec88aed40f643513428881b360e4e2cd3917979e016447137d00c060c45624e4ed10d074640cc27a476a9"
+        },
+        {
+          "version": "7.28.0",
+          "fileName": "SkyHanni-7.28.0-mc1.21.11.jar",
+          "sha512": "cb4a375a0e384697b276bfc8d36d319078d2e72c079f26c8ebff31350f1c48eeb53ce7587fe8c976e6d576d40eb5fd9275673cf8f1836c947338f7eca017c31f"
+        },
+        {
+          "version": "7.29.0",
+          "fileName": "SkyHanni-7.29.0-mc1.21.11.jar",
+          "sha512": "ab068f615cfc0c87d5c6c52a3c07dfe17d2f657f13617d25d2ed60a9c3c6d91d72106c4f68a6af54f01cfc6cf2c16b60c18f4a87594bba9487ea818914025b12"
+        },
+        {
+          "version": "7.3.0",
+          "fileName": "SkyHanni-7.3.0-mc1.21.10.jar",
+          "sha512": "1617b1f11ccad2ca80e04088ad96630b801eb596763f8501301a3fb49f5a14cc0c2935c3770946ada29fdb74985b2e703d79ff46de5dfd56786a184bf987aecb"
+        },
+        {
+          "version": "7.3.0",
+          "fileName": "SkyHanni-7.3.0-mc1.21.11.jar",
+          "sha512": "7a597430e17c4e54760dc8c90211b70e0897680f4f609846d6ab00657b016df9b4a15862a81763c380d03c278bbf7217cb2e3a9958090b09e93b56c5e4bfe8ab"
+        },
+        {
+          "version": "7.30.0",
+          "fileName": "SkyHanni-7.30.0-mc1.21.11.jar",
+          "sha512": "3a59ac102e7ad6906729618a70c9135d60231f9ba731d49b429a27a317bacedece6b0a678d4f7ec9be657cb3c59820e15982612bb71e4d495a50eb71976893e2"
+        },
+        {
+          "version": "7.31.0",
+          "fileName": "SkyHanni-7.31.0-mc1.21.11.jar",
+          "sha512": "3e9bced9b6167360ca7e5389036a28914da98a7c0c5975565fca539f8fd6374df12345876c2a8c137d3e98472ba66e79ec3e8e32c500cb6e6bf1f16e5753c3d9"
+        },
+        {
+          "version": "7.32.0",
+          "fileName": "SkyHanni-7.32.0-mc1.21.11.jar",
+          "sha512": "061a87c5a61b4c28d8e71c0ec21411c4d492aa46cedb4ff0a310fec962b6ac1173dd9ace0c029a4415857e33053b76834bad9da8743ace958ff1e5ad0d3e44e4"
+        },
+        {
+          "version": "7.33.0",
+          "fileName": "SkyHanni-7.33.0-mc1.21.11.jar",
+          "sha512": "6f0fbb7656481576412b9690abdf18d22cd9f92469f4d9000935020e263884faf9b2a6c4633e6eedddb4d22178a8b4ce2a3b3b7e53aa7fc43651443d8792e423"
+        },
+        {
+          "version": "7.34.0",
+          "fileName": "SkyHanni-7.34.0-mc1.21.11.jar",
+          "sha512": "2501e4b3126dd23d4b2db900f2c0818f5121f5613716916444bc044abb3ab13ecb710b60eb64a0df724e62980fb157ce5b700857ccdd9a9f610ded7e39d28009"
+        },
+        {
+          "version": "7.35.0",
+          "fileName": "SkyHanni-7.35.0-mc1.21.11.jar",
+          "sha512": "29f1af333010bd8479bb55e9211e866d2e51fa8f388f0b2d192ebd40a4cee27821d0f2dad5403c80f2303824e851fec7e5eecdbcfd39d6f8819072621a08227a"
+        },
+        {
+          "version": "7.36.0",
+          "fileName": "SkyHanni-7.36.0-mc1.21.11.jar",
+          "sha512": "9b219c922b3a42022dcf5b986b7266ac1b02c855de94af5783e7eaf1be5e952f1b9d1d47f5ed7c48ba021441aaed6dcd10a4f66169d64aad2a09a5eafcd1dfcc"
+        },
+        {
+          "version": "7.37.0",
+          "fileName": "SkyHanni-7.37.0-mc1.21.11.jar",
+          "sha512": "93f1d615c7183ceeea67ded9d31be1b2838e83e79a808cb21ef587d65801f25d32cbbd877b0e9414c7abd6c601f986fbe7245b9c37ada23735c1870eeacbedd4"
+        },
+        {
+          "version": "7.38.0",
+          "fileName": "SkyHanni-7.38.0-mc1.21.11.jar",
+          "sha512": "25aec5a714927507d8d7a4ee9ef99dd7bc5c2e2b668f96846e1caf5e1e14cd83c853506051b1f21d996f2fe89ea4ba710aa7e31f3fec5adee62e4b2887b182fd"
+        },
+        {
+          "version": "7.39.0",
+          "fileName": "SkyHanni-7.39.0-mc1.21.11.jar",
+          "sha512": "5e2b5a06616cd2bb5e08fdcc4555cb140e8f36b0b60a9b2cdd61b6b9429621182f5c23481d99b3156500be0aed87e6a7cdeed9ba828b03b79d8e167bcb9efe09"
+        },
+        {
+          "version": "7.4.0",
+          "fileName": "SkyHanni-7.4.0-mc1.21.10.jar",
+          "sha512": "b1d954380526410d80fac224ca0b83d3e8e32c63903cfb2418d974434bc63ceb69ba17032196795ea1763107cce8e66cb0118ed13b8ccd65f995d9e8883c220f"
+        },
+        {
+          "version": "7.4.0",
+          "fileName": "SkyHanni-7.4.0-mc1.21.11.jar",
+          "sha512": "34458a198176b66dbedb0b2b4e9ec91ef6fde8c1e6986ea2d578f9b76eb19d78990c096cfe19f80b8203eee7c1a2c41d216be715b63ab302ebdeb37e6b823e8c"
+        },
+        {
+          "version": "7.40.0",
+          "fileName": "SkyHanni-7.40.0-mc1.21.11.jar",
+          "sha512": "2789c8346f3e28eb37f484843d541c0a3d5b00ec918ce55952fc3e24cbe488b2850c38dde42394c8a972b434fb4d0e5d291ceea8a99c6d43e266af8bc7f92896"
+        },
+        {
+          "version": "7.41.0",
+          "fileName": "SkyHanni-7.41.0-mc1.21.11.jar",
+          "sha512": "010dc4c4678bc17029ea92f68a142c79c93a151f05fe2b7abf2b2fb035a73694fed7cd6990830f40a5c04f579a43630400cf2e3abd048d27f7503002dd476c31"
+        },
+        {
+          "version": "7.5.0",
+          "fileName": "SkyHanni-7.5.0-mc1.21.10.jar",
+          "sha512": "11d8dacb4a9aa77335f730d309f63fe9e52f7b3708e5c6291129f2c4c38f61f39594bc6f2170e445539c5654e87f86bb72c299f72653d842ccd3382db4f069b5"
+        },
+        {
+          "version": "7.5.0",
+          "fileName": "SkyHanni-7.5.0-mc1.21.11.jar",
+          "sha512": "12491d12ce6dc59129a65f7c07192ed340be77d3f6df6c8768cee3cb646518dcfd6c5559d0ea66c6e3b9fa0c1cbe168cd24349573ed0e16277730aa88b3aa987"
+        },
+        {
+          "version": "7.6.0",
+          "fileName": "SkyHanni-7.6.0-mc1.21.10.jar",
+          "sha512": "4e2eeb068be2ed241e72a7b74a51b8480b40f7ea155720a6ea54f02edb99ce8c0a996704b84cab6912ad90d9f7450cc25e4f3348b5062cd417cf5d7ffa8b2ac0"
+        },
+        {
+          "version": "7.6.0",
+          "fileName": "SkyHanni-7.6.0-mc1.21.11.jar",
+          "sha512": "e94bf1724be1cf55b226d80709604be4d7f41224872328d64ec262613613c81e01d63b9460cbdabda41bf17cb5950d8c1989dc6e2f7fc4b30da9fa3c85b29a50"
+        },
+        {
+          "version": "7.7.0",
+          "fileName": "SkyHanni-7.7.0-mc1.21.10.jar",
+          "sha512": "d4139a5cd31ef3f53d5ff748b9ffcaf96321f29af0e8b4b659fd5741b23d119de89a13b5c22f71ec9f2560036479e01e61d367486b39696381bcb200980e769e"
+        },
+        {
+          "version": "7.7.0",
+          "fileName": "SkyHanni-7.7.0-mc1.21.11.jar",
+          "sha512": "990133b1bfec851e24dd4787e20203234e137a421c9d9637c3accd338cbabef6924c13d315993ff3798dd14c376ec89fbf6e9268da7da933718d1b3ccd2adbcf"
+        },
+        {
+          "version": "7.8.0",
+          "fileName": "SkyHanni-7.8.0-mc1.21.10.jar",
+          "sha512": "60b8c69ece6b29c7ec63894b137b1f0045d162b7f3dc9e869b06e82ad3f911f2c8d99a051734cdc67544323a8390486ce6306d5727dc110bc1ff2dc05ad8da8f"
+        },
+        {
+          "version": "7.8.0",
+          "fileName": "SkyHanni-7.8.0-mc1.21.11.jar",
+          "sha512": "5479b97bb58489c0790324e4378abf912e718aca18e085b9bd21b2b93e0361145f3453009793571641394a2b0fa4ade79bfffc794c7a66fa3d9946e209ad0a5f"
+        },
+        {
+          "version": "7.9.0",
+          "fileName": "SkyHanni-7.9.0-mc1.21.10.jar",
+          "sha512": "73ce3def3de381f5db4814b776fd521ef5318edfbdb1d1ee76c5b4a0db41a607dd921cebb1c283439c5995d986d1e92565b2d8d789801171bab586cd748b756f"
+        },
+        {
+          "version": "7.9.0",
+          "fileName": "SkyHanni-7.9.0-mc1.21.11.jar",
+          "sha512": "43453a602ffa2d43fbcd628fe4bf69b76c74d1a10e4974d7e3929d3113c1a6bfc6560d4942ba99bdbb57a0a1ddd6714f6e702ee9cfb37ae8bfe2caedb4248e77"
+        }
+      ]
+    }
+  ]
 }
