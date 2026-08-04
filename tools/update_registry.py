@@ -28,7 +28,7 @@ FABRIC_MOD_ID_PATTERN = re.compile(
 )
 
 USER_AGENT = (
-    "Gland0rf/NSM-Trust-Registry/1.0 "
+    "Gland0rf/Nicos-Super-Mods-Trust-Registry/1.0 "
     "(https://github.com/Gland0rf/"
     "Nicos-Super-Mods-Trust-Registry)"
 )
@@ -281,6 +281,7 @@ def update_github_project(
     project_url = f"https://github.com/{repository}"
 
     project = get_existing_project(registry, project_url)
+    known_file_names = registered_file_names(project)
     changed = False
 
     for release in github_releases(repository):
@@ -312,6 +313,13 @@ def update_github_project(
                 raise ValueError(
                     f"Missing download URL for {file_name}"
                 )
+
+            if file_name.casefold() in known_file_names:
+                print(
+                    f"Skipping {repository}: {file_name} "
+                    f"(already in registry)"
+                )
+                continue
 
             print(f"Checking {repository}: {file_name}")
 
@@ -583,6 +591,30 @@ def update_modrinth_project(
 
     return changed
 
+def registered_file_names(
+    project: dict[str, Any] | None,
+) -> set[str]:
+    if project is None:
+        return set()
+
+    names: set[str] = set()
+
+    releases = project.get("releases", [])
+
+    if not isinstance(releases, list):
+        return names
+
+    for release in releases:
+        if not isinstance(release, dict):
+            continue
+
+        file_name = release.get("fileName")
+
+        if isinstance(file_name, str):
+            names.add(file_name.casefold())
+
+    return names
+
 
 def main() -> int:
     sources = read_json_file(SOURCES_PATH)
@@ -636,12 +668,6 @@ def main() -> int:
             raise ValueError(
                 f"Unsupported source type: {source_type}"
             )
-
-        changed |= update_github_project(
-            source,
-            registry,
-            hashes,
-        )
 
     if not changed:
         print("No new releases found.")
