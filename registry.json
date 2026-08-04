@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-04T01:57:07Z",
+  "generatedAt": "2026-08-04T02:02:49Z",
   "projects": [
     {
       "name": "Cloth Config v26.2",
@@ -460,6 +460,7 @@
       "name": "Fabric API",
       "projectUrl": "https://modrinth.com/mod/fabric-api",
       "modIds": [
+        "fabric",
         "fabric-api"
       ],
       "releases": [
