@@ -11,6 +11,7 @@ import sys
 import urllib.error
 import urllib.request
 import zipfile
+import copy
 
 from datetime import datetime, timezone
 from pathlib import Path
@@ -34,33 +35,53 @@ USER_AGENT = (
 )
 
 
-def request_headers() -> dict[str, str]:
+def request_headers(
+    accept: str,
+    *,
+    github_auth: bool = False,
+) -> dict[str, str]:
     headers = {
-        "Accept": "application/vnd.github+json",
+        "Accept": accept,
         "User-Agent": USER_AGENT,
     }
 
-    token = os.environ.get("GITHUB_TOKEN")
-    if token:
-        headers["Authorization"] = f"Bearer {token}"
+    if github_auth:
+        token = os.environ.get("GITHUB_TOKEN")
+
+        if token:
+            headers["Authorization"] = f"Bearer {token}"
 
     return headers
 
 
-def download_json(url: str) -> Any:
+def download_json(
+    url: str,
+    *,
+    github_auth: bool = False,
+) -> Any:
     request = urllib.request.Request(
         url,
-        headers=request_headers(),
+        headers=request_headers(
+            "application/json",
+            github_auth=github_auth,
+        ),
     )
 
     try:
-        with urllib.request.urlopen(request, timeout=30) as response:
+        with urllib.request.urlopen(
+            request,
+            timeout=30,
+        ) as response:
             return json.load(response)
+
     except urllib.error.HTTPError as exception:
-        body = exception.read().decode("utf-8", errors="replace")
+        body = exception.read().decode(
+            "utf-8",
+            errors="replace",
+        )
 
         raise RuntimeError(
-            f"GitHub request failed with HTTP "
+            f"Request failed with HTTP "
             f"{exception.code}: {url}\n{body}"
         ) from exception
 
@@ -68,22 +89,27 @@ def download_json(url: str) -> Any:
 def download_jar(url: str) -> bytes:
     request = urllib.request.Request(
         url,
-        headers={
-            **request_headers(),
-            "Accept": "application/octet-stream",
-        },
+        headers=request_headers(
+            "application/octet-stream"
+        ),
     )
 
     try:
-        with urllib.request.urlopen(request, timeout=60) as response:
-            content_length = response.headers.get("Content-Length")
+        with urllib.request.urlopen(
+            request,
+            timeout=60,
+        ) as response:
+            content_length = response.headers.get(
+                "Content-Length"
+            )
 
             if content_length is not None:
                 declared_size = int(content_length)
 
                 if declared_size > MAX_JAR_BYTES:
                     raise ValueError(
-                        f"JAR is too large: {declared_size} bytes"
+                        f"JAR is too large: "
+                        f"{declared_size} bytes"
                     )
 
             data = response.read(MAX_JAR_BYTES + 1)
@@ -204,7 +230,10 @@ def github_releases(repository: str) -> list[dict[str, Any]]:
             f"?per_page=100&page={page}"
         )
 
-        response = download_json(url)
+        response = download_json(
+            url,
+            github_auth=True,
+        )
 
         if not isinstance(response, list):
             raise ValueError(
@@ -662,6 +691,152 @@ def registered_file_names(
 
     return names
 
+def project_identity(
+    project: dict[str, Any],
+) -> str:
+    project_url = project.get("projectUrl")
+
+    if isinstance(project_url, str) and project_url.strip():
+        return normalize_project_url(project_url)
+
+    return str(project.get("name", "")).strip().casefold()
+
+
+def release_identity(
+    release: dict[str, Any],
+) -> str:
+    sha512 = release.get("sha512")
+
+    if isinstance(sha512, str) and sha512.strip():
+        return f"sha512:{sha512.lower()}"
+
+    # Fallback for malformed or older registry entries.
+    return json.dumps(
+        release,
+        sort_keys=True,
+        ensure_ascii=False,
+    )
+
+
+def print_update_summary(
+    before: dict[str, Any],
+    after: dict[str, Any],
+) -> None:
+    before_projects: dict[str, dict[str, Any]] = {}
+
+    for project in before.get("projects", []):
+        if isinstance(project, dict):
+            before_projects[project_identity(project)] = project
+
+    new_projects: list[str] = []
+    added_releases: list[str] = []
+    mod_id_changes: list[str] = []
+
+    for project in after.get("projects", []):
+        if not isinstance(project, dict):
+            continue
+
+        key = project_identity(project)
+        project_name = str(
+            project.get("name", "<unnamed project>")
+        )
+
+        previous_project = before_projects.get(key)
+
+        if previous_project is None:
+            new_projects.append(project_name)
+            previous_releases: set[str] = set()
+            previous_mod_ids: set[str] = set()
+        else:
+            previous_releases = {
+                release_identity(release)
+                for release in previous_project.get("releases", [])
+                if isinstance(release, dict)
+            }
+
+            previous_mod_ids = {
+                str(mod_id).lower()
+                for mod_id in previous_project.get("modIds", [])
+            }
+
+        current_mod_ids = {
+            str(mod_id).lower()
+            for mod_id in project.get("modIds", [])
+        }
+
+        if (
+            previous_project is not None
+            and current_mod_ids != previous_mod_ids
+        ):
+            mod_id_changes.append(
+                f"{project_name}: "
+                f"{sorted(previous_mod_ids)} -> "
+                f"{sorted(current_mod_ids)}"
+            )
+
+        for release in project.get("releases", []):
+            if not isinstance(release, dict):
+                continue
+
+            if release_identity(release) in previous_releases:
+                continue
+
+            version = str(
+                release.get("version", "<unknown version>")
+            )
+            file_name = str(
+                release.get("fileName", "<unknown file>")
+            )
+
+            added_releases.append(
+                f"{project_name} {version} — {file_name}"
+            )
+
+    print()
+    print("========== Registry update summary ==========")
+    print(f"New projects:         {len(new_projects)}")
+    print(f"New releases:         {len(added_releases)}")
+    print(f"Changed mod ID lists: {len(mod_id_changes)}")
+
+    if new_projects:
+        print()
+        print("New projects:")
+
+        for project_name in sorted(
+            new_projects,
+            key=str.casefold,
+        ):
+            print(f"  + {project_name}")
+
+    if added_releases:
+        print()
+        print("Added releases:")
+
+        for release in sorted(
+            added_releases,
+            key=str.casefold,
+        ):
+            print(f"  + {release}")
+
+    if mod_id_changes:
+        print()
+        print("Changed mod ID lists:")
+
+        for change in sorted(
+            mod_id_changes,
+            key=str.casefold,
+        ):
+            print(f"  ~ {change}")
+
+    if not (
+        new_projects
+        or added_releases
+        or mod_id_changes
+    ):
+        print()
+        print("No registry content was changed.")
+
+    print("=============================================")
 
 def main() -> int:
     sources = read_json_file(SOURCES_PATH)
@@ -686,10 +861,12 @@ def main() -> int:
 
     registry.setdefault("projects", [])
 
+    original_registry = copy.deepcopy(registry)
+
     # Save the original state so partial changes are detected even
     # when an updater throws before returning its changed value.
     original_registry_state = json.dumps(
-        registry,
+        original_registry,
         sort_keys=True,
         ensure_ascii=False,
     )
@@ -783,13 +960,10 @@ def main() -> int:
     else:
         print("No new releases found.")
 
-    if errors:
-        print(
-            f"Completed with {len(errors)} skipped source(s)."
-        )
-
-        for error in errors:
-            print(f"  - {error}")
+    print_update_summary(
+        original_registry,
+        registry,
+    )
 
     # Return success so GitHub Actions can still create the update PR.
     return 0
