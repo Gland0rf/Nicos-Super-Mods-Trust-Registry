@@ -28,7 +28,7 @@ FABRIC_MOD_ID_PATTERN = re.compile(
 )
 
 USER_AGENT = (
-    "Gland0rf/NSM-Trust-Registry/1.0 "
+    "Gland0rf/Nicos-Super-Mods-Trust-Registry/1.0 "
     "(https://github.com/Gland0rf/"
     "Nicos-Super-Mods-Trust-Registry)"
 )
@@ -281,6 +281,7 @@ def update_github_project(
     project_url = f"https://github.com/{repository}"
 
     project = get_existing_project(registry, project_url)
+    known_file_names = registered_file_names(project)
     changed = False
 
     for release in github_releases(repository):
@@ -312,6 +313,13 @@ def update_github_project(
                 raise ValueError(
                     f"Missing download URL for {file_name}"
                 )
+
+            if file_name.casefold() in known_file_names:
+                print(
+                    f"Skipping {repository}: {file_name} "
+                    f"(already in registry)"
+                )
+                continue
 
             print(f"Checking {repository}: {file_name}")
 
@@ -434,6 +442,26 @@ def update_modrinth_project(
         source.get("releaseTypes", ["release"])
     )
 
+    raw_mod_ids = source.get("modIds", [])
+
+    if not isinstance(raw_mod_ids, list):
+        raise ValueError(
+            f"{project_id}: modIds must be an array"
+        )
+
+    configured_mod_ids: set[str] = set()
+
+    for value in raw_mod_ids:
+        if (
+            not isinstance(value, str)
+            or not FABRIC_MOD_ID_PATTERN.fullmatch(value)
+        ):
+            raise ValueError(
+                f"{project_id}: invalid configured mod ID {value!r}"
+            )
+
+        configured_mod_ids.add(value.lower())
+
     if not isinstance(project_id, str) or not project_id.strip():
         raise ValueError(
             "Modrinth source requires projectId"
@@ -459,6 +487,25 @@ def update_modrinth_project(
     project = get_existing_project(registry, project_url)
 
     changed = False
+
+    if project is not None and configured_mod_ids:
+        existing_mod_ids = {
+            str(value).lower()
+            for value in project.get("modIds", [])
+        }
+
+        merged_mod_ids = sorted(
+            existing_mod_ids | configured_mod_ids
+        )
+
+        if merged_mod_ids != sorted(existing_mod_ids):
+            project["modIds"] = merged_mod_ids
+            changed = True
+
+            print(
+                f"Updated {project_id} mod IDs: "
+                f"{merged_mod_ids}"
+            )
 
     for version in versions:
         version_type = version.get("version_type")
@@ -535,10 +582,24 @@ def update_modrinth_project(
         metadata = read_fabric_metadata(jar_bytes)
 
         if project is None:
+            if (
+                configured_mod_ids
+                and metadata["id"] not in configured_mod_ids
+            ):
+                raise ValueError(
+                    f"{project_id}: {file_name} claims "
+                    f"unexpected mod ID {metadata['id']!r}; "
+                    f"expected {sorted(configured_mod_ids)!r}"
+                )
+
+            project_mod_ids = sorted(
+                configured_mod_ids or {metadata["id"]}
+            )
+
             project = {
                 "name": metadata["name"],
                 "projectUrl": project_url,
-                "modIds": [metadata["id"]],
+                "modIds": project_mod_ids,
                 "releases": [],
             }
 
@@ -547,9 +608,11 @@ def update_modrinth_project(
                 []
             ).append(project)
 
+            changed = True
+
             print(
                 f"Discovered {metadata['name']} "
-                f"with mod ID {metadata['id']}"
+                f"with mod IDs {project_mod_ids}"
             )
         else:
             registered_mod_ids = {
@@ -564,14 +627,6 @@ def update_modrinth_project(
                     f"expected {sorted(registered_mod_ids)!r}"
                 )
 
-        project.setdefault("releases", []).append(
-            {
-                "version": metadata["version"],
-                "fileName": file_name,
-                "sha512": digest,
-            }
-        )
-
         known_hashes.add(digest)
         changed = True
 
@@ -582,6 +637,30 @@ def update_modrinth_project(
         )
 
     return changed
+
+def registered_file_names(
+    project: dict[str, Any] | None,
+) -> set[str]:
+    if project is None:
+        return set()
+
+    names: set[str] = set()
+
+    releases = project.get("releases", [])
+
+    if not isinstance(releases, list):
+        return names
+
+    for release in releases:
+        if not isinstance(release, dict):
+            continue
+
+        file_name = release.get("fileName")
+
+        if isinstance(file_name, str):
+            names.add(file_name.casefold())
+
+    return names
 
 
 def main() -> int:
@@ -607,59 +686,112 @@ def main() -> int:
 
     registry.setdefault("projects", [])
 
+    # Save the original state so partial changes are detected even
+    # when an updater throws before returning its changed value.
+    original_registry_state = json.dumps(
+        registry,
+        sort_keys=True,
+        ensure_ascii=False,
+    )
+
     hashes = all_known_hashes(registry)
-    changed = False
+    errors: list[str] = []
 
     for source in raw_sources:
         if not isinstance(source, dict):
-            raise ValueError(
-                "Each sources.json project must be an object"
+            errors.append(
+                "Skipped invalid source: source must be an object"
             )
+            continue
 
         source_type = source.get("type", "github")
 
         if source_type == "github":
-            changed |= update_github_project(
-                source,
-                registry,
-                hashes,
+            source_name = str(
+                source.get("repository", "<unknown GitHub source>")
             )
 
         elif source_type == "modrinth":
-            changed |= update_modrinth_project(
-                source,
-                registry,
-                hashes,
+            source_name = str(
+                source.get("projectId", "<unknown Modrinth source>")
             )
 
         else:
-            raise ValueError(
-                f"Unsupported source type: {source_type}"
+            source_name = str(source_type)
+
+        try:
+            if source_type == "github":
+                update_github_project(
+                    source,
+                    registry,
+                    hashes,
+                )
+
+            elif source_type == "modrinth":
+                update_modrinth_project(
+                    source,
+                    registry,
+                    hashes,
+                )
+
+            else:
+                raise ValueError(
+                    f"Unsupported source type: {source_type}"
+                )
+
+        except Exception as exception:
+            message = (
+                f"Skipped remaining releases for "
+                f"{source_type} source {source_name}: "
+                f"{exception}"
             )
 
-        changed |= update_github_project(
-            source,
-            registry,
-            hashes,
-        )
+            errors.append(message)
 
-    if not changed:
-        print("No new releases found.")
-        return 0
+            # This prints one readable warning rather than a traceback.
+            print(
+                f"WARNING: {message}",
+                file=sys.stderr,
+            )
 
-    registry["generatedAt"] = (
-        datetime.now(timezone.utc)
-        .replace(microsecond=0)
-        .isoformat()
-        .replace("+00:00", "Z")
+            # Continue with the next configured source.
+            continue
+
+    current_registry_state = json.dumps(
+        registry,
+        sort_keys=True,
+        ensure_ascii=False,
     )
 
-    sort_registry(registry)
-    write_json_file(REGISTRY_PATH, registry)
+    registry_changed = (
+        current_registry_state != original_registry_state
+    )
 
-    print("registry.json was updated.")
-    print("It must now be reviewed and signed manually.")
+    if registry_changed:
+        registry["generatedAt"] = (
+            datetime.now(timezone.utc)
+            .replace(microsecond=0)
+            .isoformat()
+            .replace("+00:00", "Z")
+        )
 
+        sort_registry(registry)
+        write_json_file(REGISTRY_PATH, registry)
+
+        print("registry.json was updated.")
+        print("It must now be reviewed and signed manually.")
+    else:
+        print("No new releases found.")
+
+    if errors:
+        print(
+            f"Completed with {len(errors)} skipped source(s)."
+        )
+
+        for error in errors:
+            print(f"  - {error}")
+
+    # Return success so GitHub Actions can still create the update PR.
     return 0
 
 
