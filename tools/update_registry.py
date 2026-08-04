@@ -392,6 +392,197 @@ def sort_registry(registry: dict[str, Any]) -> None:
             )
         )
 
+def modrinth_versions(
+    project_id: str,
+    loaders: list[str],
+    game_versions: list[str],
+) -> list[dict[str, Any]]:
+    query = {
+        "include_changelog": "false",
+    }
+
+    if loaders:
+        query["loaders"] = json.dumps(loaders)
+
+    if game_versions:
+        query["game_versions"] = json.dumps(game_versions)
+
+    url = (
+        f"https://api.modrinth.com/v2/project/"
+        f"{urllib.parse.quote(project_id, safe='')}/version?"
+        f"{urllib.parse.urlencode(query)}"
+    )
+
+    response = download_json(url)
+
+    if not isinstance(response, list):
+        raise ValueError(
+            f"Unexpected Modrinth response for {project_id}"
+        )
+
+    return response
+
+def update_modrinth_project(
+    source: dict[str, Any],
+    registry: dict[str, Any],
+    known_hashes: set[str],
+) -> bool:
+    project_id = source.get("projectId")
+    loaders = source.get("loaders", ["fabric"])
+    game_versions = source.get("gameVersions", [])
+    release_types = set(
+        source.get("releaseTypes", ["release"])
+    )
+
+    if not isinstance(project_id, str) or not project_id.strip():
+        raise ValueError(
+            "Modrinth source requires projectId"
+        )
+
+    if not isinstance(loaders, list):
+        raise ValueError(
+            f"{project_id}: loaders must be an array"
+        )
+
+    if not isinstance(game_versions, list):
+        raise ValueError(
+            f"{project_id}: gameVersions must be an array"
+        )
+
+    versions = modrinth_versions(
+        project_id,
+        [str(value) for value in loaders],
+        [str(value) for value in game_versions],
+    )
+
+    project_url = f"https://modrinth.com/mod/{project_id}"
+    project = get_existing_project(registry, project_url)
+
+    changed = False
+
+    for version in versions:
+        version_type = version.get("version_type")
+
+        if version_type not in release_types:
+            continue
+
+        files = version.get("files")
+
+        if not isinstance(files, list) or not files:
+            continue
+
+        # Prefer Modrinth's primary file.
+        primary_files = [
+            file
+            for file in files
+            if file.get("primary") is True
+        ]
+
+        selected_file = (
+            primary_files[0]
+            if primary_files
+            else files[0]
+        )
+
+        file_name = selected_file.get("filename")
+        download_url = selected_file.get("url")
+        hashes = selected_file.get("hashes", {})
+        modrinth_sha512 = hashes.get("sha512")
+
+        if not isinstance(file_name, str):
+            raise ValueError(
+                f"{project_id}: version file has no filename"
+            )
+
+        if not isinstance(download_url, str):
+            raise ValueError(
+                f"{project_id}: {file_name} has no URL"
+            )
+
+        if (
+            not isinstance(modrinth_sha512, str)
+            or not re.fullmatch(
+                r"[0-9a-fA-F]{128}",
+                modrinth_sha512,
+            )
+        ):
+            raise ValueError(
+                f"{project_id}: {file_name} has no valid SHA-512"
+            )
+
+        digest = modrinth_sha512.lower()
+
+        if digest in known_hashes:
+            continue
+
+        print(
+            f"Checking Modrinth project "
+            f"{project_id}: {file_name}"
+        )
+
+        # Still download the file so we can verify metadata and
+        # independently confirm Modrinth's hash.
+        jar_bytes = download_jar(download_url)
+        calculated_digest = hashlib.sha512(
+            jar_bytes
+        ).hexdigest()
+
+        if calculated_digest != digest:
+            raise ValueError(
+                f"{project_id}: SHA-512 mismatch for {file_name}"
+            )
+
+        metadata = read_fabric_metadata(jar_bytes)
+
+        if project is None:
+            project = {
+                "name": metadata["name"],
+                "projectUrl": project_url,
+                "modIds": [metadata["id"]],
+                "releases": [],
+            }
+
+            registry.setdefault(
+                "projects",
+                []
+            ).append(project)
+
+            print(
+                f"Discovered {metadata['name']} "
+                f"with mod ID {metadata['id']}"
+            )
+        else:
+            registered_mod_ids = {
+                str(value).lower()
+                for value in project.get("modIds", [])
+            }
+
+            if metadata["id"] not in registered_mod_ids:
+                raise ValueError(
+                    f"{project_id}: {file_name} claims "
+                    f"unexpected mod ID {metadata['id']!r}; "
+                    f"expected {sorted(registered_mod_ids)!r}"
+                )
+
+        project.setdefault("releases", []).append(
+            {
+                "version": metadata["version"],
+                "fileName": file_name,
+                "sha512": digest,
+            }
+        )
+
+        known_hashes.add(digest)
+        changed = True
+
+        print(
+            f"Added {metadata['name']} "
+            f"{metadata['version']} "
+            f"from Modrinth"
+        )
+
+    return changed
+
 
 def main() -> int:
     sources = read_json_file(SOURCES_PATH)
@@ -427,7 +618,21 @@ def main() -> int:
 
         source_type = source.get("type", "github")
 
-        if source_type != "github":
+        if source_type == "github":
+            changed |= update_github_project(
+                source,
+                registry,
+                hashes,
+            )
+
+        elif source_type == "modrinth":
+            changed |= update_modrinth_project(
+                source,
+                registry,
+                hashes,
+            )
+
+        else:
             raise ValueError(
                 f"Unsupported source type: {source_type}"
             )
