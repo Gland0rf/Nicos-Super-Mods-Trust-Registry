@@ -31,7 +31,11 @@
         },
         {
             "type": "modrinth",
-            "projectId": "cloth-config"
+            "projectId": "cloth-config",
+            "modIds": [
+                "cloth-config",
+                "cloth-config2"
+            ]
         },
         {
             "type": "modrinth",
