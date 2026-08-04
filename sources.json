@@ -47,7 +47,11 @@
         },
         {
             "type": "modrinth",
-            "projectId": "fabric-api"
+            "projectId": "fabric-api",
+            "modIds": [
+                "fabric",
+                "fabric-api"
+            ]
         },
         {
             "type": "modrinth",
