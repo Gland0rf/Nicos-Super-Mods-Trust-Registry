@@ -2,14 +2,116 @@
     "schemaVersion": 1,
     "projects": [
         {
+            "type": "github",
             "repository": "Gland0rf/Nicos-Super-Mods",
             "assetRegex": "^NicosSuperMods-[0-9].*\\.jar$",
             "includePrereleases": true
         },
         {
+            "type": "github",
             "repository": "hannibal002/SkyHanni",
             "assetRegex": "^SkyHanni-[0-9]+\\.[0-9]+\\.[0-9]+-mc[0-9]+\\.[0-9]+\\.[0-9]+\\.jar$",
             "includePrereleases": true
+        },
+        {
+            "type": "github",
+            "repository": "FabricMC/fabric-language-kotlin",
+            "assetRegex": "^fabric-language-kotlin-[0-9]+\\.[0-9]+\\.[0-9]+\\+kotlin\\.[0-9]+\\.[0-9]+\\.[0-9]+\\.jar$",
+            "includePrereleases": true
+        },
+        {
+            "type": "github",
+            "repository": "isXander/YetAnotherConfigLib",
+            "assetRegex": "^YetAnotherConfigLib-[0-9]+\\.[0-9]+\\.[0-9]+\\+[0-9]+\\.[0-9]+(?:\\.[0-9]+)?-(?:fabric|neoforge)\\.jar$",
+            "includePrereleases": true
+        },
+        {
+            "type": "modrinth",
+            "projectId": "server-pack-unlocker"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "cloth-config"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "cloth-config"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "devonian"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "fabric-api"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "firmament"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "iq-addons"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "iris"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "litematica"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "malilib"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "modmenu"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "nofrills"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "odin"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "owo-lib"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "ping-offset-miner"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "rei"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "skyblock-overhaul"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "skyblock-profile-viewer"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "skyblocker"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "skyblocker-liap"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "sodium"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "placeholder-api"
         }
     ]
 }
