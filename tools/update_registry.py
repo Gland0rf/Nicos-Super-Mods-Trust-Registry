@@ -442,6 +442,26 @@ def update_modrinth_project(
         source.get("releaseTypes", ["release"])
     )
 
+    raw_mod_ids = source.get("modIds", [])
+
+    if not isinstance(raw_mod_ids, list):
+        raise ValueError(
+            f"{project_id}: modIds must be an array"
+        )
+
+    configured_mod_ids: set[str] = set()
+
+    for value in raw_mod_ids:
+        if (
+            not isinstance(value, str)
+            or not FABRIC_MOD_ID_PATTERN.fullmatch(value)
+        ):
+            raise ValueError(
+                f"{project_id}: invalid configured mod ID {value!r}"
+            )
+
+        configured_mod_ids.add(value.lower())
+
     if not isinstance(project_id, str) or not project_id.strip():
         raise ValueError(
             "Modrinth source requires projectId"
@@ -467,6 +487,25 @@ def update_modrinth_project(
     project = get_existing_project(registry, project_url)
 
     changed = False
+
+    if project is not None and configured_mod_ids:
+        existing_mod_ids = {
+            str(value).lower()
+            for value in project.get("modIds", [])
+        }
+
+        merged_mod_ids = sorted(
+            existing_mod_ids | configured_mod_ids
+        )
+
+        if merged_mod_ids != sorted(existing_mod_ids):
+            project["modIds"] = merged_mod_ids
+            changed = True
+
+            print(
+                f"Updated {project_id} mod IDs: "
+                f"{merged_mod_ids}"
+            )
 
     for version in versions:
         version_type = version.get("version_type")
@@ -543,10 +582,24 @@ def update_modrinth_project(
         metadata = read_fabric_metadata(jar_bytes)
 
         if project is None:
+            if (
+                configured_mod_ids
+                and metadata["id"] not in configured_mod_ids
+            ):
+                raise ValueError(
+                    f"{project_id}: {file_name} claims "
+                    f"unexpected mod ID {metadata['id']!r}; "
+                    f"expected {sorted(configured_mod_ids)!r}"
+                )
+
+            project_mod_ids = sorted(
+                configured_mod_ids or {metadata["id"]}
+            )
+
             project = {
                 "name": metadata["name"],
                 "projectUrl": project_url,
-                "modIds": [metadata["id"]],
+                "modIds": project_mod_ids,
                 "releases": [],
             }
 
@@ -555,9 +608,11 @@ def update_modrinth_project(
                 []
             ).append(project)
 
+            changed = True
+
             print(
                 f"Discovered {metadata['name']} "
-                f"with mod ID {metadata['id']}"
+                f"with mod IDs {project_mod_ids}"
             )
         else:
             registered_mod_ids = {
@@ -571,14 +626,6 @@ def update_modrinth_project(
                     f"unexpected mod ID {metadata['id']!r}; "
                     f"expected {sorted(registered_mod_ids)!r}"
                 )
-
-        project.setdefault("releases", []).append(
-            {
-                "version": metadata["version"],
-                "fileName": file_name,
-                "sha512": digest,
-            }
-        )
 
         known_hashes.add(digest)
         changed = True
