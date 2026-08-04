@@ -3,6 +3,12 @@
     "projects": [
         {
             "type": "github",
+            "repository": "isXander/YetAnotherConfigLib",
+            "assetRegex": "^YetAnotherConfigLib-[0-9]+\\.[0-9]+\\.[0-9]+\\+[0-9]+\\.[0-9]+(?:\\.[0-9]+)?-fabric\\.jar$",
+            "includePrereleases": true
+        },
+        {
+            "type": "github",
             "repository": "Gland0rf/Nicos-Super-Mods",
             "assetRegex": "^NicosSuperMods-[0-9].*\\.jar$",
             "includePrereleases": true
@@ -20,18 +26,16 @@
             "includePrereleases": true
         },
         {
-            "type": "github",
-            "repository": "isXander/YetAnotherConfigLib",
-            "assetRegex": "^YetAnotherConfigLib-[0-9]+\\.[0-9]+\\.[0-9]+\\+[0-9]+\\.[0-9]+(?:\\.[0-9]+)?-(?:fabric|neoforge)\\.jar$",
-            "includePrereleases": true
-        },
-        {
             "type": "modrinth",
             "projectId": "server-pack-unlocker"
         },
         {
             "type": "modrinth",
-            "projectId": "cloth-config"
+            "projectId": "cloth-config",
+            "modIds": [
+                "cloth-config",
+                "cloth-config2"
+            ]
         },
         {
             "type": "modrinth",
