@@ -639,53 +639,112 @@ def main() -> int:
 
     registry.setdefault("projects", [])
 
+    # Save the original state so partial changes are detected even
+    # when an updater throws before returning its changed value.
+    original_registry_state = json.dumps(
+        registry,
+        sort_keys=True,
+        ensure_ascii=False,
+    )
+
     hashes = all_known_hashes(registry)
-    changed = False
+    errors: list[str] = []
 
     for source in raw_sources:
         if not isinstance(source, dict):
-            raise ValueError(
-                "Each sources.json project must be an object"
+            errors.append(
+                "Skipped invalid source: source must be an object"
             )
+            continue
 
         source_type = source.get("type", "github")
 
         if source_type == "github":
-            changed |= update_github_project(
-                source,
-                registry,
-                hashes,
+            source_name = str(
+                source.get("repository", "<unknown GitHub source>")
             )
 
         elif source_type == "modrinth":
-            changed |= update_modrinth_project(
-                source,
-                registry,
-                hashes,
+            source_name = str(
+                source.get("projectId", "<unknown Modrinth source>")
             )
 
         else:
-            raise ValueError(
-                f"Unsupported source type: {source_type}"
+            source_name = str(source_type)
+
+        try:
+            if source_type == "github":
+                update_github_project(
+                    source,
+                    registry,
+                    hashes,
+                )
+
+            elif source_type == "modrinth":
+                update_modrinth_project(
+                    source,
+                    registry,
+                    hashes,
+                )
+
+            else:
+                raise ValueError(
+                    f"Unsupported source type: {source_type}"
+                )
+
+        except Exception as exception:
+            message = (
+                f"Skipped remaining releases for "
+                f"{source_type} source {source_name}: "
+                f"{exception}"
             )
 
-    if not changed:
-        print("No new releases found.")
-        return 0
+            errors.append(message)
 
-    registry["generatedAt"] = (
-        datetime.now(timezone.utc)
-        .replace(microsecond=0)
-        .isoformat()
-        .replace("+00:00", "Z")
+            # This prints one readable warning rather than a traceback.
+            print(
+                f"WARNING: {message}",
+                file=sys.stderr,
+            )
+
+            # Continue with the next configured source.
+            continue
+
+    current_registry_state = json.dumps(
+        registry,
+        sort_keys=True,
+        ensure_ascii=False,
     )
 
-    sort_registry(registry)
-    write_json_file(REGISTRY_PATH, registry)
+    registry_changed = (
+        current_registry_state != original_registry_state
+    )
 
-    print("registry.json was updated.")
-    print("It must now be reviewed and signed manually.")
+    if registry_changed:
+        registry["generatedAt"] = (
+            datetime.now(timezone.utc)
+            .replace(microsecond=0)
+            .isoformat()
+            .replace("+00:00", "Z")
+        )
 
+        sort_registry(registry)
+        write_json_file(REGISTRY_PATH, registry)
+
+        print("registry.json was updated.")
+        print("It must now be reviewed and signed manually.")
+    else:
+        print("No new releases found.")
+
+    if errors:
+        print(
+            f"Completed with {len(errors)} skipped source(s)."
+        )
+
+        for error in errors:
+            print(f"  - {error}")
+
+    # Return success so GitHub Actions can still create the update PR.
     return 0
 
 
