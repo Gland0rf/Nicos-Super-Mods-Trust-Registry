@@ -8451,50 +8451,6 @@
     },
     {
       "name": "Skyblocker",
-      "projectUrl": "https://modrinth.com/mod/skyblocker",
-      "modIds": [
-        "skyblocker"
-      ],
-      "releases": [
-        {
-          "version": "1.0.0",
-          "fileName": "skyblocker-1.0.0.jar",
-          "sha512": "9418de963e00b846f8d0adb4b1bf8d8cf267ebd36b27fc763bbeb40bd0605c121794cd2c79bffe7389ac5d90bd1a1185527cd9a17bdf57d8ec91656c94f738fd"
-        },
-        {
-          "version": "1.0.1",
-          "fileName": "skyblocker-1.0.1.jar",
-          "sha512": "6739503b9defeeb6879d8213f6919353b8aa4760365afad1e0a29586de527bb1d9a86e9efdee2d3b773e1ba3858c6a07bc682ff301bc7b983ea4d327e16d903b"
-        },
-        {
-          "version": "1.0.2",
-          "fileName": "skyblocker-1.0.2.jar",
-          "sha512": "815ce43438c58f20ccd69491e33f6946ba4a300ccf7efa7ee5dbc9cdf70dd80cfdcca58195f7e6ca36e50bf5fff2f6c5eee0e8f885ef4f6a82a73ef32686a56d"
-        },
-        {
-          "version": "1.0.3",
-          "fileName": "skyblocker-1.0.3.jar",
-          "sha512": "9d0dc4154fcc1cfdc17a7a668278b26a3189f11b0e2fff196fab1200ed39a29f4656cc5db1576b78b28750723092a8c27ae5056f7d0b92a44e07a3c054a68924"
-        },
-        {
-          "version": "1.0.4",
-          "fileName": "skyblocker-1.0.4.jar",
-          "sha512": "d34da7123da9d9bb47f522d72da658efe5ee4acf2ec3a2090a21abb74ecb72f9761043d339ed0eaa08384f35baa41f75684e319c7d51d6e9a6c1d75f7ac99512"
-        },
-        {
-          "version": "1.0.5",
-          "fileName": "skyblocker-1.0.5.jar",
-          "sha512": "8fa642c2e727876c887c71e5d695b686f50fc0fe1c08ee99503998d8fbbf2f8b7580f54892cf354f98b00edd9f0459e5d1d3542d4270bf1412150e9f91d296da"
-        },
-        {
-          "version": "1.0.6",
-          "fileName": "skyblocker-1.0.6.jar",
-          "sha512": "7e8a96e72099bdead198e2073cba33bb2a45e98ad01d103239706303eb85c86948d8c685fc7594cd59cc0958e8d842e2d3f99e1a6d036d692debb9b4fcca90d0"
-        }
-      ]
-    },
-    {
-      "name": "Skyblocker",
       "projectUrl": "https://modrinth.com/mod/skyblocker-liap",
       "modIds": [
         "skyblocker"
