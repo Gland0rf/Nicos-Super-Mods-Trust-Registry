@@ -111,10 +111,6 @@
         },
         {
             "type": "modrinth",
-            "projectId": "skyblocker"
-        },
-        {
-            "type": "modrinth",
             "projectId": "skyblocker-liap"
         },
         {
