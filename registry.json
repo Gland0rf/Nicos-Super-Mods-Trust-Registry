@@ -8483,14 +8483,6 @@
     },
     {
       "name": "Skyblocker",
-      "projectUrl": "https://modrinth.com/mod/skyblocker",
-      "modIds": [
-        "skyblocker"
-      ],
-      "releases": []
-    },
-    {
-      "name": "Skyblocker",
       "projectUrl": "https://modrinth.com/mod/skyblocker-liap",
       "modIds": [
         "skyblocker"
