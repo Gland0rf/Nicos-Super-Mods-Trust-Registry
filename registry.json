@@ -1,7 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-04T02:02:49Z",
+  "generatedAt": "2026-08-05T01:12:55Z",
   "projects": [
+    {
+      "name": "Architectury",
+      "projectUrl": "https://modrinth.com/mod/architectury-api",
+      "modIds": [
+        "architectury"
+      ],
+      "releases": []
+    },
     {
       "name": "Cloth Config v26.2",
       "projectUrl": "https://modrinth.com/mod/cloth-config",
@@ -2151,6 +2159,14 @@
       ]
     },
     {
+      "name": "FerriteCore",
+      "projectUrl": "https://modrinth.com/mod/ferrite-core",
+      "modIds": [
+        "ferritecore"
+      ],
+      "releases": []
+    },
+    {
       "name": "Firmament",
       "projectUrl": "https://modrinth.com/mod/firmament",
       "modIds": [
@@ -2408,6 +2424,14 @@
           "sha512": "2d9e7b64e70753f5c93b3ba493683364305bbf105ef1510326adf684923f2d44281a9a0c07a2c6440e804858d7ad426fb58f5db3079d6beceb9504a66a4d27b1"
         }
       ]
+    },
+    {
+      "name": "Hypixel Mod API",
+      "projectUrl": "https://modrinth.com/mod/hypixel-mod-api",
+      "modIds": [
+        "hypixel-mod-api"
+      ],
+      "releases": []
     },
     {
       "name": "IQ",
@@ -6417,6 +6441,14 @@
           "sha512": "07b6fc802559d54ec6577f6e2788926ef391d755206c2bfb0528280977885cae4bc0c517d8a53eb6f34092015ebe6c41210627d255aa6504662daefa8fb76397"
         }
       ]
+    },
+    {
+      "name": "REI Search Bar Calculations",
+      "projectUrl": "https://modrinth.com/mod/rei-search-bar-calculations",
+      "modIds": [
+        "rei_search_bar_calculations"
+      ],
+      "releases": []
     },
     {
       "name": "Roughly Enough Items",
@@ -10474,6 +10506,11 @@
           "version": "7.41.0",
           "fileName": "SkyHanni-7.41.0-mc1.21.11.jar",
           "sha512": "010dc4c4678bc17029ea92f68a142c79c93a151f05fe2b7abf2b2fb035a73694fed7cd6990830f40a5c04f579a43630400cf2e3abd048d27f7503002dd476c31"
+        },
+        {
+          "version": "7.42.0",
+          "fileName": "SkyHanni-7.42.0-mc1.21.11.jar",
+          "sha512": "52f43948aa0b224bd6ec0c9e141be6264566bff610f57d0071dd609e97f55e4509e84de555a857388dc94f0c2a9b2d47ef4bad8faa3bc8badb7d530b48d49377"
         },
         {
           "version": "7.5.0",
