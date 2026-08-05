@@ -1,7 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-04T20:01:27Z",
+  "generatedAt": "2026-08-05T01:12:55Z",
   "projects": [
+    {
+      "name": "Architectury",
+      "projectUrl": "https://modrinth.com/mod/architectury-api",
+      "modIds": [
+        "architectury"
+      ],
+      "releases": []
+    },
     {
       "name": "Cloth Config v26.2",
       "projectUrl": "https://modrinth.com/mod/cloth-config",
@@ -2151,6 +2159,14 @@
       ]
     },
     {
+      "name": "FerriteCore",
+      "projectUrl": "https://modrinth.com/mod/ferrite-core",
+      "modIds": [
+        "ferritecore"
+      ],
+      "releases": []
+    },
+    {
       "name": "Firmament",
       "projectUrl": "https://modrinth.com/mod/firmament",
       "modIds": [
@@ -2408,6 +2424,14 @@
           "sha512": "2d9e7b64e70753f5c93b3ba493683364305bbf105ef1510326adf684923f2d44281a9a0c07a2c6440e804858d7ad426fb58f5db3079d6beceb9504a66a4d27b1"
         }
       ]
+    },
+    {
+      "name": "Hypixel Mod API",
+      "projectUrl": "https://modrinth.com/mod/hypixel-mod-api",
+      "modIds": [
+        "hypixel-mod-api"
+      ],
+      "releases": []
     },
     {
       "name": "IQ",
@@ -6419,6 +6443,14 @@
       ]
     },
     {
+      "name": "REI Search Bar Calculations",
+      "projectUrl": "https://modrinth.com/mod/rei-search-bar-calculations",
+      "modIds": [
+        "rei_search_bar_calculations"
+      ],
+      "releases": []
+    },
+    {
       "name": "Roughly Enough Items",
       "projectUrl": "https://modrinth.com/mod/rei",
       "modIds": [
@@ -8448,6 +8480,14 @@
           "sha512": "9963b82f535f2da7885dcbbc396ab006809605645e013f303282738ed6f5ceac1d461d1a3a7e96e4fa3d78e5f11d0c4562e140cb96b996637b81790548ff1035"
         }
       ]
+    },
+    {
+      "name": "Skyblocker",
+      "projectUrl": "https://modrinth.com/mod/skyblocker",
+      "modIds": [
+        "skyblocker"
+      ],
+      "releases": []
     },
     {
       "name": "Skyblocker",
