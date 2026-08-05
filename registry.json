@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T01:34:54Z",
+  "generatedAt": "2026-08-05T19:58:02Z",
   "projects": [
     {
       "name": "Architectury",
@@ -3887,6 +3887,11 @@
           "version": "0.156.2+26.3",
           "fileName": "fabric-api-0.156.2+26.3.jar",
           "sha512": "661232ddeb7a742ffe9bb8dfe07bbc4a0671d580a64077e66e54252e663a6965bd510d646b2dcee9a0a0b5c8b080ee159fe521ad4dfc1637ec704d5bed1bacf9"
+        },
+        {
+          "version": "0.156.3+26.3",
+          "fileName": "fabric-api-0.156.3+26.3.jar",
+          "sha512": "5733627732098142ffd4a99b4a88f759fec23f5e51253926563d53d951a9f53dacaf703f99ee84281382ad39dff546ee3381a897cbe2bd20686fa93f93bf7910"
         },
         {
           "version": "0.16.0+build.321-1.15",
