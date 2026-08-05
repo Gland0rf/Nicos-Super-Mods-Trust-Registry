@@ -467,9 +467,22 @@ def update_modrinth_project(
     project_id = source.get("projectId")
     loaders = source.get("loaders", ["fabric"])
     game_versions = source.get("gameVersions", [])
-    release_types = set(
-        source.get("releaseTypes", ["release"])
-    )
+    raw_release_types = source.get("releaseTypes")
+
+    if raw_release_types is None:
+        # Missing releaseTypes means accept every type:
+        # release, beta, and alpha.
+        release_types: set[str] | None = None
+    else:
+        if not isinstance(raw_release_types, list):
+            raise ValueError(
+                f"{project_id}: releaseTypes must be an array"
+            )
+
+        release_types = {
+            str(value)
+            for value in raw_release_types
+        }
 
     raw_mod_ids = source.get("modIds", [])
 
@@ -539,7 +552,10 @@ def update_modrinth_project(
     for version in versions:
         version_type = version.get("version_type")
 
-        if version_type not in release_types:
+        if (
+            release_types is not None
+            and version_type not in release_types
+        ):
             continue
 
         files = version.get("files")

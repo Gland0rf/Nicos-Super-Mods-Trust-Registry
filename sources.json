@@ -99,6 +99,10 @@
         },
         {
             "type": "modrinth",
+            "projectId": "rei-search-bar-calculations"
+        },
+        {
+            "type": "modrinth",
             "projectId": "skyblock-overhaul"
         },
         {
@@ -120,6 +124,18 @@
         {
             "type": "modrinth",
             "projectId": "placeholder-api"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "architectury-api"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "ferrite-core"
+        },
+        {
+            "type": "modrinth",
+            "projectId": "hypixel-mod-api"
         }
     ]
 }
