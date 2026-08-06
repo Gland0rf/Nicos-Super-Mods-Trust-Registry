@@ -12,6 +12,7 @@ import urllib.error
 import urllib.request
 import zipfile
 import copy
+import urllib.parse
 
 from datetime import datetime, timezone
 from pathlib import Path
@@ -671,6 +672,14 @@ def update_modrinth_project(
                     f"unexpected mod ID {metadata['id']!r}; "
                     f"expected {sorted(registered_mod_ids)!r}"
                 )
+
+        project.setdefault("releases", []).append(
+            {
+                "version": metadata["version"],
+                "fileName": file_name,
+                "sha512": digest,
+            }
+        )
 
         known_hashes.add(digest)
         changed = True
