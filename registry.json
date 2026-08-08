@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T01:34:54Z",
+  "generatedAt": "2026-08-08T02:23:56Z",
   "projects": [
     {
       "name": "Architectury",
@@ -3887,6 +3887,11 @@
           "version": "0.156.2+26.3",
           "fileName": "fabric-api-0.156.2+26.3.jar",
           "sha512": "661232ddeb7a742ffe9bb8dfe07bbc4a0671d580a64077e66e54252e663a6965bd510d646b2dcee9a0a0b5c8b080ee159fe521ad4dfc1637ec704d5bed1bacf9"
+        },
+        {
+          "version": "0.156.3+26.3",
+          "fileName": "fabric-api-0.156.3+26.3.jar",
+          "sha512": "5733627732098142ffd4a99b4a88f759fec23f5e51253926563d53d951a9f53dacaf703f99ee84281382ad39dff546ee3381a897cbe2bd20686fa93f93bf7910"
         },
         {
           "version": "0.16.0+build.321-1.15",
@@ -13131,6 +13136,11 @@
           "sha512": "939299e72209f8e5a4937fbb2290ed63f7bc5caf2677e6d9fbea8be8049d5ad39c1173f0b61abae7cfddcf7cceb9802f7e2d60b9e8a0fdda399fcbad8f0ac5b4"
         },
         {
+          "version": "0.13.1+26.1",
+          "fileName": "owo-lib-0.13.1+26.1.jar",
+          "sha512": "2e95f7b87b04477c114f6a0dd8cad49b1415bd1715abd535294613be88e8b3796f5fd0b614b58e2188e2095d6f0e3179d0cc4a0679380026622fb7fc05417b74"
+        },
+        {
           "version": "0.2.0",
           "fileName": "owo-0.2.0.jar",
           "sha512": "5c2966f11e9aa2ca3cf9e672736e8db8be0a106da5a25bee6a890addc3e8c648a46a250de52661ef17c84c19b72c0c00cefce487924d9bf48cea1caaa381503b"
@@ -15792,6 +15802,16 @@
           "version": "1.8.8",
           "fileName": "SkyBlockPv-1.8.8-26.2.jar",
           "sha512": "9963b82f535f2da7885dcbbc396ab006809605645e013f303282738ed6f5ceac1d461d1a3a7e96e4fa3d78e5f11d0c4562e140cb96b996637b81790548ff1035"
+        },
+        {
+          "version": "1.8.9",
+          "fileName": "SkyBlockPv-1.8.9-26.1.jar",
+          "sha512": "2f5cd56a86537d63dafec0bee1f59910a23881f2778f13f51773ac2ca5d7ec4b9d7b61effb5f67a0ceaa07c9429e24c3ab101f7ed4ac53dd46a2178c1a3f58c2"
+        },
+        {
+          "version": "1.8.9",
+          "fileName": "SkyBlockPv-1.8.9-26.2.jar",
+          "sha512": "f5fb2f59e233d221ec439d181f4c5378dc04bb3731d8ab6cb2c02542f677cf31a8cf0dc7bbaa2d1489558b4d6591cba441205cb62b5df263c9e1349871f04fa6"
         }
       ]
     },
@@ -18561,6 +18581,11 @@
           "sha512": "deb7f132920926c6052bb2ecad44861d99501b299de685260408e9c83593ceac6a2787c4b0e7550ff101dd8f2aeff836509b3007e236ae7fb61905c2ea3fbe36"
         },
         {
+          "version": "0.8.13-beta.2+mc1.21.1",
+          "fileName": "sodium-fabric-0.8.13-beta.2+mc1.21.1.jar",
+          "sha512": "1bbde2b1c11cbaba4742c321dbeff686c9a792984868f3e32b1e744e90f5a3e0b2a60eaaaf288c68fb454196806b755fe7df468e354777b8f58436058af51256"
+        },
+        {
           "version": "0.8.13-beta.2+mc1.21.11",
           "fileName": "sodium-fabric-0.8.13-beta.2+mc1.21.11.jar",
           "sha512": "5f7402367cc5df216c86e3c76c787d2684a32893419197476817dc737b271ba6bcc21c281e739374b436c8c86f6cf113a866ae69270cffe3342b37937fe932e9"
@@ -18574,6 +18599,11 @@
           "version": "0.8.14-beta.1+mc1.21.11",
           "fileName": "sodium-fabric-0.8.14-beta.1+mc1.21.11.jar",
           "sha512": "f5ffa32b4ea30de370bfe3251da5235b9705e223b06f65c61f728ca761d1f15df55233d96c495faa8568f721976225b6c488507cb18da64b7784be2d8e5f2417"
+        },
+        {
+          "version": "0.8.14-beta.2+mc1.21.11",
+          "fileName": "sodium-fabric-0.8.14-beta.2+mc1.21.11.jar",
+          "sha512": "44330d0a51aa640abda8d86c4b0d6df390e9f9f96f5c9d4e89230e98da4f03f28049eb9723d1d2d8632dc4c59968ec9eaacc3cfad41cea87062c8b9121a3c183"
         },
         {
           "version": "0.8.2+mc1.21.11",
@@ -18699,6 +18729,16 @@
           "version": "0.9.2-alpha.3+mc26.2",
           "fileName": "sodium-fabric-0.9.2-alpha.3+mc26.2.jar",
           "sha512": "f393afc12818434da20d3506462a41632ebc39f0849902a3a444896e8881dcd9f96fd62009265b992db2edf184ed0c9433035d3f187cf1cc03a49369cba2e41a"
+        },
+        {
+          "version": "0.9.2-alpha.4+mc26.1.2",
+          "fileName": "sodium-fabric-0.9.2-alpha.4+mc26.1.2.jar",
+          "sha512": "f0b3a7adf52ccbc71a04a0a373966e338f5c45996d7db992cfdf51dee6e1917fab5922972f58f85baa0faea06e6b9fa89c221119f996ab8b723c91c83396f5b5"
+        },
+        {
+          "version": "0.9.2-alpha.4+mc26.2",
+          "fileName": "sodium-fabric-0.9.2-alpha.4+mc26.2.jar",
+          "sha512": "2c7a548616e6a9ecc9a0aaeb3f192bf75be424fa965e7ac248e958535330ccee8059026cc3bab9fc481e09055446d684bc07c57bc82f91fb966a52d7142be472"
         }
       ]
     },
