@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-08T19:01:42Z",
+  "generatedAt": "2026-08-20T19:03:32Z",
   "projects": [
     {
       "name": "Architectury",
@@ -1582,6 +1582,16 @@
           "version": "1.28.9",
           "fileName": "devonian-1.28.9.jar",
           "sha512": "bc8a626acd24779063bc582acfe83f3b9749f13babb56f23ed25b592e1092d255b6b0fb7438c8751cd947b24b3f2d4377577ed7140874ffcf9668a7c8c4ee4b4"
+        },
+        {
+          "version": "1.29.9",
+          "fileName": "devonian-1.29.9.jar",
+          "sha512": "73384c4fa3a939d6549ec994d223ddfc8ed9ce2f7e057adb44fb77b6a5dc451c6f8bca541c6b2f504c21a0abef1661044591d0fa07b79862f014eb0743deef5e"
+        },
+        {
+          "version": "1.29.9",
+          "fileName": "devonian-1.29.9.jar",
+          "sha512": "b3f68bc645ddba82963ff857188032fdba9d181f513803e97b11f0f8cc4803632d579c7089234d7fd80e11e9ebd01bdb1eae6062fe3ba065aff3100143528db4"
         },
         {
           "version": "1.5.1",
@@ -3892,6 +3902,36 @@
           "version": "0.156.3+26.3",
           "fileName": "fabric-api-0.156.3+26.3.jar",
           "sha512": "5733627732098142ffd4a99b4a88f759fec23f5e51253926563d53d951a9f53dacaf703f99ee84281382ad39dff546ee3381a897cbe2bd20686fa93f93bf7910"
+        },
+        {
+          "version": "0.157.0+26.2",
+          "fileName": "fabric-api-0.157.0+26.2.jar",
+          "sha512": "4ebec489f2b2ce621ebebb2d1b7e9714b6fd288ebdb4e287d767cde57612cf1d3d1d4f51daf7e7ec9541fa146df6bde4978ab98a29637ced6d9bc2f3c4217650"
+        },
+        {
+          "version": "0.157.0+26.3",
+          "fileName": "fabric-api-0.157.0+26.3.jar",
+          "sha512": "575430452b3ba500f29ca7a635eaab08cfb397fb1d1ea7cbb72ed18a826b5f38c4cc1edd38a02b4c61448d69751a3b91aaa1cbd675e5bb7a029fbecf668c4583"
+        },
+        {
+          "version": "0.157.1+26.3",
+          "fileName": "fabric-api-0.157.1+26.3.jar",
+          "sha512": "4850f66d790accaaaa61b61f3aef2d0f069cabf22bb7369814503168a8924481b696e024ebfd06f98eb2a382a4d7355e1020e8379bd9b615817ba85ddeaee364"
+        },
+        {
+          "version": "0.157.2+26.3",
+          "fileName": "fabric-api-0.157.2+26.3.jar",
+          "sha512": "c3203fb412e328ac3891519068b85e80b165a54bf1155d135f4375afa8a533273d383d518b30ead9f8360a7bcb661d43f3e8e4dd7786e962f68a222de5cb2c2a"
+        },
+        {
+          "version": "0.158.0+26.2",
+          "fileName": "fabric-api-0.158.0+26.2.jar",
+          "sha512": "4c2c1ebe74ffd54875a01ff371b53ba3d8674ac98d561f7dae02a96d3d37fbdbc5f5abc6e820f73b6154d6f873ddd05a442b0998ed2d456863dc0ad972e040a6"
+        },
+        {
+          "version": "0.158.0+26.3",
+          "fileName": "fabric-api-0.158.0+26.3.jar",
+          "sha512": "84bf9b33c6003fc299d4e5c9853b5e81cb6da3c5dc47d6c36d9b451f1c1c5123bbff4e8e15ee2df71e7e2cf0d592a99e5a0d2ad5eec7941daf464e8aa66a34f8"
         },
         {
           "version": "0.16.0+build.321-1.15",
@@ -10607,9 +10647,19 @@
           "sha512": "45c1541485da5b2068772cab16129a99c233fdfe96d110629ec47c579c85cf6d71bb506d2e6254ac65f306d64d0e83eac2591148d7fcfa77a2c05bcb97da8ad2"
         },
         {
+          "version": "0.26.13",
+          "fileName": "litematica-fabric-1.21.11-0.26.13.jar",
+          "sha512": "2156f99f609177aff956ffab4a4f7c25cb19470d29ad5016c24d3077c44ffc022d1612c1478cc6db9018edd6b9ff2fa7da62d53b892d8684b8765d0b5a656012"
+        },
+        {
           "version": "0.27.10",
           "fileName": "litematica-fabric-26.1.2-0.27.10.jar",
           "sha512": "bb5490649664b97fed7cbfb4a79cedea3f946f6757862df949494f786aa64273497be4ef91ec7aaf6503a356bb330ee036d066c6ab71b971996d18767e3ae0c7"
+        },
+        {
+          "version": "0.27.11",
+          "fileName": "litematica-fabric-26.1.2-0.27.11.jar",
+          "sha512": "d53eb3866bd477ddeed44728cd4a879468e9b4a221e82844b3717ae86484e16274ca0827af59925cd498cf37f00ea223e2c6750e0b2ceda8f565e1780b8c7e4e"
         },
         {
           "version": "0.27.9",
@@ -10625,6 +10675,11 @@
           "version": "0.28.4",
           "fileName": "litematica-fabric-26.2-0.28.4.jar",
           "sha512": "4e94924b1b2de5c3e1d1a99f0e45946bec97f9e712f359afcd3c3fb09cedc78d3c11c148e2daba57aeb46f03a7cefb370d79968da1f905181091ef4996011cd8"
+        },
+        {
+          "version": "0.28.5",
+          "fileName": "litematica-fabric-26.2-0.28.5.jar",
+          "sha512": "af988f57e934047848ad29607492479394cef69e7516c0492cc37907cedbfec1b3fb8cbf4e089872d20ce1039d2d592ceb459113ee7135401f91038ceb101097"
         },
         {
           "version": "0.9.0",
@@ -11531,6 +11586,11 @@
           "sha512": "a4cb460bfaf7eba4c0ad860216bed4cb96067ff53c064a0815fad35025e016608c695f60eec8b02544998394b7ad838a315c803bce5ddccadd7b7ee682f7416e"
         },
         {
+          "version": "0.27.17",
+          "fileName": "malilib-fabric-1.21.11-0.27.17.jar",
+          "sha512": "1e375d9f6a12026816b4ed2f6b9cfc9caebe1f599c8597cd1ea561acf850b1817b250b0b88896ddfbb7dd5608552add99bce59fe0b52638bf158740e0ab53528"
+        },
+        {
           "version": "0.27.2",
           "fileName": "malilib-fabric-1.21.11-0.27.2.jar",
           "sha512": "0da35f31396d4e15a9ec3eb94ac9348fef4949db55f2a487090eff32652af80aa468ee6b78efffb0d91b28a57418aec1365f191b8d8ef64626de5e56de151897"
@@ -11579,6 +11639,11 @@
           "version": "0.28.1",
           "fileName": "malilib-fabric-26.1-0.28.1.jar",
           "sha512": "4324335ed416312177bc95938e39f324a8327330c90d074833410c3fced557575e3b89100697fe02f6fdaf37ca57b99a65ca2d8749926df0ec855091c6bd4a3f"
+        },
+        {
+          "version": "0.28.10",
+          "fileName": "malilib-fabric-26.1.2-0.28.10.jar",
+          "sha512": "a28dcb2e0be26339db205c2fb436bb354525ce6a15b3bb80707854025fe4f18b238b958e1dbafb897a405a3058a999030f2101cb3df580600a66022b3dc023e5"
         },
         {
           "version": "0.28.2",
@@ -11639,6 +11704,11 @@
           "version": "0.29.3",
           "fileName": "malilib-fabric-26.2-0.29.3.jar",
           "sha512": "f4ccff4b13791f8e36771c10dafc0cb982896673b8c5e3e1a2b34da3829277c7a4b7cca03c01f2b39b52caecd39b3c2d70c2ef7ad87a28ac975dd4136396640b"
+        },
+        {
+          "version": "0.29.4",
+          "fileName": "malilib-fabric-26.2-0.29.4.jar",
+          "sha512": "d45d08efe53cac7d7d9cae4d15b09601266bdb4f47a8d68289d6bc73d1b1235a1f21d23ec0f456c83a903d53c089514435b1cbfbfcb93eeaf6d6dda36c041c32"
         },
         {
           "version": "0.9.5",
@@ -12885,6 +12955,11 @@
           "version": "0.3.0",
           "fileName": "Odin-0.3.0.jar",
           "sha512": "0483d366c23cd6ac9ad57d022ea8f6bedcf8ec75981c881cf78a1f08f4d707e8363caa8ff5441fdd58b8df7cefe22ff6af5b43a43debe6c67759886fc66e460e"
+        },
+        {
+          "version": "0.3.1",
+          "fileName": "Odin-0.3.1.jar",
+          "sha512": "95a7b2930e83b9231e8df78c8dcd1c1baca5bf14a4863c9ea24aa6d39d6527e8d9acc0b5537941ccd888ec1f4c8e15eeb29ac9bd2658ce974fcd23156bab3259"
         }
       ]
     },
@@ -13139,6 +13214,11 @@
           "version": "0.13.1+26.1",
           "fileName": "owo-lib-0.13.1+26.1.jar",
           "sha512": "2e95f7b87b04477c114f6a0dd8cad49b1415bd1715abd535294613be88e8b3796f5fd0b614b58e2188e2095d6f0e3179d0cc4a0679380026622fb7fc05417b74"
+        },
+        {
+          "version": "0.13.1+26.2",
+          "fileName": "owo-lib-0.13.1+26.2.jar",
+          "sha512": "d7393129fa9d8c42c244b96fa66bdbbbcd23967fc6d393a689fbf1b0ee11f6da297c2ddcde3c3e476d2d07b73b600ad3d68c739786c729a4dc13a03e72ac0f82"
         },
         {
           "version": "0.2.0",
@@ -16501,6 +16581,16 @@
           "version": "6.9.0+26.2",
           "fileName": "skyblocker-6.9.0+26.2.jar",
           "sha512": "a02af8bf3eb0d5d089bb45a800af34ff8731af06cba5025248700827c1985a9d910b3e3a79c1b52112ef59212b0bff609893373a1abcba906d211ff2a69aa666"
+        },
+        {
+          "version": "6.9.1+26.1.2",
+          "fileName": "skyblocker-6.9.1+26.1.2.jar",
+          "sha512": "d568f9a19dc852aa9a54e54fcbcbf4b3a44b26ce8abe44016f6697eb6ae98687ec0354dc7feda43b2deb44e59fcc1e450fbbfab8c35b174b292c55016b9b8026"
+        },
+        {
+          "version": "6.9.1+26.2",
+          "fileName": "skyblocker-6.9.1+26.2.jar",
+          "sha512": "54779a559531ef80a7aaffbb1b47568ee8daf4c64a63bab3021a6a4901176ca2a86fe34b8f7802905d3c18a5c51b31c4883b34e105ec17e02e69748af8f3602c"
         }
       ]
     },
@@ -18918,6 +19008,525 @@
           "version": "3.6.2+1.21.4-fabric",
           "fileName": "YetAnotherConfigLib-3.6.2+1.21.4-fabric.jar",
           "sha512": "50f3996aa4382692bbe569ee26506dacd0f4775d86964b5a5c47451e9514d5bf755b5fc1b75e629fc6391fe33d98598977e15c8880ed0f5785c5511ac3360933"
+        }
+      ]
+    },
+    {
+      "name": "YetAnotherConfigLib",
+      "projectUrl": "https://modrinth.com/mod/yacl",
+      "modIds": [
+        "yet_another_config_lib_v3"
+      ],
+      "releases": [
+        {
+          "version": "3.0.0+1.19.4",
+          "fileName": "yet-another-config-lib-fabric-3.0.0+1.19.4.jar",
+          "sha512": "74c5d6c0af0d39b5892fb478085b711202c59787cd5d4ee506efaa4b71c902f057149f590ac04a8780a66d5e9847b4294d63f0db5f5e9be13697393d242a9401"
+        },
+        {
+          "version": "3.0.0+1.20",
+          "fileName": "yet-another-config-lib-fabric-3.0.0+1.20.jar",
+          "sha512": "0c9b53c88def8fa936b41c5d0f2f74b6efe045ae668b9fb427a2b5469cdea375045c9deae2ba5e7b45532a3952427cd76e7b3ca7173a196371f185959ce34c29"
+        },
+        {
+          "version": "3.0.0-beta.2+1.19.4",
+          "fileName": "yet-another-config-lib-fabric-3.0.0-beta.2+1.19.4.jar",
+          "sha512": "ac61efc04a55a15012f26fc5938af56051a1942327c20620818142cb4ff519b6dd11b0a3ac14baa2da4382f4c447da513d22da6f086fb7abf6b1ab89d973335e"
+        },
+        {
+          "version": "3.0.0-beta.7+1.20",
+          "fileName": "yet-another-config-lib-fabric-3.0.0-beta.7+1.20.jar",
+          "sha512": "42feda93aefb9ff38333ddfc4b294b3b766748cc26de2aea29bfb550e4f96a70aee309f17561d0a7d6e93b803b1c40666b280536bf053636f4a9184e7dd85e88"
+        },
+        {
+          "version": "3.0.1+1.19.4",
+          "fileName": "yet-another-config-lib-fabric-3.0.1+1.19.4.jar",
+          "sha512": "55f37c8009da54b85b0906b7dabc284995df6389c72b447d83c56f04692aca66546799551612755f56a0c182fe77690409803bb00ea7f3d7af4a4eda60965d6f"
+        },
+        {
+          "version": "3.0.1+1.20",
+          "fileName": "yet-another-config-lib-fabric-3.0.1+1.20.jar",
+          "sha512": "0c1a99560ca945f09bbc1ff056733355941248e48b085766ea81a1fa0dd9caea2f4f96b3c24e2e7bd9ffda97227b3057b0a73ba7d979f1fa7d6cde7c49a63708"
+        },
+        {
+          "version": "3.0.2+1.19.4",
+          "fileName": "yet-another-config-lib-fabric-3.0.2+1.19.4.jar",
+          "sha512": "2a048cd8db5d77d58761613e83819e6bfbe64381296fd367edeaa45469c64d58db7f4fc1d81c8457178253844f8301e2cc7f902655dccf15667f4f92d56960e6"
+        },
+        {
+          "version": "3.0.2+1.20",
+          "fileName": "yet-another-config-lib-fabric-3.0.2+1.20.jar",
+          "sha512": "92dd17673b68fd4e9049759aece626598333d7c9a0ff3cfad2320d0f06627cc82e8e3fef24ced70e150d1b14ea36ee936a7fc4aba7ca429df56a6cebdd5f34d4"
+        },
+        {
+          "version": "3.0.3+1.19.4",
+          "fileName": "yet-another-config-lib-fabric-3.0.3+1.19.4.jar",
+          "sha512": "89b6975ebcb46d1d7cfc468266f5e0dc9ee05f28a2b0c0cb356fc31d2742e51a323786dfdece3f1ebcb7700f65d3012a516f4104d71175cf450d8885340d8f17"
+        },
+        {
+          "version": "3.0.3+1.20",
+          "fileName": "yet-another-config-lib-fabric-3.0.3+1.20.jar",
+          "sha512": "3111c564e4854d5e96d0f1901e9a719cc9a03ab7b9ed068378ed50d31a64a010832309373474dae9430c9cdeb33af79d1cb2d0b34fb16b5320615961a9cba450"
+        },
+        {
+          "version": "3.0.4+1.19.4",
+          "fileName": "yet-another-config-lib-fabric-3.0.4+1.19.4.jar",
+          "sha512": "83ff90b9fcefa7419249dbb0aaafcea06b18b29d9db15b4e57dc9f8e3839c07f827aad5fbf5157e19fa41596e21899ee8f50357c194e7956d09519ce4b65dac8"
+        },
+        {
+          "version": "3.1.0+1.19.4",
+          "fileName": "yet-another-config-lib-fabric-3.1.0+1.19.4.jar",
+          "sha512": "90b67df8609c9758747905ac2e53053e981585dbfc60dbf7ff7b66da3c98ae882c01eb9c1b671fc28228e2bee1812ea59461aaa5d0cdd3bf729c974fc4e6be93"
+        },
+        {
+          "version": "3.1.0+1.20",
+          "fileName": "yet-another-config-lib-fabric-3.1.0+1.20.jar",
+          "sha512": "252d3063e99476c4a0b4de70bf030b8e590f1ab37f7681360e53268c6d40d6fb87aef5ad778943296246a1cce0dcd606a267c3f1779807ac7a8783f010679b45"
+        },
+        {
+          "version": "3.1.1+1.19.4",
+          "fileName": "yet-another-config-lib-fabric-3.1.1+1.19.4.jar",
+          "sha512": "f69abf85f63f7aeb52a62102c98c106d166e5ea18f9b4623e7e7dd648d2cfc7b503e8e8d3b8bfbf005fc92d4616f67c359711f360ad9e10ca8f6026a3918f821"
+        },
+        {
+          "version": "3.1.1+1.20",
+          "fileName": "yet-another-config-lib-fabric-3.1.1+1.20.jar",
+          "sha512": "38f0d82eb2ad93678303fd01b7b2206db8487f4779cca4c77df4e196906291e4468242a064054b189df78e2b6fdefc60959bb1fbfdb3cf2ea8455f51f61ee2ff"
+        },
+        {
+          "version": "3.2.0+1.20",
+          "fileName": "yet-another-config-lib-fabric-3.2.0+1.20.jar",
+          "sha512": "30ec27c31791c2fb12026ecef1abbc47b57ac1c5faa2580c9fa93de9cae812ccc63f7eeade02516e9b76bebe965829d82579b55f0b8b2f9d608391ca4e0f8d9c"
+        },
+        {
+          "version": "3.2.0+1.20.2",
+          "fileName": "yet-another-config-lib-fabric-3.2.0+1.20.2.jar",
+          "sha512": "b765f37bdaebf1f11090a81070f82a3fdae365630dbaceea5fdd4dd8b12b3e700c83d8ed74be9406bc27760925a0314a4e0b0cc9e290a40f9f743e902947b65a"
+        },
+        {
+          "version": "3.2.1+1.20",
+          "fileName": "yet-another-config-lib-fabric-3.2.1+1.20.jar",
+          "sha512": "2f1c3b68e6ea62e33a2fa00b2b77041000f354c9be71f04caa2ef5217676bfe86c7d891605c1b9410e9e49b40ab98255d3422334f52b6e97e4e9fc0c5ebcc293"
+        },
+        {
+          "version": "3.2.1+1.20.2",
+          "fileName": "yet-another-config-lib-fabric-3.2.1+1.20.2.jar",
+          "sha512": "83ee4e302d0783ed89d9f82e85d8c89da67458818c0ef43d386ab984e443018bdb51c1f1c73c7c34bddfabbfd8414364747c9a56556be58396375d83587d4920"
+        },
+        {
+          "version": "3.2.2+1.20",
+          "fileName": "yet-another-config-lib-fabric-3.2.2+1.20.jar",
+          "sha512": "dcfedeb671d5afb1b1816f7c42708544a211aa8bc71e0ec33e2e1157fc12f31a13181255ee2551257aba599c102951f74113cb931e440c87386b435753ca021d"
+        },
+        {
+          "version": "3.3.0+1.20.4",
+          "fileName": "yet-another-config-lib-fabric-3.3.0+1.20.4.jar",
+          "sha512": "314fbbd5f0fc75b09630cc9361b6d137aa5c87b67d77f941dfbb43d6ab33be1bb8e5258985fcbebe236bbc0e722e597e97e2f5241fd4ac80180b7f1950500aeb"
+        },
+        {
+          "version": "3.3.0-beta.1+1.20.2",
+          "fileName": "yet-another-config-lib-fabric-3.3.0-beta.1+1.20.2.jar",
+          "sha512": "5830fcd3a750c722665c8a07b933682b31b06563e54530d8621fbbbe29d620f6b681c2af7359307b9741e755ea854f37b294d73c727e5e001e908e6d834db4b5"
+        },
+        {
+          "version": "3.3.0-beta.1+1.20.3",
+          "fileName": "yet-another-config-lib-fabric-3.3.0-beta.1+1.20.3.jar",
+          "sha512": "61be6941034540e26aa0976c0fee756af83066761f0bbcab07a0485ec44b850905cb0f56b83dfd7fc08181509d3419e5c0cde08b9871f605302381ce0d3d70bc"
+        },
+        {
+          "version": "3.3.1+1.20.4",
+          "fileName": "yet-another-config-lib-fabric-3.3.1+1.20.4.jar",
+          "sha512": "3bc6c44e609437c8309d1cd7434b7870b240a363cf46f662d330f46f6ece7e5134900c6ae2551ad07c7f182aa3c5454c1f349f99c2fadfd46be0f2c9d08ca7d4"
+        },
+        {
+          "version": "3.3.2+1.20.4",
+          "fileName": "yet-another-config-lib-fabric-3.3.2+1.20.4.jar",
+          "sha512": "597073b3835ce1d4c0f9e4ba835bd565871fa49a8feee41b90213480a76d251e2a57a71729f132e4b908ef50a5602cff90c330da229db605014e26e856cfcbc8"
+        },
+        {
+          "version": "3.4.0+1.20.1-fabric",
+          "fileName": "YetAnotherConfigLib-3.4.0+1.20.1-fabric.jar",
+          "sha512": "54515b9097ee34304f565c87e82ff4210bfe229aed8a3afb9e5fcbc422220811405f3f519af42e6ff6b1b3265fd61a49585485a368c9178a8c5c813baf8bb736"
+        },
+        {
+          "version": "3.4.0+1.20.4-fabric",
+          "fileName": "YetAnotherConfigLib-3.4.0+1.20.4-fabric.jar",
+          "sha512": "4ff4f70fa0377ade6528ea27d2f26aab77b9c57199ef349f7d53e5397cb6369ef4dcbce751d9996f1d99fb68de14da92a600eeb58b63a32451b308b5fd514cd8"
+        },
+        {
+          "version": "3.4.0+1.20.5-fabric",
+          "fileName": "YetAnotherConfigLib-3.4.0+1.20.5-fabric.jar",
+          "sha512": "3ccf6b7485b5eb18c06cf074fe7dd5c2d4bf96d5c54f0f2e2f57df74b7bbd7d82d69536f45eda19f444bc2159e874e3a01ec780d2489bf5c4cf000ed91e226de"
+        },
+        {
+          "version": "3.6.3+1.20.1-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.3+1.20.1-fabric.jar",
+          "sha512": "defa98c81b17122b759efc06726ee3ec28fcb16357788bfa6e766291cc8f85306f3830b55c33c74d0d7832a3cd85ad279b8064c293bc9525d1986dbde7283ca7"
+        },
+        {
+          "version": "3.6.3+1.20.4-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.3+1.20.4-fabric.jar",
+          "sha512": "09850576896e7806783bd909831fa6e01b3ef4d79f7cfe18432f67e9f6a680307c09fb77d193e424f5184ebf7b61c898ca025250404081bdcce26116cde0fabb"
+        },
+        {
+          "version": "3.6.3+1.20.6-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.3+1.20.6-fabric.jar",
+          "sha512": "af6e96353ab7fec2a116c26b1ea95a5d1e58f7c3809b63257b219818cce074be05b0f873beeed937119288bd7f166acc5f7177bd22f0b3467937aa4927fd769d"
+        },
+        {
+          "version": "3.6.3+1.21.1-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.3+1.21.1-fabric.jar",
+          "sha512": "11908061c318be4d82fda3a2155a0a5fc0e79577dceacdd1494c7778da77b7180eeb7a8d5d9883ff6352a4e902385f38d5e5c29a9bde040c48160aac83c67457"
+        },
+        {
+          "version": "3.6.3+1.21.3-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.3+1.21.3-fabric.jar",
+          "sha512": "463e32571008f1f3296d1553c783a938e04e69d55a793b76b60d6e848f60f90ad7dcb1770d699d53a093f72c314acd9aeedcfa117f613a0fff42f9326da58fdb"
+        },
+        {
+          "version": "3.6.3+1.21.4-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.3+1.21.4-fabric.jar",
+          "sha512": "5ef73c3b54a12a39860296847bb29da42e77a925134e0a02f8596dac10d2c8d257452ec22a093d60b6c641155c8cabdf626e7f68829c1fa8d5c353dfbb8f04ce"
+        },
+        {
+          "version": "3.6.4+1.20.1-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.4+1.20.1-fabric.jar",
+          "sha512": "bca9287dfb83c06d53ac43f55ab233c2abc2307dd5f3426b113bc1b803e25459bad7d86cec3427b3b04de4fa72e7de8bfaa911ee5d6e333b87b6b3f130565e7e"
+        },
+        {
+          "version": "3.6.4+1.20.4-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.4+1.20.4-fabric.jar",
+          "sha512": "020014a8ba6967dfaa37c4aa4699e5d50f563f586ffa9591a058d174f1d8d8e76cf9e323350db0cd6e08b95e9bfa979005b0b1c7e96ceaf39e2bf4c7fda42d54"
+        },
+        {
+          "version": "3.6.4+1.20.6-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.4+1.20.6-fabric.jar",
+          "sha512": "bdd5dc6d51a19dd4fde691d142526b109ea0ecaf4d962a6320660aaf1d6e1d72b65db63277977eaece408f56d41e18d97db6824a82c73d3c98f11d88957219ad"
+        },
+        {
+          "version": "3.6.4+1.21.1-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.4+1.21.1-fabric.jar",
+          "sha512": "d3ce26f4a61f3ff383ee3243fde8ab1f3c6e749665f3fca073fc0279cfbb2b09ad05a2636d995d201a7cffb31e559020c3247e0aea6e2cd48fac37236cb8d658"
+        },
+        {
+          "version": "3.6.4+1.21.3-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.4+1.21.3-fabric.jar",
+          "sha512": "09096c892b60585f36db026dfd8ce59e49f6c05a4a1726645002741d951354101665f0fe2f087b38b2bf031264d9fcb159aa15fe02393a3edf91c8a90e8cbd10"
+        },
+        {
+          "version": "3.6.4+1.21.4-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.4+1.21.4-fabric.jar",
+          "sha512": "60ab7cc8b327bfce1b2ed641c600d9c9f4815bb6d0cdbc2b3ead9116edc430b74065ace96e43205bdb67a5142b26b4ce0372cd8ae694da00561837f6c3551ef6"
+        },
+        {
+          "version": "3.6.4+1.21.5-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.4+1.21.5-fabric.jar",
+          "sha512": "f24170515b7157d097d5b68d734be5f7a90e2bcc5522e3ad7ef8d0707a2ff3bf30d3f1a0b471f6ffcb38eebb5671c55579deece09316735d8ec172c07aceced3"
+        },
+        {
+          "version": "3.6.5+1.20.1-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.5+1.20.1-fabric.jar",
+          "sha512": "f02d80cade3f7c8f7d3ecaef7d1ab17e5d60bf55e3d4d2c6d1ccb7222cf1bdcdabe16ebb56a9ed91855c263e9b4eb4cfec70b93c11cac2dfd90341f6f43b1a77"
+        },
+        {
+          "version": "3.6.5+1.20.4-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.5+1.20.4-fabric.jar",
+          "sha512": "b3a6c6b03fbaf5c6671f6d9f7ef3b0977f166303a5691341d8352acbc554ea2885fe57d0125ce9d21e5d8153e003e9728a8faf45ab119b38c1d1353623e586cf"
+        },
+        {
+          "version": "3.6.5+1.20.6-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.5+1.20.6-fabric.jar",
+          "sha512": "89a2046fa5aa81f011f0f639d9dedee4c57f59f87a2b90f0a244ee33d92fa121598dfb405a370f3d6879e6ef57bf7353498f3a70a47d162bddf2cbc47c26bb64"
+        },
+        {
+          "version": "3.6.5+1.21.1-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.5+1.21.1-fabric.jar",
+          "sha512": "58153d92dcc229f07e7ee958337228937f1f489a4edc535cc4cf8d0e9aeed00f73ec18241dab437002ca5673533cb8d08c389c83da65a2588d810a27e9d05b11"
+        },
+        {
+          "version": "3.6.5+1.21.3-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.5+1.21.3-fabric.jar",
+          "sha512": "bb36a7325e3ec5a497cc640e3c1ff83054601d3ec983caa084c2ece4fbfe759aee565d8f247dec90b9a40ed2405bf9fb8d56b6dbaf840edfe1632ef5a978b266"
+        },
+        {
+          "version": "3.6.5+1.21.4-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.5+1.21.4-fabric.jar",
+          "sha512": "4b0e5acd0b07606a3a1a7da489e0f30c43b5d866420bade7c38ccfbb1735d186518572511f97fd4bf7a2302b4cc290a50eb184fc7a7d6dd98731148cd8295554"
+        },
+        {
+          "version": "3.6.5+1.21.5-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.5+1.21.5-fabric.jar",
+          "sha512": "efc22222482503312f3c69086eac49607219517a79c1eccec19d9d7949c35dc05019840324b5accf66150a378fa752d0ee840a829f6a7edd45ccd549df7fba63"
+        },
+        {
+          "version": "3.6.6+1.20.1-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.6+1.20.1-fabric.jar",
+          "sha512": "20f282b3cdaec7c83a96840edb756336677c5816ed943145022f1ce1eafac0c9aa7c621939e15abe6f4309626738bc56d3d1b8434f5175d22e7409108630b02b"
+        },
+        {
+          "version": "3.6.6+1.20.4-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.6+1.20.4-fabric.jar",
+          "sha512": "ea5af6c6a95a2c62070b87822d87ad835daae655886f8886a20f71e5b838687c56f06df0d9ba6ab3f5c69c2c1699e1a2400bc8079a6d4d37442d2f4daa696eb1"
+        },
+        {
+          "version": "3.6.6+1.20.6-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.6+1.20.6-fabric.jar",
+          "sha512": "8a0a3dd27ef3603472814e243c2f51c1a61e5bb907d07abf18582145a61536ef49119f25f844cd97d9dee93d9079a3f877d27ce80b5fed39f5343f2d41460879"
+        },
+        {
+          "version": "3.6.6+1.21.1-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.6+1.21.1-fabric.jar",
+          "sha512": "b88b213c08919e4624ca88a07a582408a8759a7f2fa7b12086c6bf1087d0e932723d92051d26596fa79f5f8bdaa6090f2d5f87851a8e8628c2eb861aa804de46"
+        },
+        {
+          "version": "3.6.6+1.21.3-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.6+1.21.3-fabric.jar",
+          "sha512": "df0b24cdaaf655fdb9220c43bd8602e1327a6b1e1129df532e28102e8a1352fc21d8cb647912e709679fe8a65546cd0a9210e9a3ecf3f5368a3e0c7e2e1e8f19"
+        },
+        {
+          "version": "3.6.6+1.21.4-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.6+1.21.4-fabric.jar",
+          "sha512": "c4904eae179e5a012e0bcee882a650a54c021105c03ef613893f82b13a793a3b19f30748e281b7f2d62308975296177b236ea79ad7bfdbf35366fedb2fa02171"
+        },
+        {
+          "version": "3.6.6+1.21.5-fabric",
+          "fileName": "yet_another_config_lib_v3-3.6.6+1.21.5-fabric.jar",
+          "sha512": "13db3a4ec6ba02c7bc190ea777459d3b113d6600fa2b9688aedb1c038915af0e9a7caad4d0bd0c19a86e5a9fbafd65f34f61f7d63190a707cce7c6a4e2c3aed5"
+        },
+        {
+          "version": "3.7.0+1.21.1-fabric",
+          "fileName": "yet_another_config_lib_v3-3.7.0+1.21.1-fabric.jar",
+          "sha512": "43062ed2051ecc99e7e161261470b7500c2315f7330a82fc7681105191a515c7059895e2c0cf46a308d27fca6fb875ef751df41c010a0b1ed231a9589dded527"
+        },
+        {
+          "version": "3.7.0+1.21.3-fabric",
+          "fileName": "yet_another_config_lib_v3-3.7.0+1.21.3-fabric.jar",
+          "sha512": "b6f991e294e05054e63123eb8f7afaeecb8b88b6ec0de43112f30596e942c8ff546d66faef7f558414ebc81c765e5666ea699c016034a405c9c49c6c1557e7b9"
+        },
+        {
+          "version": "3.7.0+1.21.4-fabric",
+          "fileName": "yet_another_config_lib_v3-3.7.0+1.21.4-fabric.jar",
+          "sha512": "947518cd56d6588b52ea3856a0f0f34ebb9c5bdfe3dca5e54eba4866624e1e553d170521c2ace65b283d5f26d17a7f6d36d56aaccde7ba3b1fdaf84c4dc6af0f"
+        },
+        {
+          "version": "3.7.0+1.21.5-fabric",
+          "fileName": "yet_another_config_lib_v3-3.7.0+1.21.5-fabric.jar",
+          "sha512": "249b30891424da0d586ddbb8497a01d266e6e2d1b215894200defc855a8e1b318ecfeea0383a5c7401fb16b18d38226eae7efb7953347b7307c6cbf1a24ed7ed"
+        },
+        {
+          "version": "3.7.0+1.21.6-fabric",
+          "fileName": "yet_another_config_lib_v3-3.7.0+1.21.6-fabric.jar",
+          "sha512": "71dafa4237b8f18a35e3ebdc7ff012f420dee4317c70c86fa92aceff0a8400f5a400ea38e91bab3b15a1b316346434f4757f0736c548003e0d100e27bc2df59a"
+        },
+        {
+          "version": "3.7.1+1.21.1-fabric",
+          "fileName": "yet_another_config_lib_v3-3.7.1+1.21.1-fabric.jar",
+          "sha512": "7ec418266402a702423da1f32433b731c3b27fbb493d6b1e63cffeaa31a6a8435493e45c8e5e64370910095b9cf39b52257e5b74b9bdb1ff606933db98862e3e"
+        },
+        {
+          "version": "3.7.1+1.21.3-fabric",
+          "fileName": "yet_another_config_lib_v3-3.7.1+1.21.3-fabric.jar",
+          "sha512": "3692204ef9f17fc4612fb55e3614536e489c02e391562690bec586317ec8d2bdb1bd033d037b9c8e556a7b49a00cc372e0e1728cf2263084965459136b0a8237"
+        },
+        {
+          "version": "3.7.1+1.21.4-fabric",
+          "fileName": "yet_another_config_lib_v3-3.7.1+1.21.4-fabric.jar",
+          "sha512": "c816b11402da81e89e50ce77bb7a0dac1b9a8ec686675eec21297da9a0489da3d018bd47a7c52cb80415cff19c291cffeb05ca39836275b00bc189bdb81046d1"
+        },
+        {
+          "version": "3.7.1+1.21.5-fabric",
+          "fileName": "yet_another_config_lib_v3-3.7.1+1.21.5-fabric.jar",
+          "sha512": "30282d2a9fe2eb4b4061c863100778f81ef68194dcd3785e75d0ad7ccdf0783e29d6d9bfe2b6a82c17f6fd94eb0c6a82e3989633cc6f66c2190f0bd031bea624"
+        },
+        {
+          "version": "3.7.1+1.21.6-fabric",
+          "fileName": "yet_another_config_lib_v3-3.7.1+1.21.6-fabric.jar",
+          "sha512": "838f57724346a295ed82eba0e9e94880273cc20a7b7825f5d17cac711989311aa4040c61964e9c4a18ef56dba5ec066d3537ad540196eed66c6a56940ac9a1fa"
+        },
+        {
+          "version": "3.7.1+1.21.9-fabric",
+          "fileName": "yet_another_config_lib_v3-3.7.1+1.21.9-fabric.jar",
+          "sha512": "e059b88761fc289af334c98f7ad2feaf7c1b961dee3da8a3b1555f9cfd815bf4b1ae480c0dfb4a31bda76a0dce070612261e58f64c7f4e9a8e5180cbf7d42052"
+        },
+        {
+          "version": "3.7.2+1.21.9-fabric",
+          "fileName": "yet_another_config_lib_v3-3.7.2+1.21.9-fabric.jar",
+          "sha512": "5e383de08622cf0dbe604fe9da6deaf10d6617287a9766ccede887b980c75c3c855b14dab3e590866c6c370ac16954d1a25d8a7d4c73b805a9343f71dff5d675"
+        },
+        {
+          "version": "3.8.0+1.21.1-fabric",
+          "fileName": "yet_another_config_lib_v3-3.8.0+1.21.1-fabric.jar",
+          "sha512": "1aaa44b9043aebe677bb53c28476b822c65d94eecb8c47a379b31df6faa779ac0649ec51c831ded515c5fc1c2ae9909dcbf02f5ff4d3eb72bb1f295bb0c3d153"
+        },
+        {
+          "version": "3.8.0+1.21.3-fabric",
+          "fileName": "yet_another_config_lib_v3-3.8.0+1.21.3-fabric.jar",
+          "sha512": "ef2ad78cb431ca7457d66cc956d73a1037107c46b322a59e40849ce32241dbddd37b349be1a4bdebf6468d9c1b9367e676740ea578b546cc219d24dfd9d3cfe5"
+        },
+        {
+          "version": "3.8.0+1.21.4-fabric",
+          "fileName": "yet_another_config_lib_v3-3.8.0+1.21.4-fabric.jar",
+          "sha512": "3fcd2ce12709a951f7ad4d2e4abf0b276aee0192bc93a91279ad6d6b2a0d7523f27f42e39fe21618542a1e5628cc937d83c4a75ba65bd64b44c062c481598c63"
+        },
+        {
+          "version": "3.8.0+1.21.5-fabric",
+          "fileName": "yet_another_config_lib_v3-3.8.0+1.21.5-fabric.jar",
+          "sha512": "6463da69870dc6dd4905816b6344f2653ea00a271ec14fc0e1f7efb59a833ef27f6d55f30557d0d970e4955488b9eccac0b51126301a859e568326a591bd8820"
+        },
+        {
+          "version": "3.8.0+1.21.6-fabric",
+          "fileName": "yet_another_config_lib_v3-3.8.0+1.21.6-fabric.jar",
+          "sha512": "dba03c9b419c7512a0d6a5eb1ee109b187290842e3add06b6c268b147601fd62be8cfef2333bcadce415df4f3f993e631523f4f0974cfd60ee3c0102f8af2088"
+        },
+        {
+          "version": "3.8.0+1.21.9-fabric",
+          "fileName": "yet_another_config_lib_v3-3.8.0+1.21.9-fabric.jar",
+          "sha512": "9ca9ccbbf025a795f1853feba3dc9755a377f744e3b075d581d987ae51d32e170d839e9069a9f2b05bd121cca78dfff3882dd5ea132768c7ce0ecae81ed472e3"
+        },
+        {
+          "version": "3.8.1+1.21.1-fabric",
+          "fileName": "yet_another_config_lib_v3-3.8.1+1.21.1-fabric.jar",
+          "sha512": "d4532cf9ed422c584447d1b44e5e16ce894675599b44bebb3c293dafb559efd87b5c4ad8c571e6a845a55095d16e3e7739011483365ef264678fd9639540c903"
+        },
+        {
+          "version": "3.8.1+1.21.10-fabric",
+          "fileName": "yet_another_config_lib_v3-3.8.1+1.21.10-fabric.jar",
+          "sha512": "3b05fc10d45a631b95aeb974d6a8244cc1fa33449668c72d9988c1e4cb8e63f00e0f2c4a2cb8dab928a449cc261c219cb2ed1dc86c1ba13af710674ffb603def"
+        },
+        {
+          "version": "3.8.1+1.21.11-fabric",
+          "fileName": "yet_another_config_lib_v3-3.8.1+1.21.11-fabric.jar",
+          "sha512": "3a4f015644454dffd423272a8b066e6b94d0f982184ca8c492d996a4f30eb8247b1648fe936413e178d4da3c9266c00e9b864eb9a91f0815348ba5662596986c"
+        },
+        {
+          "version": "3.8.1+1.21.3-fabric",
+          "fileName": "yet_another_config_lib_v3-3.8.1+1.21.3-fabric.jar",
+          "sha512": "c12a9618b5ae33550c8775082af00cb62542b3c08d63eba3da1b28a54d78f490fe24c96d10b12a063ce23b8c9166336c3dc1a8a2c18de181fda20873e58dadd7"
+        },
+        {
+          "version": "3.8.1+1.21.4-fabric",
+          "fileName": "yet_another_config_lib_v3-3.8.1+1.21.4-fabric.jar",
+          "sha512": "137fbcf11677c09a931e0e5f6ebedcb730d79ccfea4c7d771b77249812d456a741bc06d289c5226e855fd8b9cfb0a9e0f6aa9902a79681c8cacc8f5ea82207c0"
+        },
+        {
+          "version": "3.8.1+1.21.5-fabric",
+          "fileName": "yet_another_config_lib_v3-3.8.1+1.21.5-fabric.jar",
+          "sha512": "5ce03f94534eab84a40555c46683395302b9645232d77a4a3d2ae47d80edd7db8a37930f3d82128907a2eaf400ae75eb335813558a9dfa0c90dc6dea8a4bebad"
+        },
+        {
+          "version": "3.8.1+1.21.6-fabric",
+          "fileName": "yet_another_config_lib_v3-3.8.1+1.21.6-fabric.jar",
+          "sha512": "e43747e0bea6bbbe2133b15859ababf129f59eeb5a0e253bc779b5aa2a991c9910557354598e0b3d423d5bd608fd65b2be11f78913cb5222a0cd18825f0e9bc4"
+        },
+        {
+          "version": "3.8.2+1.21.1-fabric",
+          "fileName": "yet_another_config_lib_v3-3.8.2+1.21.1-fabric.jar",
+          "sha512": "353169f85fa63e73ce9bdd0d4ddce54e3cbc4d71153a93c982f74c68fd93325986663f94fc2f2b10f4427e8b15a0485c608c5587b3840d933204b50ea4cb6d4c"
+        },
+        {
+          "version": "3.8.2+1.21.10-fabric",
+          "fileName": "yet_another_config_lib_v3-3.8.2+1.21.10-fabric.jar",
+          "sha512": "77dd4dbef6ab2d60863e1ac2f5c4e3eba16b3e6307fba5d9d70c20604e0f72863da20962c2aa99a8ef155debd5e60851c54937311b06e0dd4dbf4edb7a783b01"
+        },
+        {
+          "version": "3.8.2+1.21.11-fabric",
+          "fileName": "yet_another_config_lib_v3-3.8.2+1.21.11-fabric.jar",
+          "sha512": "392db7d471030cca27483ecf58c626a14cd73d71a18afe6d4173c6b030948b8a925b36e708d4cc2c897dfa3f20a7f23b999fc18aa6d36c156da29037601153ac"
+        },
+        {
+          "version": "3.8.2+1.21.3-fabric",
+          "fileName": "yet_another_config_lib_v3-3.8.2+1.21.3-fabric.jar",
+          "sha512": "bf83bc7ec27447edc1e6a18aa27c5e79b6c6ec3d3bb06917fc017e59cefbb2bbb36d8760c77901df30c2bab1d182a19a26cb13980c9be728e750b454222542c4"
+        },
+        {
+          "version": "3.8.2+1.21.4-fabric",
+          "fileName": "yet_another_config_lib_v3-3.8.2+1.21.4-fabric.jar",
+          "sha512": "4c44736033fe6a662155fb46c0e65e1e4d5011d397c671a2ba86ddb8d0cc3e196cd17d01c4270cec465e0d90664b56054f0d6f9cf743a4fa909c984355194df5"
+        },
+        {
+          "version": "3.8.2+1.21.5-fabric",
+          "fileName": "yet_another_config_lib_v3-3.8.2+1.21.5-fabric.jar",
+          "sha512": "9db844d1423734526ff6a723ef9950173d63ee3c15df995bac6b4f4c405bc4bc778a689cf8bc0875c1f22e7d3ef8dd8ac1005146e9b4005ad9d58a83382e083c"
+        },
+        {
+          "version": "3.8.2+1.21.6-fabric",
+          "fileName": "yet_another_config_lib_v3-3.8.2+1.21.6-fabric.jar",
+          "sha512": "502a278d916580a23bf894bdf187f66b3fcdf541848c045bde581ae2df33c3e79a0d70fc4aacc54c6ed82f7c392c03a0cf2a5f13903f5c5d9b625b4334311080"
+        },
+        {
+          "version": "3.8.2+26.1.0-fabric",
+          "fileName": "yet_another_config_lib_v3-3.8.2+26.1.0-fabric.jar",
+          "sha512": "463232155a33073f28c2080a37ffd19ca515c735c58645365ef37e77dae70365a139c20d1570831e6ccc3f6df4ccf3a68c93534477c38ee8a17d2ac1f81791ca"
+        },
+        {
+          "version": "3.9.0+26.1-fabric",
+          "fileName": "yet_another_config_lib_v3-3.9.0+26.1-fabric.jar",
+          "sha512": "af2c467d9a9b2884bf38bdc9b59e108f36a7b2fd3bc4de3cc582542a585d794a7936f3ec44a5f793d4d7f9141d4fd546107732600558fbd249fbe16c8bf7e0bb"
+        },
+        {
+          "version": "3.9.1+26.1-fabric",
+          "fileName": "yet_another_config_lib_v3-3.9.1+26.1-fabric.jar",
+          "sha512": "c7791958ce0782be754bbf4766e2f488d61e4fc0b743408b676098fedc506206e26f5bdb5b49a3535555b5d900cd7cdc141482120b4c25959c473366b7b8173c"
+        },
+        {
+          "version": "3.9.2+26.1-fabric",
+          "fileName": "yet_another_config_lib_v3-3.9.2+26.1-fabric.jar",
+          "sha512": "0efbc7bbf9cabcf5f78884eab0b85ca902e6ca7dfa07b60c1c812b828442b940e80c459fd3de8b87cae50bba3c203efc4444a8e29d21b94ad1ad12d438f91a58"
+        },
+        {
+          "version": "3.9.3+26.1-fabric",
+          "fileName": "yet_another_config_lib_v3-3.9.3+26.1-fabric.jar",
+          "sha512": "c725d81ef2b8f7f4b3c1c127e782572778a765581ce6105e2c4ce77e642b52b2c99b1587f18af192ad649538e4844dda6807e2ecda0a493d09f7f06a346ac377"
+        },
+        {
+          "version": "3.9.3+26.2-fabric",
+          "fileName": "yet_another_config_lib_v3-3.9.3+26.2-fabric.jar",
+          "sha512": "8cca1d53fd6b6a832189fc5638c8cc8a728e9a45bbde56409b94c73dbd3130dc2bb8dfbc9d11a1041439716258d462ca8f17af196331d46b183144bc3ed02222"
+        },
+        {
+          "version": "3.9.3+26.2-fabric",
+          "fileName": "yet_another_config_lib_v3-3.9.3+26.2-fabric.jar",
+          "sha512": "de2a8c192b823b7394ee2f345c3b809434645711fad7bddefba071dd706262f67f580fcd06a8e741cc0027e1a2758d8bf5c2596575ed47b7ced68f97b39fce2e"
+        },
+        {
+          "version": "3.9.4+26.1-fabric",
+          "fileName": "yet_another_config_lib_v3-3.9.4+26.1-fabric.jar",
+          "sha512": "a39de71c189fea4c43e951a4c2d99850ef161280846d817efa4b32761728fda6442d4a714eada0783ca79baa8909935ff7e68dc7a495f104df0fa05515250e52"
+        },
+        {
+          "version": "3.9.4+26.2-fabric",
+          "fileName": "yet_another_config_lib_v3-3.9.4+26.2-fabric.jar",
+          "sha512": "a23640a6c17052a763fe238a426c17dc6ce316499963f4f85c7dae2e6b1e2d34f3225959d9776caa9537e5d6ea5a9c85d37568c6e26fdad081d4bdaa0167ef07"
+        },
+        {
+          "version": "3.9.5+26.1-fabric",
+          "fileName": "yet_another_config_lib_v3-3.9.5+26.1-fabric.jar",
+          "sha512": "e0016a590339b6819100d28a4e4f04ac0a13c119ac6b2d5589b57763e5c828b75345d3eb159148b2d8c94e1d92706dc33489fa41244cf5f02e6b745a942789d0"
+        },
+        {
+          "version": "3.9.5+26.2-fabric",
+          "fileName": "yet_another_config_lib_v3-3.9.5+26.2-fabric.jar",
+          "sha512": "bf709e5d1db2f104abb1e45d27dec39f10e0e2d546ec1e5df3a49b464c6f2b2daf39633e26e94e7869ae2a555258e5c4ee2d796c7d6d0e26300052a8de15052a"
+        },
+        {
+          "version": "3.9.5+26.3-fabric",
+          "fileName": "yet_another_config_lib_v3-3.9.5+26.3-fabric.jar",
+          "sha512": "bc523573c28fdc8d5d96ff342008d38cdf2e8ca8eb6c061430f6fe7484fd287950d5cc8043ee83cbd7bd00bebf6ab4a1d471aa8ea05d8b2278d17764ed3f5952"
+        },
+        {
+          "version": "3.9.6+26.1-fabric",
+          "fileName": "yet_another_config_lib_v3-3.9.6+26.1-fabric.jar",
+          "sha512": "d1efe6c248d89477d707749d9e8eb4c555e892ad23cb3ac0ba45bbe59d5c166b8dde554e7de5d1cf95c185d749e58537b376a8128cfdc4deea60266418d5b122"
+        },
+        {
+          "version": "3.9.6+26.2-fabric",
+          "fileName": "yet_another_config_lib_v3-3.9.6+26.2-fabric.jar",
+          "sha512": "b3a58e4a5ef54647569282b8b2e9630389b3568f0abecb9c168daaa815477cbf961e79de28081cac551b69b810f561f043d669d1034aec80f12153a53dff53ef"
+        },
+        {
+          "version": "3.9.6+26.3-fabric",
+          "fileName": "yet_another_config_lib_v3-3.9.6+26.3-fabric.jar",
+          "sha512": "e858b30a27621e56fbe68f181cf5dcba156ce54fd39c92d2f10409051952f4f0d506ff48cd1d25b3915489dd2058275abb3aea362faa5aaff0d1dce4a2415d5b"
         }
       ]
     }
